@@ -1,8 +1,69 @@
 ---
 layout: default
 permalink: /about/
+
+# visit https://getbootstrap.com/docs/4.1/utilities/colors/#background-color
+# to know available colors (white and transparent aren't included)
+# default color is blue (primary)
+
+programming-skills:
+
+    - name: HTML5
+      percentage: 90
+      color: danger
+
+    - name: CSS3
+      percentage: 80
+      color:
+
+    - name: Sass
+      percentage: 70
+      color: dark
+
+
+other-skills:
+
+    - name: Adobe Photoshop
+      percentage: 95
+      color: info
+  
+    - name: Adobe Illustrator
+      percentage: 90
+      color: success
 ---
 
-<div class="row justify-content-center p-5 m-5">
-    <h1>About</h1>
+<div class="row justify-content-center m-3 mt-5">
+
+    <div class="col-lg-5 m-2">
+
+        <h2 class="mb-3">Programming Skills</h2>
+
+        {% for skill in page.programming-skills %}
+        <div class="skill">
+            <p>{{ skill.name }}</p>
+            <div class="skill-bar skill-bar-{{ skill.color }} skill-{{ skill.percentage }} wow animated slideInLeft"
+                 data-wow-delay="{{ forloop.index | divided_by: 20.0 }}">
+                <span>{{ skill.percentage }}%</span>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="col-lg-5 m-2">
+
+        <h2 class="mb-3">Other Skills</h2>
+
+        {% for skill in page.other-skills %}
+        <div class="skill">
+            <p>{{ skill.name }}</p>
+            <div class="skill-bar skill-bar-{{ skill.color }} skill-{{ skill.percentage }} wow animated slideInLeft"
+                 data-wow-delay="{{ forloop.index | divided_by: 20.0 }}">
+                <span>{{ skill.percentage }}%</span>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
 </div>
