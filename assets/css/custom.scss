@@ -1,8 +1,13 @@
 ---
 ---
 @charset "utf-8";
+
+// Custom Fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "variables",
-        "base";
+        "base",
+        "navbar",
+        "skills",
+        "timeline";
