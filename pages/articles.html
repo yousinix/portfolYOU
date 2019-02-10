@@ -36,7 +36,13 @@ permalink: /articles/
                     <span class="badge {{ badge_style }}">{{ tag }}</span>
                     {% endfor %}
                 </p>
-                <p class="card-text">{{ post.content | truncatewords: 25, "<small><i>  read more...</i></small>" }} </p>
+                <p class="card-text">
+                    {% if post.color %}
+                        {{ post.description }}
+                    {% else %}
+                        {{ post.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+                    {% endif %}
+                </p>
             </div>
             <div class="card-footer {{ text_style }}"> {{ post.date | date_to_long_string }} </div>
         </a>
