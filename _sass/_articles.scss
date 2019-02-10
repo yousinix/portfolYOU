@@ -41,7 +41,7 @@
 
     h1, h2 { margin-top: 32px; }
 
-    a {
+    a:not(.btn) {
         display: inline-block;
         text-decoration: none;
 
