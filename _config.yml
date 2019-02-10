@@ -12,6 +12,7 @@ permalink: articles/:title
 # Author Info
 author:
   img: https://ssl.gstatic.com/images/branding/product/1x/avatar_square_blue_512dp.png
+  name: John Doe
   email: portfolYOU@xyz.com
   github: portfolYOU
   twitter: portfolYOU

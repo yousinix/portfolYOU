@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: about
+title: "About Me"
 permalink: /about/
 
 # visit https://getbootstrap.com/docs/4.1/utilities/colors/#background-color
@@ -50,55 +51,10 @@ timeline:
                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
 ---
 
-<div class="row justify-content-center m-3 mt-5">
+Hi I am **{{ site.author.name }}**,<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-	<!-- Programming Skills -->
-    <div class="col-lg-5 m-2">
-        <h2 class="mb-3">Programming Skills</h2>
-        {% for skill in page.programming-skills %}
-        <div class="skill">
-            <p>{{ skill.name }}</p>
-            <div class="skill-bar skill-bar-{{ skill.color }} skill-{{ skill.percentage }} wow animated slideInLeft"
-                 data-wow-delay="{{ forloop.index | divided_by: 20.0 }}">
-                <span>{{ skill.percentage }}%</span>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-	<!-- Other Skills -->
-    <div class="col-lg-5 m-2">
-        <h2 class="mb-3">Other Skills</h2>
-        {% for skill in page.other-skills %}
-        <div class="skill">
-            <p>{{ skill.name }}</p>
-            <div class="skill-bar skill-bar-{{ skill.color }} skill-{{ skill.percentage }} wow animated slideInLeft"
-                 data-wow-delay="{{ forloop.index | divided_by: 20.0 }}">
-                <span>{{ skill.percentage }}%</span>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-
-	<!-- TimeLine -->
-    <div class="col-lg-10 m-2">
-		<div class="timeline-body">
-
-        {% for item in page.timeline %}
-			<div class="timeline-item">
-				<div class="content">
-					<h2>{{ item.title }}</h2>
-					<h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-					<p>{{ item.description }}</p>
-				</div>
-            </div>
-        {% endfor %}
-
-		</div>
-    </div>
-
-</div>
+{% include skills.html %}
+{% include timeline.html %}
