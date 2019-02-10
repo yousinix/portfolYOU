@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.card').hover(
+    $('.project.card').hover(
         // trigger when mouse hover
         function(){ $(this).animate({ marginTop: "-=1%", marginBottom: "+=1%" }, 200) },
 
