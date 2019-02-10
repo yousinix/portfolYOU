@@ -1,8 +1,71 @@
 ---
 layout: default
 permalink: /projects/
+
+projects:
+
+    - name: Project A
+      tools: [C#, XML, WPF]
+      link: https://www.google.com
+      image: https://thenextscoop.com/wp-content/uploads/2019/01/web-design-2019.jpg
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    - name: Project B
+      tools: [HTML5, CSS3]
+      link: https://www.google.com
+      image: https://www.infotyke.com/wp-content/uploads/2018/02/web-development-service-infotyke.png
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    - name: Project C
+      tools: [Android]
+      link: https://www.google.com
+      image: https://www.sketchappsources.com/resources/source-image/coo-app-concept-subgaurav.jpg
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    - name: Project X
+      tools: [Arduino Uno, Electronics]
+      link: https://www.google.com
+      image: https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1143356/1160/772/m1/fpnw/wm0/creativemarket_image_front-.png?1459611806&s=04d4f811ceed88ca4716fd2551e93a36
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    - name: Project Y
+      tools: [Java]
+      link: https://www.google.com
+      image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    - name: Project Z
+      tools: [JavaScript]
+      link: https://www.google.com
+      image:
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-<div class="row justify-content-center p-5 m-5">
-    <h1>Projects</h1>
+<div class="card-columns m-3 mt-5">
+
+    {% for project in page.projects %}
+    <div class="wow animated fadeIn" data-wow-delay=".15s">
+        <a href="{{ project.link }}" class="card text-dark">
+            {% if project.image %}
+            <img class="card-img-top" src="{{ project.image }}" alt="Card image cap">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <p class="card-text">
+                    {% for tool in project.tools %}
+                        <span class="badge badge-pill text-primary border border-primary">{{tool}}</span>
+                    {% endfor %}
+                </p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+
 </div>
