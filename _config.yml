@@ -4,6 +4,7 @@ description: >
   Lorem ipsum dolor sit amet, his eu liber nobis senserit,
   ne option debitis adipiscing duo, has in eirmod ancillae.
 baseurl: "/portfolYOU/"
+repo_url: https://github.com/YoussefRaafatNasry/portfolYOU
 
 # Posts Permalink
 permalink: articles/:title

@@ -12,7 +12,24 @@
 }
 
 
+
 .article {
+
+    .article-metadata {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+
+    footer {
+        font-size: 10px;
+        color: #6c757d;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        text-align: right;
+        margin-top: 4em;
+        margin-right: 2em;
+    }
+
     img {
         display: block;
         max-width: 100%;
