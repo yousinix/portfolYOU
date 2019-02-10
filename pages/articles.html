@@ -17,11 +17,14 @@ permalink: /articles/
             {% assign card_style = post.color | prepend: 'bg-' %}
             {% if post.color != 'light' %}
                 {% assign text_style = 'text-white' %}
-                {% assign badge_style = 'badge-light text-muted' %}
+                {% assign badge_style = 'badge-light text-' %}
+                {% assign badge_style = badge_style | append: post.color %}
             {% endif %}
         {% else %}
             {% assign card_style = post.color | prepend: 'border border-' %}
-            {% assign badge_style =  post.color | prepend: 'badge-' %}
+            {% if post.color %}
+                {% assign badge_style =  post.color | prepend: 'badge-' %}
+            {% endif %}
         {% endif %}
 
     <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
