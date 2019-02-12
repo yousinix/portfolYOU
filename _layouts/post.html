@@ -1,34 +1,32 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="col-lg-10 mx-auto mt-5 article">
-    <h1><b>{{ page.title }}</b></h1>
-    <p class="article-metadata text-muted">
-        {{ page.date | date_to_long_string }} -  
+<h1><b>{{ page.title }}</b></h1>
 
-        <b>
-        {% assign words = content | number_of_words %}
-        {% if words < 360 %}
-            less than 1 min read time
-        {% else %}
-            {{ words | divided_by:180 }} mins read time
-        {% endif %}
-        </b>
+<p class="article-metadata text-muted">
+    {{ page.date | date_to_long_string }} -  
+    <b>
+    {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+        less than 1 min read time
+    {% else %}
+        {{ words | divided_by:180 }} mins read time
+    {% endif %}
+    </b>
 
-        <br>
+    <br>
+    
+    Tags: 
+    {% for tag in page.tags %}
+        <span class="badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    {% endfor %}
+</p>
 
-        Tags: 
-        {% for tag in page.tags %}
-            <span class="badge badge-pill text-primary border border-primary">{{ tag }}</span>
-        {% endfor %}
-    </p>
+{{ content }}
 
-    {{ content }}
-
-    <footer>
-        This Article is <b>open source</b>. Noticed a typo? </br>
-        Or something unclear? Improve this article on 
-        <a href="{{ site.repo_url }}/edit/master/{{ page.path }}">GitHub</a>.
-    </footer>
-</div>
+<footer>
+    This Article is <b>open source</b>. Noticed a typo? </br>
+    Or something unclear? Improve this article on 
+    <a href="{{ site.repo_url }}/edit/master/{{ page.path }}">GitHub</a>.
+</footer>
