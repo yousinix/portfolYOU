@@ -18,3 +18,17 @@ author:
   twitter: portfolYOU
   linkedin: portfolYOU
   facebook: portfolYOU
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+# Default values for collections
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
