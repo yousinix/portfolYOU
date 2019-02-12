@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "About Me"
+title: about
 permalink: /about/
 
 # visit https://getbootstrap.com/docs/4.1/utilities/colors/#background-color
@@ -53,6 +53,8 @@ timeline:
                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 ---
+
+# **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

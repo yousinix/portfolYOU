@@ -8,9 +8,11 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link{% if page.url contains 'projects' %} active{% endif %}" href="{{ '/projects' | relative_url }}">Projects</a>
-            <a class="nav-item nav-link{% if page.url contains 'articles' %} active{% endif %}" href="{{ '/articles' | relative_url }}">Articles</a>
-            <a class="nav-item nav-link{% if page.url contains 'about' %} active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
+            {% for site_page in site.pages reversed %}
+                {% if site_page.path contains 'pages/' %}
+                    <a class="nav-item nav-link{% if page.url contains site_page.title %} active{% endif %}" href="{{ site_page.permalink | relative_url }}">{{ site_page.title | capitalize }}</a>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 
