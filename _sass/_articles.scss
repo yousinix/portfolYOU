@@ -30,6 +30,11 @@
         margin-right: 2em;
     }
 
+    
+    h1, h2 { margin-top: 32px; }
+
+    hr { background: $secondary; }
+
     img {
         display: block;
         max-width: 100%;
@@ -37,9 +42,17 @@
         margin: 1rem auto;
     }
 
-    hr { background: $secondary; }
-
-    h1, h2 { margin-top: 32px; }
+    .video {
+        position: relative;
+        padding-bottom: 50%;
+        margin-bottom: 1rem;
+        width: 100%;
+        iframe {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    }
 
     a:not(.btn) {
         display: inline-block;
@@ -79,7 +92,6 @@
         background-color: $light;
         color: $dark;
         border-radius: 3px;
-        font-size: 85%;
         margin: 0;
         padding: .2em .4em;
     }
