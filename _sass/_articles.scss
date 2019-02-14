@@ -54,7 +54,7 @@
         }
     }
 
-    a:not(.btn) {
+    a:not(.btn):not([class^="carousel-"]) {
         display: inline-block;
         text-decoration: none;
 
