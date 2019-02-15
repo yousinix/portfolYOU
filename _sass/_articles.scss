@@ -103,7 +103,8 @@
     }
       
     table {
-        width: 100%;
+        display: block;
+        overflow-x: auto;
         margin: 1rem 0;
 
         td {
