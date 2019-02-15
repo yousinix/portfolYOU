@@ -1,19 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light">
 
-    <a class="navbar-brand" href="{{ site.baseurl }}"><h4><b>{{ site.title }}</b></h4></a>
+  <a class="navbar-brand" href="{{ site.baseurl }}/"><h4><b>{{ site.title }}</b></h4></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-            {% for site_page in site.pages reversed %}
-                {% if site_page.path contains 'pages/' %}
-                    <a class="nav-item nav-link{% if page.url contains site_page.title %} active{% endif %}" href="{{ site_page.permalink | relative_url }}">{{ site_page.title | capitalize }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      {% for site_page in site.html_pages reversed %}
+        {% if site_page.title %}
+          <a class="nav-item nav-link{% if page.url contains site_page.permalink %} active {% endif %}" href="{{ site_page.permalink | relative_url }}">{{ site_page.title }}</a>
+        {% endif %}
+      {% endfor %}
     </div>
+  </div>
 
 </nav>

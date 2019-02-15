@@ -1,0 +1,11 @@
+- name: HTML5
+  percentage: 90
+  color: danger
+
+- name: CSS3
+  percentage: 80
+  color:
+
+- name: Sass
+  percentage: 70
+  color: dark
