@@ -8,7 +8,8 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      {% for site_page in site.html_pages reversed %}
+      {% assign pages = site.html_pages | sort: 'weight' %}
+      {% for site_page in pages %}
         {% if site_page.title %}
           <a class="nav-item nav-link{% if page.url contains site_page.permalink %} active {% endif %}" href="{{ site_page.permalink | relative_url }}">{{ site_page.title }}</a>
         {% endif %}
