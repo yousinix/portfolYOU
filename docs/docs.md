@@ -9,14 +9,15 @@ weight: 4
 
 portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. Created by [@YoussefRaafatNasry](https://github.com/YoussefRaafatNasry)
 
-<div class="list-group">
-  <a href="#installation" class="list-group-item list-group-item-action">Installation</a>
-  <a href="#sections" class="list-group-item list-group-item-action">Sections</a>
-  <a href="#customization" class="list-group-item list-group-item-action">Customization</a>
-  <a href="#adding-content" class="list-group-item list-group-item-action">Adding Content</a>
-  <a href="#dependencies" class="list-group-item list-group-item-action">Dependencies</a>
-  <a href="#credits" class="list-group-item list-group-item-action">Credits</a>
-</div>
+{%- capture list_items -%}
+Installation
+Sections
+Customization
+Adding Content
+Dependencies
+Credits
+{%- endcapture -%}
+{% include list.html type="toc" %}
 
 ## Installation
 
@@ -43,7 +44,7 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
 
 #### Using as Fork
 
-1. [Fork][fork] the [repo][repo]
+1. [Fork][fork] the [repo][repo].
 1. Clone or [Download][download] your fork.
 1. Delete unwanted **sections**.
 1. Modify and edit file contents upon your needs.

@@ -11,8 +11,6 @@
     }
 }
 
-
-
 .article {
 
     .article-metadata {
@@ -64,13 +62,14 @@
             content: '';
             display: block;
             height: .15em;
+            margin-top: -.15em;
             width: 0;
             background: $primary;
             transition: width .35s;
         }
 
         &:hover::after { width: 100%; }
-     }
+    }
 
     pre {
         background: $light;
@@ -93,7 +92,7 @@
         color: $dark;
         border-radius: 3px;
         margin: 0;
-        padding: .2em .4em;
+        padding: .2em .65em;
     }
 
     blockquote {
