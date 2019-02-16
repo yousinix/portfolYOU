@@ -54,7 +54,7 @@
         }
     }
 
-    a:not(.btn):not([class^="carousel-"]) {
+    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]) {
         display: inline-block;
         text-decoration: none;
 
