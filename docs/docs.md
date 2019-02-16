@@ -155,7 +155,7 @@ To change the favicon for example just generate your own using [favicon](https:/
   1. Open `pages/about.md`.
   1. Add the following lines to the skills section between `<div class="row">` and `</div>`:
   
-     ```yaml
+     ```liquid
      {% raw %}{% include skills.html title="Category_Name Skills" source=site.data.category_name-skills %}{% endraw %}
      ```
 
@@ -190,10 +190,12 @@ Add the following lines to `_data/timeline.yml`.
 
 ## Credits
 
+1. [pygments-css][pygments-css] for autumn.css syntax highlighting  _A library by Rich Leland._
 1. [CSS3 Animated Skill Progress bar][skills-progress-bar] _A pen by Shah Zobayer Ahmed._
 1. [How to Create Bootstrap Card Hover Effect (jQuery)][cards-hover] _A video by Daily Tuition._
 1. [Vertical Timeline (HTML-SCSS-CSS)][vertical-timeline] _A video by DevPen._
 
+[pygments-css]: https://github.com/richleland/pygments-css
 [skills-progress-bar]: https://codepen.io/speeedsam/pen/VeOGEq
 [cards-hover]: https://www.youtube.com/watch?v=2qQxwT-Qm5E
 [vertical-timeline]: https://www.youtube.com/watch?v=TP4THzsAa3M&t=2s
