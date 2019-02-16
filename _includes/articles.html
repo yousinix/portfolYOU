@@ -32,7 +32,7 @@
             {% endfor %}
           </p>
           <p class="card-text">
-            {% if post.color %}
+            {% if post.description %}
               {{ post.description }}
             {% else %}
               {{ post.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
