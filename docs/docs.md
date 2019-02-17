@@ -190,12 +190,14 @@ Add the following lines to `_data/timeline.yml`.
 
 ## Credits
 
-1. [pygments-css][pygments-css] for autumn.css syntax highlighting  _A library by Rich Leland._
+1. [Simple Jekyll Search][Simple-Jekyll-Search].
+1. [pygments-css][pygments-css].
 1. [CSS3 Animated Skill Progress bar][skills-progress-bar] _A pen by Shah Zobayer Ahmed._
 1. [How to Create Bootstrap Card Hover Effect (jQuery)][cards-hover] _A video by Daily Tuition._
 1. [Vertical Timeline (HTML-SCSS-CSS)][vertical-timeline] _A video by DevPen._
 1. [404 svg animated page][404-page] _A pen by Vladimir Gashenko._
 
+[Simple-Jekyll-Search]: https://github.com/christian-fei/Simple-Jekyll-Search
 [pygments-css]: https://github.com/richleland/pygments-css
 [skills-progress-bar]: https://codepen.io/speeedsam/pen/VeOGEq
 [cards-hover]: https://www.youtube.com/watch?v=2qQxwT-Qm5E
