@@ -2,7 +2,7 @@
 layout: page
 title: Docs
 permalink: /docs/
-weight: 4
+weight: 5
 ---
 
 # **About portfolYOU**
@@ -100,7 +100,7 @@ To change the favicon for example just generate your own using [favicon](https:/
    ---
    ```
 
-1. If you left `direct_link` empty, then add project body in markdown or html. Check available [elements]({{ '/articles/elements' | relative_url }}) to enjoy extra customization.
+1. If you left `direct_link` empty, then add project body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
 1. Check more projects templates from [here]({{ site.repo }}/tree/master/_projects).
 
 #### Adding new Article
@@ -119,7 +119,7 @@ To change the favicon for example just generate your own using [favicon](https:/
    ```
 
 1. If you left both the style and color empty, the article's style is set to default style.
-1. Add article body in markdown or html. Check available [elements]({{ '/articles/elements' | relative_url }}) to enjoy extra customization.
+1. Add article body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
 1. Check more articles templates from [here]({{ site.repo }}/tree/master/_posts).
 
 #### Adding new Page

@@ -1,10 +1,13 @@
 ---
+layout: page
 title: Elements
-tags: [Markdown]
-style: 
-color: 
-description: A list of available elements in portfolYOU and how to use them.
+permalink: /elements/
+weight: 4
 ---
+
+# **Elements**
+
+A demo of Markdown and HTML includes.
 
 {%- capture list_items -%}
 Headers
@@ -438,3 +441,9 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 
 This line is also begins a separate paragraph, but...  
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+
+<footer>
+  This page is <b>open source</b>. Noticed a typo? <br>
+  Or something unclear? Improve it on 
+  <a href="{{ site.repo }}/edit/master/{{ page.path }}">GitHub</a>.
+</footer>
