@@ -24,6 +24,33 @@ Credits
 #### As a GitHub Pages remote theme
 
 1. [Download][download] portfolYOU as .zip from official [repo][repo] then extract the files.
+1. Delete unnecessary files and folders: `README.md`, `LICENSE`, `docs/`
+1. Delete theme directories, _as they will be included remotely_ : `_includes/`, `_layouts/`, `_sass/`, `assets/`
+1. Delete `Gemfile` and `.gitignore` if you aren't going to set up the theme [locally].
+1. Your directory structure should be looking something like this:
+
+   ```tree
+   your_site_name/
+   ├── _data/
+   │   ├── other-skills.yml
+   │   ├── programming-skills.yml
+   │   └── timeline.yml
+   ├── _posts/
+   │   ├── YYYY-MM-DD-article-1-name.md
+   │   └── YYYY-MM-DD-article-2-name.md
+   ├── _projects/
+   │   ├── project-1.md
+   │   └── project-2.md
+   ├── pages/
+   │   ├── about.md
+   │   ├── articles.html
+   │   └── projects.html
+   ├── _config.yml
+   ├── 404.html
+   ├── index.html
+   └── search.json
+   ```
+
 1. Add the following line to the **build settings** section of `_config.yml`:
 
    ```yaml
@@ -36,10 +63,7 @@ Credits
    remote_theme: YoussefRaafatNasry/portfolYOU@v1.0.0
    ```
 
-1. Delete unnecessary files and folders: `README.md`, `LICENSE`, `docs/`
-1. Delete theme directories, _as they will be included remotely_ : `_includes/`, `_layouts/`, `_sass/`, `assets/`
-1. Delete `Gemfile` and `.gitignore` if you aren't going to set up the theme [locally].
-1. Change the configuration options in `_config.yml` depending on your needs.
+1. Change other configuration options in `_config.yml` depending on your needs.
 1. Set up portfolYOU [locally] or publish it to [GitHub Pages][gh-pages].
 
 #### Using as Fork
