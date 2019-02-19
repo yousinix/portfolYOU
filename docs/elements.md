@@ -12,6 +12,7 @@ A demo of Markdown and HTML includes.
 {%- capture list_items -%}
 Headers
 Emphasis
+Highlight
 Lists
 List Group
 Links
@@ -68,6 +69,14 @@ Strong emphasis, aka bold, with **asterisks** or __underscores__.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
+
+
+## Highlight
+
+```
+{% raw %}{% include highlight.html text="I am highlighted text." %}{% endraw %}
+```
+{% include highlight.html text="I am highlighted text." %}
 
 
 ## Lists
