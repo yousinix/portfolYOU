@@ -16,10 +16,10 @@ Just check the [Documentation](https://youssefraafatnasry.github.io/portfolYOU/d
 
 ## Contributing
 
-1. [Fork]({{ site.repo }}/fork) and clone the repository.
+1. [Fork](https://youssefraafatnasry.github.io/portfolYOU/fork) and clone the repository.
 1. Create a new branch based on `master`: `git checkout -b <my-branch-name>`
 1. Make your changes, and make sure the site still builds.
-1. Push to your fork and [submit a pull request]({{ site.repo }}/compare) from your branch to `master`
+1. Push to your fork and [submit a pull request](https://youssefraafatnasry.github.io/portfolYOU/compare) from your branch to `master`
 1. Pat yourself on the back and wait for your pull request to be reviewed.
 1. *Here are a few things you have to do:*
    - Write a good commit message.
