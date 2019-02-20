@@ -169,6 +169,22 @@ To change the favicon for example just generate your own using [favicon](https:/
 1. The new page will be added to the navigation bar of your project.
 1. Check more pages templates from [here]({{ site.repo }}/tree/master/pages).
 
+#### Adding External Page
+
+1. Add `page-name.html` or `page-name.md` to `pages/`, `new subfolder` or to `root directory` of your project.
+1. Add [front matter](https://jekyllrb.com/docs/front-matter/) to the top of your new page.
+
+   ```yaml
+   ---
+   layout: null
+   title: Page Name
+   weight: 6
+   external_url: https://google.com/
+   ---
+   ```
+
+1. The new page will be added to the navigation bar of your project and will redirect to the external URL.
+
 #### Adding new Skill
 
 - Add the following lines to `_data/programming-skills.yml` or `_data/other-skills.yml`.
