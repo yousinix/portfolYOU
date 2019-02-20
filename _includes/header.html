@@ -1,6 +1,16 @@
-<div class="col-lg-4 col-md-8 text-center mx-auto mt-4">
-  <img src="{{ site.author.image }}" alt="{{ site.title }}"class="img-fluid rounded-circle mb-3 wow animated zoomIn" data-wow-delay=".1s">
+<div class="col-lg-4 col-md-6 text-center mx-auto mt-4">
+
+  <!-- Fine Circle Responsive Image -->
+  <div id="container" class="my-2">
+    <div id="dummy"></div>
+    <div id="element">
+      <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+    </div>
+  </div>
+
   <p class="text-muted wow animated slideInUp" data-wow-delay=".25s">{{ site.description }}</p>
   <hr class="text-muted wow animated fadeIn" data-wow-delay=".40s">
+
   {% include social.html %}
+
 </div>
