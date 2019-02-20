@@ -7,6 +7,12 @@ weight: 5
 
 # **About portfolYOU**
 
+<p>
+  <a class="github-button" href="{{ site.repo }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
+  <a class="github-button" href="{{ site.repo }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
+  <a class="github-button" href="https://github.com/YoussefRaafatNasry/portfolYOU/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a>
+</p>
+
 portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. Created by [@YoussefRaafatNasry](https://github.com/YoussefRaafatNasry)
 
 {%- capture list_items -%}
@@ -216,6 +222,7 @@ Add the following lines to `_data/timeline.yml`.
 
 1. [Simple Jekyll Search][Simple-Jekyll-Search].
 1. [pygments-css][pygments-css].
+1. [GitHub Buttons][gh-btns].
 1. [CSS3 Animated Skill Progress bar][skills-progress-bar] _A pen by Shah Zobayer Ahmed._
 1. [How to Create Bootstrap Card Hover Effect (jQuery)][cards-hover] _A video by Daily Tuition._
 1. [Vertical Timeline (HTML-SCSS-CSS)][vertical-timeline] _A video by DevPen._
@@ -223,6 +230,7 @@ Add the following lines to `_data/timeline.yml`.
 
 [Simple-Jekyll-Search]: https://github.com/christian-fei/Simple-Jekyll-Search
 [pygments-css]: https://github.com/richleland/pygments-css
+[gh-btns]: https://buttons.github.io
 [skills-progress-bar]: https://codepen.io/speeedsam/pen/VeOGEq
 [cards-hover]: https://www.youtube.com/watch?v=2qQxwT-Qm5E
 [vertical-timeline]: https://www.youtube.com/watch?v=TP4THzsAa3M&t=2s
