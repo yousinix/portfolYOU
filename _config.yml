@@ -1,8 +1,8 @@
 # Site settings
 title: portfolYOU
 description: >- # this means to ignore newlines until "baseurl:"
-  Lorem ipsum dolor sit amet, his eu liber nobis senserit,
-  ne option debitis adipiscing duo, has in eirmod ancillae.
+  Always code as if the guy who ends up maintaining your code
+  will be a violent psychopath who knows where you live.
 baseurl: "/portfolYOU"  # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repo: https://github.com/YoussefRaafatNasry/portfolYOU
@@ -17,12 +17,12 @@ markdown: kramdown
 # Author Info
 author:
   name     : John Doe
-  image    : https://ssl.gstatic.com/images/branding/product/1x/avatar_square_blue_512dp.png
-  email    : portfolYOU@xyz.com
-  github   : portfolYOU
-  twitter  : portfolYOU
-  linkedin : portfolYOU
-  facebook : portfolYOU
+  image    : https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg
+  email    : username@xyz.com
+  github   : username
+  twitter  : username
+  linkedin : username
+  facebook : username
 
 
 # Collections
