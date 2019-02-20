@@ -6,15 +6,20 @@
   https://github.com/YoussefRaafatNasry/portfolYOU
 -->
 
-<html lang="en">
+<html lang="en" class="h-100">
 
 {% include head.html %}
 
-<body class="container my-5">
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
   {% include navbar.html %}
   {{ content }}
+  </main>
+
   {% include footer.html %}
   {% include scripts.html %}
+
 </body>
 
 </html>

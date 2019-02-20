@@ -1,7 +1,10 @@
-<footer class="mt-5 text-center text-muted wow animated fadeIn" data-wow-delay=".30s">
-  <small>
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>{{ site.author.name }}</strong> | 
-    © <script>document.write(new Date().getFullYear())</script>
+    by <strong>{{ site.author.name }}</strong>
   </small>
+
+  {% include social.html %}
+
 </footer>
