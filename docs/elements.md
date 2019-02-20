@@ -21,6 +21,7 @@ Figures
 Carousel
 Videos
 Buttons
+Gists
 Code
 Syntax Highlighting
 Tables
@@ -279,6 +280,36 @@ Just surrond your buttons with `<p class="text-center">` and `</p>`.
 portfolYOU uses [Bootstrap Buttons](https://getbootstrap.com/docs/4.1/components/buttons/).
 
 
+## Gists
+
+All you need to do is copy and paste the Gist's ID from the URL, and the filename if you need to include just a single file.
+
+```
+- Include all gist files:
+{% raw %}{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 %}{% endraw %}
+
+- Include a single gist file:
+{% raw %}{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 hello.py %}{% endraw %}
+
+- Include a single gist file with spaces in the filename:
+  Just replace the space in the filename with %20
+{% raw %}{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 Hello%20World.java %}{% endraw %}
+```
+
+- Include all gist files:
+
+{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 %}
+
+- Include a single gist file:
+
+{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 hello.py %}
+
+- Include a single gist file with spaces in the filename:
+  Just replace the space in the filename with `%20`
+
+{% gist 3c466bc3c32c4ae5c9b36d1266b913d8 Hello%20World.java %}
+
+
 ## Code
 
 ```
@@ -326,6 +357,7 @@ print s
 ```
 No language indicated, so no syntax highlighting. 
 ```
+
 
 ## Tables
 
