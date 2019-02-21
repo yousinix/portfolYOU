@@ -10,10 +10,24 @@ weight: 5
 <p>
   <a class="github-button" href="{{ site.repo }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
   <a class="github-button" href="{{ site.repo }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
-  <a class="github-button" href="https://github.com/YoussefRaafatNasry/portfolYOU/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a>
+  <a class="github-button" href="https://github.com/YoussefRaafatNasry/portfolYOU/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
 </p>
 
-portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. Created by [@YoussefRaafatNasry](https://github.com/YoussefRaafatNasry)
+portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. 
+
+## Features
+
+- Works 100% with **GitHub Pages** as a remote theme.
+- Based on [Bootstrap][bootstrap], [FontAwesome][font-awesome] & [GitHub Buttons][gh-btns] _(use any of those libraries' components anywhere in the project)_. Check [dependencies](#dependencies) for more info.
+- Minimal design and Animations.
+- **Search** articles by title, tags or even descriptions.
+- Support **all image orientations** _(landscape, portrait or square)_ as a header image.
+- Set of **shortcodes** to include various elements.
+- Skills Progress bars and Timeline.
+- **Responsive** design.
+- Attractive **404 page**.
+- Well Documented.
+
 
 {%- capture list_items -%}
 Installation
