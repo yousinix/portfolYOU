@@ -8,8 +8,8 @@ weight: 5
 # **About portfolYOU**
 
 <p>
-  <a class="github-button" href="{{ site.repo }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
-  <a class="github-button" href="{{ site.repo }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
+  <a class="github-button" href="{{ site.github.repository_url }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
+  <a class="github-button" href="{{ site.github.repository_url }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
   <a class="github-button" href="https://github.com/YoussefRaafatNasry/portfolYOU/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
 </p>
 
@@ -26,6 +26,7 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
 - Skills Progress bars and Timeline.
 - **Responsive** design.
 - Attractive **404 page**.
+- [Repository metadata](https://help.github.com/en/articles/repository-metadata-on-github-pages).
 - Well Documented.
 
 
@@ -94,10 +95,10 @@ Credits
 1. Modify and edit file contents upon your needs.
 1. Set up portfolYOU [locally] or publish it to [GitHub Pages][gh-pages].
 
-[repo]: {{ site.repo }}
-[fork]: {{ site.repo }}/fork
-[download]: {{ site.repo }}/archive/master.zip
-[versions]: {{ site.repo }}/releases
+[repo]: {{ site.github.repository_url }}
+[fork]: {{ site.github.repository_url }}/fork
+[download]: {{ site.github.repository_url }}/archive/master.zip
+[versions]: {{ site.github.repository_url }}/releases
 [locally]: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 [gh-pages]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
 
@@ -144,7 +145,7 @@ To change the favicon for example just generate your own using [favicon](https:/
    ```
 
 1. Add project body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
-1. Check more projects templates from [here]({{ site.repo }}/tree/master/_projects).
+1. Check more projects templates from [here]({{ site.github.repository_url }}/tree/master/_projects).
 
 #### Adding new Article
 
@@ -163,7 +164,7 @@ To change the favicon for example just generate your own using [favicon](https:/
 
 1. If you left both the style and color empty, the article's style is set to default style.
 1. Add article body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
-1. Check more articles templates from [here]({{ site.repo }}/tree/master/_posts).
+1. Check more articles templates from [here]({{ site.github.repository_url }}/tree/master/_posts).
 
 #### Adding new Page
 
@@ -180,7 +181,7 @@ To change the favicon for example just generate your own using [favicon](https:/
    ```
 
 1. The new page will be added to the navigation bar of your project.
-1. Check more pages templates from [here]({{ site.repo }}/tree/master/pages).
+1. Check more pages templates from [here]({{ site.github.repository_url }}/tree/master/pages).
 
 #### Adding External Project, Article or Page
 
@@ -262,5 +263,5 @@ Add the following lines to `_data/timeline.yml`.
 <footer>
   This documentation is <b>open source</b>. Noticed a typo? <br>
   Or something unclear? Improve it on 
-  <a href="{{ site.repo }}/edit/master/{{ page.path }}">GitHub</a>.
+  <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">GitHub</a>.
 </footer>
