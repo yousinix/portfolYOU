@@ -5,12 +5,12 @@ permalink: /docs/
 weight: 5
 ---
 
-# **About portfolYOU**
+# **About portfolYOU** <small class="text-muted">{{ site.github.latest_release.tag_name }}</small>
 
 <p>
   <a class="github-button" href="{{ site.github.repository_url }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
   <a class="github-button" href="{{ site.github.repository_url }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
-  <a class="github-button" href="https://github.com/YoussefRaafatNasry/portfolYOU/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
+  <a class="github-button" href="{{ site.github.repository_url }}/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
 </p>
 
 portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. 
@@ -87,18 +87,20 @@ Credits
 1. Change other configuration options in `_config.yml` depending on your needs.
 1. Set up portfolYOU [locally] or publish it to [GitHub Pages][gh-pages].
 
-#### Using as Fork
+#### As a Fork
 
 1. [Fork][fork] the [repo][repo].
-1. Clone or [Download][download] your fork.
+1. Clone your fork.
 1. Delete unwanted **sections**.
-1. Modify and edit file contents upon your needs.
+1. Modify and edit files' contents upon your needs.
+1. Change configuration options in `_config.yml` depending on your needs.
+1. Commit and push changes to your fork.
 1. Set up portfolYOU [locally] or publish it to [GitHub Pages][gh-pages].
 
 [repo]: {{ site.github.repository_url }}
 [fork]: {{ site.github.repository_url }}/fork
 [download]: {{ site.github.repository_url }}/archive/master.zip
-[versions]: {{ site.github.repository_url }}/releases
+[versions]: {{ site.github.releases_url }}
 [locally]: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 [gh-pages]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
 
