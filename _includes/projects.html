@@ -2,15 +2,15 @@
 
   {% for project in site.projects %}
 
-    {% comment %} Determine project link {% endcomment %}
-    {% if project.direct_link %}
-      {% assign project_link = project.direct_link %}
+    {% comment %} Determine Project URL {% endcomment %}
+    {% if project.external_url %}
+      {% assign project_url = project.external_url %}
     {% else %}
-      {% assign project_link = project.url | relative_url %}
+      {% assign project_url = project.url | relative_url %}
     {% endif %}
 
     <div class="wow animated fadeIn" data-wow-delay=".15s">
-      <a href="{{ project_link }}" class="project card text-dark">
+      <a href="{{ project_url }}" class="project card text-dark">
         {% if project.image %}
           <img class="card-img-top" src="{{ project.image }}" alt="Card image cap">
         {% endif %}

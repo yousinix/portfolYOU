@@ -22,8 +22,15 @@
       {% endif %}
     {% endif %}
 
+    {% comment %} Determine Article URL {% endcomment %}
+    {% if post.external_url %}
+      {% assign article_url = post.external_url %}
+    {% else %}
+      {% assign article_url = post.url | relative_url %}
+    {% endif %}
+
     <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-      <a href="{{ post.url | relative_url }}" class="article card {{ card_style }}">
+      <a href="{{ article_url }}" class="article card {{ card_style }}">
         <div class="card-body {{ text_style }}">
           <h3 class="card-title">{{ post.title }}</h3>
           <p class="card-text">

@@ -138,13 +138,12 @@ To change the favicon for example just generate your own using [favicon](https:/
    ---
    name: Awesome Project
    tools: [Tool1, Tool2]
-   direct_link: project url or leave empty to create individual page for the project when clicked.
    image: image url or path here.
    description: Write project description here.
    ---
    ```
 
-1. If you left `direct_link` empty, then add project body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
+1. Add project body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
 1. Check more projects templates from [here]({{ site.repo }}/tree/master/_projects).
 
 #### Adding new Article
@@ -183,21 +182,15 @@ To change the favicon for example just generate your own using [favicon](https:/
 1. The new page will be added to the navigation bar of your project.
 1. Check more pages templates from [here]({{ site.repo }}/tree/master/pages).
 
-#### Adding External Page
+#### Adding External Project, Article or Page
 
-1. Add `page-name.html` or `page-name.md` to `pages/`, `new subfolder` or to `root directory` of your project.
-1. Add [front matter](https://jekyllrb.com/docs/front-matter/) to the top of your new page.
+If you want your project, article or even the page to refer to an external resource, _**google.com** for example_, just add the following attribute to your front matter.
 
-   ```yaml
-   ---
-   layout: null
-   title: Page Name
-   weight: 6
-   external_url: https://google.com/
-   ---
-   ```
-
-1. The new page will be added to the navigation bar of your project and will redirect to the external URL.
+```yaml
+---
+external_url: https://google.com/
+---
+```
 
 #### Adding new Skill
 
