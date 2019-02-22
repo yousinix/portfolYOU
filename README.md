@@ -1,10 +1,10 @@
-[![portfolYOU](./docs/header.png)](https://youssefraafatnasry.github.io/portfolYOU/)
+[![portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/header.png?raw=true)](https://youssefraafatnasry.github.io/portfolYOU/)
 
 <div align="center">
     <i>A beautiful portfolio Jekyll theme that works with GitHub Pages.</i><br><br>
 </div>
 
-[![screenshots](./docs/portfolYOU.gif)](https://youssefraafatnasry.github.io/portfolYOU/)
+[![screenshots](https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/portfolYOU.gif?raw=true)](https://youssefraafatnasry.github.io/portfolYOU/)
 
 <div align="center">
     <sub><sup>© 2019 portfolYOU, licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
