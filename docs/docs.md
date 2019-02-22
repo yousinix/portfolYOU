@@ -10,7 +10,7 @@ weight: 5
 <p>
   <a class="github-button" href="{{ site.github.repository_url }}" data-icon="octicon-star" data-show-count="true" aria-label="Star YoussefRaafatNasry/portfolYOU on GitHub">Star</a>
   <a class="github-button" href="{{ site.github.repository_url }}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork YoussefRaafatNasry/portfolYOU on GitHub">Fork</a>
-  <a class="github-button" href="{{ site.github.repository_url }}/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
+  <a class="github-button" href="{{ site.github.zip_url }}" data-icon="octicon-cloud-download" aria-label="Download YoussefRaafatNasry/portfolYOU on GitHub">Download</a><br>
 </p>
 
 portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that works with GitHub Pages. 
@@ -99,7 +99,7 @@ Credits
 
 [repo]: {{ site.github.repository_url }}
 [fork]: {{ site.github.repository_url }}/fork
-[download]: {{ site.github.repository_url }}/archive/master.zip
+[download]: {{ site.github.zip_url }}
 [versions]: {{ site.github.releases_url }}
 [locally]: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 [gh-pages]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
@@ -264,6 +264,5 @@ Add the following lines to `_data/timeline.yml`.
 
 <footer>
   This documentation is <b>open source</b>. Noticed a typo? <br>
-  Or something unclear? Improve it on 
-  <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">GitHub</a>.
+  Or something unclear? Improve it on {% github_edit_link "GitHub" %}.
 </footer>
