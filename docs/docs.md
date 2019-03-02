@@ -84,6 +84,7 @@ Credits
    remote_theme: YoussefRaafatNasry/portfolYOU@v1.0.0
    ```
 
+1. Replace `baseurl: "/portfolYOU"` with `baseurl: ""` if your are hosting the site at `username.github.io` directly.
 1. Change other configuration options in `_config.yml` depending on your needs.
 1. Set up portfolYOU [locally] or publish it to [GitHub Pages][gh-pages].
 
