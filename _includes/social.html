@@ -1,33 +1,22 @@
 <div class="container-fluid justify-content-center">
 
-  {% if site.author.twitter %}
-  <a class="social twitter mx-1" href="https://www.twitter.com/{{ site.author.twitter }}">
-    <i class="fab fa-1x fa-twitter"></i>
-  </a>
-  {% endif %}
+  {% assign unfocused_color = "6c757d" %}
 
-  {% if site.author.facebook %}
-  <a class="social facebook mx-1" href="https://www.facebook.com/{{ site.author.facebook }}">
-    <i class="fab fa-1x fa-facebook"></i>
-  </a>
-  {% endif %}
+  {% for account in site.author %}
 
-  {% if site.author.email %}
-  <a class="social email mx-1" href="mailto:{{ site.author.email }}">
-    <i class="fas fa-1x fa-envelope"></i>
-  </a>
-  {% endif %}
+    {% assign service_name = account[0] %}
+    {% if service_name == "name" or service_name == "image" %}
+      {% continue %}
+    {% endif %}
 
-  {% if site.author.github %}
-  <a class="social github mx-1" href="https://www.github.com/{{ site.author.github }}">
-    <i class="fab fa-1x fa-github"></i>
-  </a>
-  {% endif %}
-
-  {% if site.author.linkedin %}
-  <a class="social linkedin mx-1" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">
-    <i class="fab fa-1x fa-linkedin-in"></i>
-  </a>
-  {% endif %}
+    {% assign service_data = site.data.social-media[service_name] %}
+    <a class="social mx-1"  href="{{ service_data.url }}{{ account[1] }}"
+       style="color: #{{ unfocused_color }}"
+       onMouseOver="this.style.color='#{{ service_data.color }}'"
+       onMouseOut="this.style.color='#{{ unfocused_color }}'">
+      <i class="{{ service_data.icon }} fa-1x"></i>
+    </a>
+  
+  {% endfor %}
 
 </div>

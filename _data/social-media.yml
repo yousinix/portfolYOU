@@ -1,0 +1,87 @@
+# Get Icons  from : https://fontawesome.com/icons
+# Get Colors from : https://brandcolors.net/
+
+behance:
+  url   : https://www.behance.net/
+  icon  : fab fa-behance
+  color : 1769ff
+
+dribbble:
+  url   : https://dribbble.com/
+  icon  : fab fa-dribbble
+  color : 444444
+
+email:
+  url   : "mailto:"
+  icon  : fas fa-envelope
+  color : db4437
+
+facebook:
+  url   : https://www.facebook.com/
+  icon  : fab fa-facebook
+  color : 3b5998
+
+github:
+  url   : https://www.github.com/
+  icon  : fab fa-github
+  color : 333333
+
+gitlab:
+  url   : https://www.gitlab.com/
+  icon  : fab fa-gitlab
+  color : fca326
+
+instagram:
+  url   : https://www.instagram.com/
+  icon  : fab fa-instagram
+  color : 405de6
+
+linkedin:
+  url   : https://www.linkedin.com/in/
+  icon  : fab fa-linkedin-in
+  color : 007bb5
+
+medium:
+  url   : https://medium.com/@
+  icon  : fab fa-medium
+  color : 00ab6c
+
+soundcloud:
+  url   : https://www.soundcloud.com/
+  icon  : fab fa-soundcloud
+  color : ff8800
+
+spotify:
+  url   : https://open.spotify.com/user/
+  icon  : fab fa-spotify
+  color : 1db954
+
+stackoverflow:
+  url   : https://stackoverflow.com/u/
+  icon  : fab fa-stack-overflow
+  color : f48024
+
+tumblr:
+  url   : https://
+  icon  : fab fa-tumblr
+  color : 35465c
+
+twitch:
+  url   : https://www.twitch.tv/
+  icon  : fab fa-twitch
+  color : 6441a5
+
+twitter:
+  url   : https://www.twitter.com/
+  icon  : fab fa-twitter
+  color : 1da1f2
+
+vimeo:
+  url   : https://www.vimeo.com/
+  icon  : fab fa-vimeo-v
+  color : 162221
+
+youtube:
+  url   : https://www.youtube.com/
+  icon  : fab fa-youtube
+  color : ff0000
