@@ -1,31 +1,53 @@
+<!-- Remote Projects JS -->
+<script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
+
 <div class="card-columns m-3 mt-5">
 
+  <!-- Remote Projects -->
+  {% for remote_project in page.remote_projects %}
+
+    {% for repo in site.github.public_repositories %}
+      {% if remote_project == repo.name %}
+        {% assign project = repo %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign words = project.name | split: '-' %}
+    {% capture titlecase %}
+      {% for word in words %}
+        {{ word | capitalize }}
+      {% endfor %}
+    {% endcapture %}
+
+    {% assign project_id = project.name %}
+    {% assign project_img = false %}
+    {% assign project_name = titlecase %}
+    {% assign project_desc = project.description %}
+    {% assign project_url = project.html_url %}
+
+    {% include project-card.html %}
+
+    <script>get_tools("{{ project_id }}")</script>
+
+  {% endfor %}
+
+  <!-- Local Projects -->
   {% for project in site.projects %}
 
-    {% comment %} Determine Project URL {% endcomment %}
+    {% assign project_id =  project.name | slugify %}
+    {% assign project_img = project.image %}
+    {% assign project_name = project.name %}
+    {% assign project_desc = project.description %}
+    {% assign project_tools = project.tools %}
+
     {% if project.external_url %}
       {% assign project_url = project.external_url %}
     {% else %}
       {% assign project_url = project.url | relative_url %}
     {% endif %}
 
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-      <a href="{{ project_url }}" class="project card text-dark">
-        {% if project.image %}
-          <img class="card-img-top" src="{{ project.image }}" alt="Card image cap">
-        {% endif %}
-        <div class="card-body">
-          <h5 class="card-title">{{ project.name }}</h5>
-          <p class="card-text">{{ project.description }}</p>
-          <p class="card-text">
-            {% for tool in project.tools %}
-              <span class="badge badge-pill text-primary border border-primary">{{tool}}</span>
-            {% endfor %}
-          </p>
-        </div>
-      </a>
-    </div>
-    
+    {% include project-card.html %}
+
   {% endfor %}
 
 </div>
