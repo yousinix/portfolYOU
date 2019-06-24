@@ -19,8 +19,8 @@
       {% endfor %}
     {% endcapture %}
 
+    {% assign type = "remote" %}
     {% assign project_id = project.name %}
-    {% assign project_img = false %}
     {% assign project_name = titlecase %}
     {% assign project_desc = project.description %}
     {% assign project_url = project.html_url %}
@@ -28,12 +28,14 @@
     {% include project-card.html %}
 
     <script>get_tools("{{ project_id }}")</script>
+    <script>get_meta_image("{{ project_id }}")</script>
 
   {% endfor %}
 
   <!-- Local Projects -->
   {% for project in site.projects %}
 
+    {% assign type = "local" %}
     {% assign project_id =  project.name | slugify %}
     {% assign project_img = project.image %}
     {% assign project_name = project.name %}

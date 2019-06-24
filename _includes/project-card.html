@@ -1,6 +1,6 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ project_url }}" class="project card text-dark">
-    {% if project_img %}
+    {% if type == "remote" or project_img %}
     <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
     {% endif %}
     <div class="card-body">
