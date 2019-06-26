@@ -36,6 +36,10 @@ author:
 # vimeo         : your_username
 # youtube       : your_channel_name
 
+# Pagination
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
 # Collections
 collections:
   projects:
