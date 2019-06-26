@@ -1,8 +1,7 @@
 # Site settings
 title: portfolYOU
 description: >- # this means to ignore newlines until "baseurl:"
-  Always code as if the guy who ends up maintaining your code
-  will be a violent psychopath who knows where you live.
+    I turn coffee into code, use tabs over spaces and never broke production.
 baseurl: "/portfolYOU"  # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: YoussefRaafatNasry/portfolYOU
@@ -17,7 +16,7 @@ markdown: kramdown
 # Author Info
 author:
   name          : John Doe
-  image         : https://bit.ly/2Fqe5kQ
+  image         : https://bit.ly/2KCvgVJ
   behance       : your_username
 # dribbble      : your_username
   email         : username@domain.com
