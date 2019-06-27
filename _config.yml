@@ -1,52 +1,55 @@
-# Site settings
-title: portfolYOU
-description: >- # this means to ignore newlines until "baseurl:"
-    I turn coffee into code, use tabs over spaces and never broke production.
-baseurl: "/portfolYOU"  # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repository: YoussefRaafatNasry/portfolYOU
+### Site Settings ###
+title               : portfolYOU
+description         : >-                               # >- means to ignore newlines until "url:"
+                      I turn coffee into code,
+                      use tabs over spaces
+                      and never broke production.
 
+url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : "/portfolYOU"                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : YoussefRaafatNasry/portfolYOU    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+#remote_theme       : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
 
-# Build settings
-markdown: kramdown
-# plugins:
-# - jekyll-feed
-
-
-# Author Info
+### Author Info ###
 author:
-  name          : John Doe
-  image         : https://bit.ly/2KCvgVJ
-  behance       : your_username
-# dribbble      : your_username
-  email         : username@domain.com
-  facebook      : your_username
-  github        : your_username
-# gitlab        : your_username
-# instagram     : your_username
-  linkedin      : your_username
-  medium        : your_username
-# soundcloud    : your_username
-# spotify       : your_username
-# stackoverflow : your_user_id
-# tumblr        : your_username.tumblr.com
-# twitch        : your_username
-  twitter       : your_username
-# vimeo         : your_username
-# youtube       : your_channel_name
+  name              : John Doe
+  image             : https://bit.ly/2KCvgVJ
+  behance           : your_username
+# dribbble          : your_username
+  email             : username@domain.com
+  facebook          : your_username
+  github            : your_username
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : your_username
+  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
 
-# Pagination
+
+### Pagination ###
 paginate: 6
 paginate_path: "/articles/page-:num/"
 
-# Collections
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
 collections:
   projects:
     output: true
     permalink: /projects/:name
 
 
-# Default values for collections
+### Defaults for collections ###
 defaults:
   - scope:
       path: ""
@@ -55,11 +58,7 @@ defaults:
       layout: "page"
 
 
-# Posts default Permalink
-permalink: articles/:title
-
-
-# Exclude from processing.
+### Exclude from processing ###
 exclude:
 - README.md
 - CONTRIBUTING.md
