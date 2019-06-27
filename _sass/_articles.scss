@@ -22,6 +22,11 @@
         margin-top: -6px;
     }
 
+    .tag:hover {
+        background-color: $primary;
+        color: white !important;
+    }
+
     footer {
         font-size: 10px;
         color: #6c757d;
@@ -56,7 +61,7 @@
         }
     }
 
-    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]) {
+    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline)  {
         display: inline-block;
         text-decoration: none;
 
