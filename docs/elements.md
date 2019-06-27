@@ -30,7 +30,7 @@ Inline HTML
 Horizontal Rule
 Line Breaks
 {%- endcapture -%}
-{% include list.html title="Table of Contents" type="toc" %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
 
 ## Headers
 
@@ -75,9 +75,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ## Highlight
 
 ```
-{% raw %}{% include highlight.html text="I am highlighted text." %}{% endraw %}
+{% raw %}{% include elements/highlight.html text="I am highlighted text." %}{% endraw %}
 ```
-{% include highlight.html text="I am highlighted text." %}
+{% include elements/highlight.html text="I am highlighted text." %}
 
 
 ## Lists
@@ -120,7 +120,7 @@ Google,https://www.google.com
 GitHub,https://www.google.com
 {%- endcapture -%}
 
-{% include list.html %}
+{% include elements/list.html %}
 
 
 - List Group with a Title:
@@ -130,7 +130,7 @@ Google,https://www.google.com
 GitHub,https://www.google.com
 {%- endcapture -%}
 
-{% include list.html title="Websites" %}
+{% include elements/list.html title="Websites" %}
 
 
 - List Group as Table of Contents (automatic linking to page headers):
@@ -141,7 +141,7 @@ Emphasis
 List
 {%- endcapture -%}
 
-{% include list.html title="Table of Contents" type="toc" %}{% endraw %}
+{% include elements/list.html title="Table of Contents" type="toc" %}{% endraw %}
 ```
 
 - Basic List Group:
@@ -150,7 +150,7 @@ Google,https://www.google.com
 GitHub,https://www.google.com
 {%- endcapture -%}
 
-{% include list.html %}
+{% include elements/list.html %}
 
 - List Group with a Title:
 {%- capture list_items -%}
@@ -158,7 +158,7 @@ Google,https://www.google.com
 GitHub,https://www.google.com
 {%- endcapture -%}
 
-{% include list.html title="Websites" %}
+{% include elements/list.html title="Websites" %}
 
 - List Group as Table of Contents (automatic linking to page headers):
 {%- capture list_items -%}
@@ -167,7 +167,7 @@ Emphasis
 Lists
 {%- endcapture -%}
 
-{% include list.html title="Table of Contents" type="toc" %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
 
 
 ## Links
@@ -197,10 +197,10 @@ Here's our Image (hover to see the title text):
 ## Figures
 
 ```
-{% raw %}{% include figure.html image="https://bit.ly/2N69TKO" caption="The sea complains upon a thousand shores." %}{% endraw %}
+{% raw %}{% include elements/figure.html image="https://bit.ly/2N69TKO" caption="The sea complains upon a thousand shores." %}{% endraw %}
 ```
 
-{% include figure.html image="https://bit.ly/2N69TKO" caption="The sea complains upon a thousand shores." %}
+{% include elements/figure.html image="https://bit.ly/2N69TKO" caption="The sea complains upon a thousand shores." %}
 
 
 ## Carousel
@@ -211,7 +211,7 @@ https://bit.ly/2BBbVhc
 https://bit.ly/2DOtxXB
 {%- endcapture -%}
 
-{% include carousel.html %}{% endraw %}
+{% include elements/carousel.html %}{% endraw %}
 ```
 
 {%- capture carousel_images -%}
@@ -219,16 +219,16 @@ https://bit.ly/2BBbVhc
 https://bit.ly/2DOtxXB
 {%- endcapture -%}
 
-{% include carousel.html %}
+{% include elements/carousel.html %}
 
 
 ## Videos
 
 ```
-{% raw %}{% include video.html id="aZNbUITN-mA" %}{% endraw %}
+{% raw %}{% include elements/video.html id="aZNbUITN-mA" %}{% endraw %}
 ```
 
-{% include video.html id="aZNbUITN-mA" %}
+{% include elements/video.html id="aZNbUITN-mA" %}
 
 ##### How to get a YouTube video ID from a youtube.com page URL?
 
@@ -241,39 +241,39 @@ Therefore, **the ID of the video is** `aZNbUITN-mA`.
 
 ```
 {% raw %}Styles:
-{% include button.html link="https://github.com/" text="GitHub" %}
-{% include button.html link="https://github.com/" text="GitHub" style="primary" %}
-{% include button.html link="https://github.com/" text="GitHub" style="outline-dark" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" style="primary" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" style="outline-dark" %}
 
 Sizes:
-{% include button.html link="https://github.com/" text="GitHub" size="sm" %}
-{% include button.html link="https://github.com/" text="GitHub" %}
-{% include button.html link="https://github.com/" text="GitHub" size="lg" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" size="sm" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" size="lg" %}
 
 Block:
-{% include button.html link="https://github.com/" text="GitHub" block="true" %}{% endraw %}
+{% include elements/button.html link="https://github.com/" text="GitHub" block="true" %}{% endraw %}
 ```
 
 ##### Styles:
-{% include button.html link="https://github.com/" text="GitHub" %}
-{% include button.html link="https://github.com/" text="GitHub" style="primary" %}
-{% include button.html link="https://github.com/" text="GitHub" style="outline-dark" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" style="primary" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" style="outline-dark" %}
 
 ##### Sizes:
-{% include button.html link="https://github.com/" text="GitHub" size="sm" %}
-{% include button.html link="https://github.com/" text="GitHub" %}
-{% include button.html link="https://github.com/" text="GitHub" size="lg" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" size="sm" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" size="lg" %}
 
 ##### Block:
-{% include button.html link="https://github.com/" text="GitHub" block="true" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" block="true" %}
 
 ##### How to center buttons?
 Just surrond your buttons with `<p class="text-center">` and `</p>`.
 
 <p class="text-center">
-  {% include button.html link="https://github.com/" text="GitHub" %}
-  {% include button.html link="https://google.com/" text="Google" %}
-  {% include button.html link="https://microsoft.com/" text="Microsoft" %}
+  {% include elements/button.html link="https://github.com/" text="GitHub" %}
+  {% include elements/button.html link="https://google.com/" text="Google" %}
+  {% include elements/button.html link="https://microsoft.com/" text="Microsoft" %}
 </p>
 
 ##### Know more about buttons

@@ -38,7 +38,7 @@ Adding Content
 Dependencies
 Credits
 {%- endcapture -%}
-{% include list.html type="toc" %}
+{% include elements/list.html type="toc" %}
 
 ## Installation
 
@@ -213,7 +213,7 @@ external_url: https://google.com/
   1. Add the following lines to the skills section between `<div class="row">` and `</div>`:
   
      ```liquid
-     {% raw %}{% include skills.html title="Category_Name Skills" source=site.data.category_name-skills %}{% endraw %}
+     {% raw %}{% include about/skills.html title="Category_Name Skills" source=site.data.category_name-skills %}{% endraw %}
      ```
 
 #### Adding new Timeline Item

@@ -71,7 +71,7 @@ Even though we invoked the `first()` function first, we logged out the result of
 
 It’s not that JavaScript didn’t execute our functions in the order we wanted it to, it’s instead that **JavaScript didn’t wait for a response from `first()` before moving on to execute `second()`**.
 
-So why show you this? Because you can’t just call one function after another and hope they execute in the right order. {% include highlight.html text="Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution." %}
+So why show you this? Because you can’t just call one function after another and hope they execute in the right order. {% include elements/highlight.html text="Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution." %}
 
 ## Create a Callback
 

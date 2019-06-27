@@ -20,13 +20,13 @@
     {% endcapture %}
 
     {% assign project_type = "remote" %}
-    {% assign project_id = project.name %}
-    {% assign project_img = false %}
+    {% assign project_id   = project.name %}
+    {% assign project_img  = false %}
     {% assign project_name = titlecase %}
     {% assign project_desc = project.description %}
-    {% assign project_url = project.html_url %}
+    {% assign project_url  = project.html_url %}
 
-    {% include project-card.html %}
+    {% include projects/project-card.html %}
 
     <script>get_tools("{{ project_id }}")</script>
 
@@ -35,11 +35,11 @@
   <!-- Local Projects -->
   {% for project in site.projects %}
 
-    {% assign project_type = "local" %}
-    {% assign project_id =  project.name | slugify %}
-    {% assign project_img = project.image %}
-    {% assign project_name = project.name %}
-    {% assign project_desc = project.description %}
+    {% assign project_type  = "local" %}
+    {% assign project_id    =  project.name | slugify %}
+    {% assign project_img   = project.image %}
+    {% assign project_name  = project.name %}
+    {% assign project_desc  = project.description %}
     {% assign project_tools = project.tools %}
 
     {% if project.external_url %}
@@ -48,7 +48,7 @@
       {% assign project_url = project.url | relative_url %}
     {% endif %}
 
-    {% include project-card.html %}
+    {% include projects/project-card.html %}
 
   {% endfor %}
 
