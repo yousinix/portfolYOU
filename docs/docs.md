@@ -43,7 +43,7 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
 #### As a GitHub Pages remote theme
 
 1. [Download][download] portfolYOU as .zip from official [repo][repo] then extract the files.
-1. Delete unnecessary files and folders: `README.md`, `LICENSE`, `docs/`
+1. Delete unnecessary files and folders: `README.md`, `CONTRIBUTING.md`, `LICENSE`, `docs/`
 1. Delete theme directories, _as they will be included remotely_ : `_includes/`, `_layouts/`, `_sass/`, `assets/`
 1. Delete `Gemfile` and `.gitignore` if you aren't going to set up the theme [locally].
 1. Your directory structure should be looking something like this:
