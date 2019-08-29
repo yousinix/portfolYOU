@@ -2,13 +2,38 @@
 layout: page
 title: About
 permalink: /about/
-weight: 3
+weight: 2
 ---
 
 # **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p class="about-text">
+<span class="fa fa-briefcase about-icon"></span>
+  Hi, my name is <strong>Pawel Szatkowski</strong>.
+</p>
+
+<p class="about-text">
+<span class="fa fa-graduation-cap about-icon"></span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam facilisis augue, consequat molestie mi. Quisque sed nunc purus. Vestibulum erat risus, imperdiet sit amet euismod quis, mollis vitae odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</p>
+
+<p class="about-text">
+<span class="fa fa-code about-icon"></span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam facilisis augue, consequat molestie mi. Quisque sed nunc purus. Vestibulum erat risus, imperdiet sit amet euismod quis, mollis vitae odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</p>
+
+<p class="about-text">
+<span class="fa fa-heart about-icon"></span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam facilisis augue, consequat molestie mi. Quisque sed nunc purus. Vestibulum erat risus, imperdiet sit amet euismod quis, mollis vitae odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</p>
+
+<p class="about-text">
+<span class="fa fa-envelope about-icon"></span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam facilisis augue, consequat molestie mi. Quisque sed nunc purus. Vestibulum erat risus, imperdiet sit amet euismod quis, mollis vitae odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</p>
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

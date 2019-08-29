@@ -1,4 +1,5 @@
-<div class="card-group mt-2">
+<!-- div class="card-group mt-2" -->
+<div class="card-columns m-3 mt-5">
 
   {% for post in paginator.posts %}
 
@@ -29,8 +30,8 @@
       {% assign article_url = post.url | relative_url %}
     {% endif %}
 
-    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-      <a href="{{ article_url }}" class="article card {{ card_style }}">
+<!--    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="{{ article_url }}" class="project card {{ card_style }}">
         <div class="card-body {{ text_style }}">
           <h3 class="card-title">{{ post.title }}</h3>
           <p class="card-text">
@@ -51,11 +52,34 @@
         </div>
       </a>
     </div>
+-->
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ article_url }}" class="project card {{ card_style }}">
+    {% if post.image %}
+    <img id="img" class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}" />
+    {% endif %}
+    <div class="card-body {{ text_style }}">
+      <h5 id="{{ post.title }}" class="card-title">
+        {{ post.title }}
+      </h5>
+<p class="card-text">
+            {% for tag in post.tags %}
+              <span class="badge {{ badge_style }}">{{ tag }}</span>
+            {% endfor %}
+          </p>
+
+      <p id="desc" class="card-text">{{ post.description}}</p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+          {{ post.date | date_to_long_string }}
+    </div>
+  </a>
+</div>
 
   {% endfor %}
-
+</div>
   <!-- Pagination links -->
-	<div class="mx-auto my-3">
+	<div class="mt-auto py-3 text-center">
 
 		{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path | relative_url }}" class="badge badge-primary"><</a>
@@ -71,6 +95,5 @@
 			<span class="badge badge-light text-muted">></span>
 		{% endif %}
 
-  </div>
+	</div>
   
-</div>

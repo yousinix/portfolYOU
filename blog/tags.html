@@ -1,0 +1,7 @@
+---
+layout: page
+title: Tags
+permalink: /blog/tags
+---
+
+{% include blog/tags.html %}
