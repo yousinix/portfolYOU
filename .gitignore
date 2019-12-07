@@ -9,4 +9,7 @@ _site/
 Gemfile.lock
 
 # Photoshop Documents
-Preview.psd
+*.psd
+
+# Log Files
+*.log
