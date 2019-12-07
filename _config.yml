@@ -1,9 +1,9 @@
 ### Site Settings ###
 title               : portfolYOU
 description         : >-                               # >- means to ignore newlines until "url:"
-                      I turn coffee into code,
+                      "I turn coffee :coffee: into code,
                       use tabs over spaces
-                      and never broke production.
+                      and never broke production."
 
 url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : "/portfolYOU"                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
@@ -57,11 +57,13 @@ defaults:
     values:
       layout: "page"
 
+plugins:
+  - jemoji
 
 ### Exclude from processing ###
 exclude:
-- README.md
-- CONTRIBUTING.md
-- LICENSE
-- Gemfile
-- Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
