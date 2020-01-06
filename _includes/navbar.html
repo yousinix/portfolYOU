@@ -8,14 +8,29 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
+
       {% assign pages = site.html_pages | sort: 'weight' %}
-      {% for site_page in pages %}
-        {% if site_page.title %}
-          {% unless site_page.url contains 'page' or site_page.url contains 'tags' %}
-            <a class="nav-item nav-link {% if page.url contains site_page.url %} active {% endif %}" href="{% if site_page.external_url %} {{ site_page.external_url }} {% else %} {{ site_page.url | relative_url }} {% endif %}">{{ site_page.title }}</a>
-          {% endunless %}
+     
+      {% for nav_page in pages %}  
+
+        {% if page.url contains nav_page.url %}
+          {% assign active_status = "active" %}
+        {% else %}
+          {% assign active_status = "" %}
         {% endif %}
+
+        {% if nav_page.external_url %}
+          {% assign url = nav_page.external_url %}
+        {% else %}
+          {% assign url = nav_page.url | relative_url %}
+        {% endif %}
+
+        {% unless nav_page.url contains 'page' or nav_page.url contains 'tags' %}
+          <a class="nav-item nav-link {{ active_status }}" href="{{ url }}">{{ nav_page.title }}</a>
+        {% endunless %}
+
       {% endfor %}
+
     </div>
   </div>
 
