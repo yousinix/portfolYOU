@@ -1,4 +1,4 @@
-{% assign images = carousel_images | newline_to_br | split: '<br />' %}
+{%- assign images = carousel_images | strip | newline_to_br | split: '<br />' -%}
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
 

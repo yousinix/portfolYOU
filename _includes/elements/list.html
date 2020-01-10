@@ -1,4 +1,4 @@
-{% assign items = list_items | newline_to_br | split: '<br />' %}
+{%- assign items = list_items | strip | newline_to_br | split: '<br />' -%}
 
 <div class="list-group my-3">
 

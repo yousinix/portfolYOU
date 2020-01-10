@@ -9,7 +9,7 @@ weight: 4
 
 A demo of Markdown and HTML includes.
 
-{%- capture list_items -%}
+{% capture list_items %}
 Headers
 Emphasis
 Highlight
@@ -29,7 +29,8 @@ Blockquotes
 Inline HTML
 Horizontal Rule
 Line Breaks
-{%- endcapture -%}
+{% endcapture %}
+
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
 ## Headers
@@ -115,57 +116,57 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 {% raw %}- Basic List Group:
 
-{%- capture list_items -%}
+{% capture list_items %}
 Google,https://www.google.com
 GitHub,https://www.google.com
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html %}
 
 
 - List Group with a Title:
 
-{%- capture list_items -%}
+{% capture list_items %}
 Google,https://www.google.com
 GitHub,https://www.google.com
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html title="Websites" %}
 
 
 - List Group as Table of Contents (automatic linking to page headers):
 
-{%- capture list_items -%}
+{% capture list_items %}
 Headers
 Emphasis
 List
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html title="Table of Contents" type="toc" %}{% endraw %}
 ```
 
 - Basic List Group:
-{%- capture list_items -%}
+{% capture list_items %}
 Google,https://www.google.com
 GitHub,https://www.google.com
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html %}
 
 - List Group with a Title:
-{%- capture list_items -%}
+{% capture list_items %}
 Google,https://www.google.com
 GitHub,https://www.google.com
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html title="Websites" %}
 
 - List Group as Table of Contents (automatic linking to page headers):
-{%- capture list_items -%}
+{% capture list_items %}
 Headers
 Emphasis
 Lists
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -206,18 +207,18 @@ Here's our Image (hover to see the title text):
 ## Carousel
 
 ```
-{% raw %}{%- capture carousel_images -%}
+{% raw %}{% capture carousel_images %}
 https://bit.ly/2BBbVhc
 https://bit.ly/2DOtxXB
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/carousel.html %}{% endraw %}
 ```
 
-{%- capture carousel_images -%}
+{% capture carousel_images %}
 https://bit.ly/2BBbVhc
 https://bit.ly/2DOtxXB
-{%- endcapture -%}
+{% endcapture %}
 
 {% include elements/carousel.html %}
 
@@ -251,7 +252,7 @@ Sizes:
 {% include elements/button.html link="https://github.com/" text="GitHub" size="lg" %}
 
 Block:
-{% include elements/button.html link="https://github.com/" text="GitHub" block="true" %}{% endraw %}
+{% include elements/button.html link="https://github.com/" text="GitHub" block=true %}{% endraw %}
 ```
 
 ##### Styles:
@@ -265,7 +266,7 @@ Block:
 {% include elements/button.html link="https://github.com/" text="GitHub" size="lg" %}
 
 ##### Block:
-{% include elements/button.html link="https://github.com/" text="GitHub" block="true" %}
+{% include elements/button.html link="https://github.com/" text="GitHub" block=true %}
 
 ##### How to center buttons?
 Just surrond your buttons with `<p class="text-center">` and `</p>`.
