@@ -7,30 +7,30 @@ layout: page
 <p class="post-metadata text-muted">
   {{ page.date | date_to_long_string }} -  
   <b>
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
+  {%- assign words = content | number_of_words -%}
+  {%- if words < 360 -%}
     less than 1 min read time
-  {% else %}
-    {{ words | divided_by:180 }} mins read time
-  {% endif %}
+  {%- else -%}
+    {{ words | divided_by: 180 }} mins read time
+  {%- endif -%}
   </b>
 
   <br>
 
-  {% if page.tags != empty %}
+  {%- if page.tags != empty -%}
     Tags: 
     {% for tag in page.tags %}
     <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
       <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
     </a>
     {% endfor %}
-  {% endif %}
+  {%- endif -%}
 
 </p>
 
 {{ content }}
 
 <footer>
-  This page is <b>open source</b>. Noticed a typo? </br>
+  This page is <b>open source</b>. Noticed a typo? <br />
   Or something unclear? Improve it on {% github_edit_link "GitHub" %}.
 </footer>

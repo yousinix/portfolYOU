@@ -9,53 +9,53 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
 
-      {% assign html_pages = site.html_pages | sort: 'weight' %}
-      {% assign filtered_pages = "" | split: "" %}
+      {%- assign html_pages = site.html_pages | sort: 'weight' -%}
+      {%- assign filtered_pages = "" | split: "" -%}
 
-      {% for html_page in html_pages %} 
+      {%- for html_page in html_pages -%} 
 
-        {% assign exclude = false %}
+        {%- assign exclude = false -%}
 
-        {% for exclude_path in site.nav_exclude %}
+        {%- for exclude_path in site.nav_exclude -%}
 
-          {% if html_page.path == exclude_path %}
-            {% assign exclude = true %}
-            {% break %}
-          {% else if exclude_path contains ':num' %}
-            {% assign temp = html_page.path %}
-            {% assign parts = exclude_path | split: ':num' %}
-            {% for part in parts %}
-              {% assign temp = temp | remove: part %}
-            {% endfor %}
-            {% assign test_num = temp | plus: 0 | downcase %}
-            {% if temp == test_num %}
-              {% assign exclude = true %}
-              {% break %}
-            {% endif %}
-          {% endif %}
+          {%- if html_page.path == exclude_path -%}
+            {%- assign exclude = true -%}
+            {%- break -%}
+          {%- else if exclude_path contains ':num' -%}
+            {%- assign temp = html_page.path -%}
+            {%- assign parts = exclude_path | split: ':num' -%}
+            {%- for part in parts -%}
+              {%- assign temp = temp | remove: part -%}
+            {%- endfor -%}
+            {%- assign test_num = temp | plus: 0 | downcase -%}
+            {%- if temp == test_num -%}
+              {%- assign exclude = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endif -%}
 
-        {% endfor %}
+        {%- endfor -%}
 
-        {% unless exclude %}
-          {% assign filtered_pages = filtered_pages | push: html_page %}
-        {% endunless %}
+        {%- unless exclude -%}
+          {%- assign filtered_pages = filtered_pages | push: html_page -%}
+        {%- endunless -%}
 
-      {% endfor %}
+      {%- endfor -%}
 
 
       {% for html_page in filtered_pages %}  
 
-        {% if page.url contains html_page.url %}
-          {% assign active_status = "active" %}
-        {% else %}
-          {% assign active_status = "" %}
-        {% endif %}
+        {%- if page.url contains html_page.url -%}
+          {%- assign active_status = "active" -%}
+        {%- else -%}
+          {%- assign active_status = "" -%}
+        {%- endif -%}
 
-        {% if html_page.external_url %}
-          {% assign url = html_page.external_url %}
-        {% else %}
-          {% assign url = html_page.url | relative_url %}
-        {% endif %}
+        {%- if html_page.external_url -%}
+          {%- assign url = html_page.external_url -%}
+        {%- else -%}
+          {%- assign url = html_page.url | relative_url -%}
+        {%- endif -%}
 
         <a class="nav-item nav-link {{ active_status }}" href="{{ url }}">{{ html_page.title }}</a>
 

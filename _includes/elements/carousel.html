@@ -4,25 +4,25 @@
 
   <ol class="carousel-indicators">
     {% for image in images %}
-        {% if forloop.first == true %}
+        {%- if forloop.first -%}
           <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}" class="active"></li>
-        {% else %}
+        {%- else -%}
           <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}"></li>
-        {% endif %}
+        {%- endif -%}
     {% endfor %}
   </ol>
 
   <div class="carousel-inner">
     {% for image in images %}
-      {% if forloop.first == true %}
+      {%- if forloop.first -%}
         <div class="carousel-item active">
           <img src="{{ image }}" class="d-block w-100">
         </div>
-      {% else %}
+      {%- else -%}
         <div class="carousel-item">
           <img src="{{ image }}" class="d-block w-100">
         </div>
-      {% endif %}
+      {%- endif -%}
     {% endfor %}
   </div>
 
