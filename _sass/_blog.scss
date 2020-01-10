@@ -2,7 +2,7 @@
     box-shadow:none !important;
 }
 
-.article.card {
+.post.card {
     border-radius: $rounded-borders;
     text-decoration: none!important;
     padding: 15px;
@@ -15,9 +15,9 @@
     }
 }
 
-.article {
+.post {
 
-    .article-metadata {
+    .post-metadata {
         font-size: 14px;
         margin-top: -6px;
     }

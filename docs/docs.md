@@ -27,8 +27,8 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
 - Support [Repository metadata][repo-meta], [FontAwesome][font-awesome], [GitHub Buttons][gh-btns] and many [more](#dependencies).
 - Support **all image orientations** _(landscape, portrait or square)_ as a landing image.
 - **Automatic** importing for **GitHub Repositories** as Projects.
-- **Search** articles by title, tags or descriptions.
-- **Tags archive** for articles.
+- **Search** posts by title, tags or descriptions.
+- **Tags archive** for posts.
 - Skills progress bars and education/experience timeline.
 - Support large number of **social networks**.
 - Quick including for various [elements][elements] as videos, lists, figures, buttons and many more.
@@ -56,14 +56,14 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
    │   ├── social-media.yml
    │   └── timeline.yml
    ├── _posts/
-   │   ├── YYYY-MM-DD-article-1.md
+   │   ├── YYYY-MM-DD-post-1.md
    │   ├── ....
-   │   └── YYYY-MM-DD-article-n.md
+   │   └── YYYY-MM-DD-post-n.md
    ├── _projects/
    │   ├── project-1.md
    │   ├── ....
    │   └── project-n.md
-   ├── articles/
+   ├── blog/
    │   ├── index.html
    │   └── tags.html
    ├── pages/
@@ -112,11 +112,11 @@ portfolYOU is a free modern open-source Jekyll portfolio and blogging theme that
 
 portfolYOU's sections are **independent**, you can remove any section upon your needs. Here's a list of the files and folders needed by each section:
 
-| Projects                      | Articles                | About                   |
+| Projects                      | Blog                    | About                   |
 | :---------                    | :---------              | :---------              |
-| pages/projects.html           | articles/               | pages/about.md          |
-| _includes/projects/           | _includes/articles/     | _includes/about/        |
-| _sass/projects.scss ¹         | _sass/_articles.scss ¹  | _sass/_skills.scss ¹    |
+| pages/projects.html           | blog/                   | pages/about.md          |
+| _includes/projects/           | _includes/blog/         | _includes/about/        |
+| _sass/projects.scss ¹         | _sass/_blog.scss ¹      | _sass/_skills.scss ¹    |
 | assets/js/card-animation.js ² | _layouts/post.html      | _sass/_timeline.scss ¹  |
 | _projects/ ³                  | _posts/ ⁴               | _data/ ⁵                |
 
@@ -165,10 +165,10 @@ remote_projects:
 ---
 ```
 
-#### Articles
+#### Posts
 
-1. Add `YYYY-MM-DD-article-name.md` to `_posts/`.
-1. Add [front matter](https://jekyllrb.com/docs/front-matter/) to the top of your new article file.
+1. Add `YYYY-MM-DD-post-name.md` to `_posts/`.
+1. Add [front matter](https://jekyllrb.com/docs/front-matter/) to the top of your new post file.
 
     ```yaml
     ---
@@ -176,13 +176,13 @@ remote_projects:
     tags: [TAG 1, TAG 2]
     style: fill / border (choose one only)
     color: primary / secondary / success / danger / warning / info / light / dark (choose one only)
-    description: Write article description here, or it will be the first 25 words of the article's body.
+    description: Write post description here, or it will be the first 25 words of the post's body.
     ---
     ```
 
-1. If you left both the style and color empty, the article's style is set to default style.
-1. Add article body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
-1. Check more articles templates from [here]({{ site.github.repository_url }}/tree/master/_posts).
+1. If you left both the style and color empty, the post's style is set to default style.
+1. Add post body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
+1. Check more posts templates from [here]({{ site.github.repository_url }}/tree/master/_posts).
 
 #### Pages
 
@@ -203,7 +203,7 @@ remote_projects:
 
 #### External Content
 
-If you want your project, article or even the page to refer to an external resource, _**google.com** for example_, just add the following attribute to your front matter:
+If you want your project, post or even the page to refer to an external resource, _**google.com** for example_, just add the following attribute to your front matter:
 
 ```yaml
 ---

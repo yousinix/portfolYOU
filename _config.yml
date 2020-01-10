@@ -20,8 +20,8 @@ plugins:
 nav_exclude:                        # Pages with the following paths will be excluded from navbar
   - 404.html
   - index.html
-  - articles/tags.html
-  - articles/page-:num/index.html
+  - blog/tags.html
+  - blog/page-:num/index.html
 
 
 ### Author Info ###
@@ -49,11 +49,11 @@ author:
 
 ### Pagination ###
 paginate: 6
-paginate_path: "/articles/page-:num/"
+paginate_path: "/blog/page-:num/"
 
 
 ### Posts Permalink ###
-permalink: articles/:title
+permalink: blog/:title
 
 
 ### Collections ###

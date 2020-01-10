@@ -7,7 +7,7 @@
         border-radius: $rounded-borders $rounded-borders 0 0;
     }
 
-    &:hover:not(.article) {
+    &:hover:not(.post) {
         box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, .24);
     }
 }
