@@ -1,34 +1,35 @@
 .link-after {
-    content: '';
-    display: block;
-    height: .15em;
-    background: $primary;
+  content: "";
+  display: block;
+  height: 0.15em;
+  background: $primary;
 }
 
-.nav-link, .navbar-brand {
-    &::after {
-        @extend .link-after;
-        width: 0;
-        transition: width .35s;
-    }
+.nav-link,
+.navbar-brand {
+  &::after {
+    @extend .link-after;
+    width: 0;
+    transition: width 0.35s;
+  }
 
-    &:hover::after {
-        width: 100%;
-    }
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .nav-item.active {
-    font-weight: bold;
-    
-    &::after {
-        @extend .link-after;
-        width: 100%!important;
-    }
+  font-weight: bold;
+
+  &::after {
+    @extend .link-after;
+    width: 100% !important;
+  }
 }
 
 .navbar-brand {
-    margin-bottom: -14px;
-    &::after {
-        margin-top: -.25em;
-    }
+  margin-bottom: -14px;
+  &::after {
+    margin-top: -0.25em;
+  }
 }

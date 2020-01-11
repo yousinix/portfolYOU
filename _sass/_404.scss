@@ -1,18 +1,60 @@
-.cls-1  { fill: #ffc541 }
-.cls-2  { fill: #4e4066 }
-.cls-3  { fill: #6f5b92 }
-.cls-4  { fill: #f78d5e }
-.cls-5  { fill: #fa976c }
-.cls-6  { fill: #b65c32; opacity: 0.6; }
-.cls-7  { fill: #b65c32; opacity: 0.4; }
-.cls-8  { fill: #b65c32 }
-.cls-9  { fill: #f4b73b }
-.cls-10 { opacity: 0.6 }
-.cls-11 { fill: #f9c358 }
-.cls-12 { fill: #9b462c }
-.cls-13 { fill: #aa512e }
-.cls-14 { fill: #7d6aa5 }
+.cls-1 {
+  fill: #ffc541;
+}
 
+.cls-2 {
+  fill: #4e4066;
+}
+
+.cls-3 {
+  fill: #6f5b92;
+}
+
+.cls-4 {
+  fill: #f78d5e;
+}
+
+.cls-5 {
+  fill: #fa976c;
+}
+
+.cls-6 {
+  fill: #b65c32;
+  opacity: 0.6;
+}
+
+.cls-7 {
+  fill: #b65c32;
+  opacity: 0.4;
+}
+
+.cls-8 {
+  fill: #b65c32;
+}
+
+.cls-9 {
+  fill: #f4b73b;
+}
+
+.cls-10 {
+  opacity: 0.6;
+}
+
+.cls-11 {
+  fill: #f9c358;
+}
+
+.cls-12 {
+  fill: #9b462c;
+}
+
+.cls-13 {
+  fill: #aa512e;
+}
+
+.cls-14 {
+  fill: #7d6aa5;
+}
 
 /* animations */
 
@@ -28,7 +70,7 @@
     animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   }
   100% {
-    transform: rotate(960deg)
+    transform: rotate(960deg);
   }
 }
 
@@ -46,7 +88,7 @@
 
 @keyframes clock-rotate {
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -58,7 +100,7 @@
 
 @keyframes box-top-anim {
   50% {
-    transform: rotate(-5deg)
+    transform: rotate(-5deg);
   }
 }
 
@@ -85,7 +127,7 @@
 
 @keyframes cup-rotate {
   50% {
-    transform: rotate(-5deg)
+    transform: rotate(-5deg);
   }
 }
 
@@ -97,10 +139,10 @@
 
 @keyframes pillow-anim {
   25% {
-    transform: rotate(10deg) translateY(5px)
+    transform: rotate(10deg) translateY(5px);
   }
   75% {
-    transform: rotate(-10deg)
+    transform: rotate(-10deg);
   }
 }
 
@@ -112,10 +154,10 @@
 
 @keyframes stripe-anim {
   25% {
-    transform: translate(10px, 0) rotate(-10deg)
+    transform: translate(10px, 0) rotate(-10deg);
   }
   75% {
-    transform: translateX(10px)
+    transform: translateX(10px);
   }
 }
 
@@ -125,14 +167,14 @@
 
 @keyframes bike-anim {
   0% {
-    transform: translateX(-1300px)
+    transform: translateX(-1300px);
   }
   50% {
     transform: translateX(0);
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
   }
   100% {
-    transform: translateX(1300px)
+    transform: translateX(1300px);
   }
 }
 
@@ -144,7 +186,7 @@
 
 @keyframes ruck-anim {
   50% {
-    transform: rotate(5deg)
+    transform: rotate(5deg);
   }
 }
 
@@ -155,16 +197,33 @@
   perspective: 0px;
 }
 
-.circle.c1 { animation-duration: 2s }
-.circle.c2 { animation-duration: 3s }
-.circle.c3 { animation-duration: 1s }
-.circle.c4 { animation-duration: 1s }
-.circle.c5 { animation-duration: 2s }
-.circle.c6 { animation-duration: 3s }
+.circle.c1 {
+  animation-duration: 2s;
+}
+
+.circle.c2 {
+  animation-duration: 3s;
+}
+
+.circle.c3 {
+  animation-duration: 1s;
+}
+
+.circle.c4 {
+  animation-duration: 1s;
+}
+
+.circle.c5 {
+  animation-duration: 2s;
+}
+
+.circle.c6 {
+  animation-duration: 3s;
+}
 
 @keyframes circle-anim {
   50% {
-    transform: scale(.2) rotateX(360deg) rotateY(360deg)
+    transform: scale(0.2) rotateX(360deg) rotateY(360deg);
   }
 }
 
@@ -193,6 +252,6 @@
 
 @keyframes four-anim {
   50% {
-    transform: scale(.98)
+    transform: scale(0.98);
   }
 }

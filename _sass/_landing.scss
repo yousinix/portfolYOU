@@ -1,0 +1,28 @@
+// Fine Circle Responsive Image
+// Inspired by https://stackoverflow.com/a/6615994/10194811
+
+#container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+#dummy {
+  padding-top: 100%; /* 1:1 aspect ratio */
+}
+
+#element {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}

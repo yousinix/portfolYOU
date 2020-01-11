@@ -1,0 +1,21 @@
+.social {
+  text-decoration: none !important;
+}
+
+#attribution {
+  opacity: 0.5;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #attribution {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 56px;
+    right: 22px;
+  }
+}
