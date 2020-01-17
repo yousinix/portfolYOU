@@ -11,11 +11,6 @@ repository          : YoussefRaafatNasry/portfolYOU    # repository metadata on 
 #remote_theme       : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
 
 
-### Build Settings ###
-plugins:
-  - jemoji
-
-
 ### Navbar Settings ###
 nav_exclude:                        # Pages with the following paths will be excluded from navbar
   - 404.html
@@ -77,6 +72,14 @@ defaults:
     values:
       layout: "element"
 
+### Plugins ###
+plugins:
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jemoji
+
 
 ### Exclude from processing ###
 exclude:
@@ -84,4 +87,5 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - Gemfile
-  - Gemfile.lock
+  - portfolyou-jekyll-theme.gemspec
+  - "*.log"
