@@ -1,0 +1,27 @@
+---
+layout: page
+title: Elements
+permalink: /elements/
+weight: 4
+---
+
+<h1>Elements</h1>
+
+{% assign list_items = "" %}
+{% for element in site.elements %}
+    {% assign title = element.title | slice: 2, element.title.size %}
+    {%- capture list_items -%}
+        {{ list_items }}
+        {{ title }}
+    {%- endcapture -%}
+{% endfor %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
+{% for element in site.elements %}
+    {{ element }}
+{% endfor %}
+
+<footer>
+    This page is <b>open source</b>. Noticed a typo?<br>
+    Or something unclear? Improve it on {% github_edit_link "GitHub" %}.
+</footer>

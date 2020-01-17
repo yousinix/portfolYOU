@@ -1,0 +1,141 @@
+{% assign page_title = page.title | slice: 2, page.title.size %}
+<h2 id="{{ page_title | slugify }}">{{ page_title }}</h2>
+
+{%- assign code = content | strip -%}
+
+{%- if code contains '{% ' -%}
+
+    {%- assign code = code | newline_to_br | split: '<br />' -%}
+
+    {%- assign start_capture = false -%}
+    {%- assign captured_text = '' -%}
+    {%- assign captured_var  = '' -%}
+    {%- assign includes      = '' | split: '' -%}
+
+    {%- for line in code -%}
+
+        {%- if line contains '{% endcapture' -%}
+            {%- assign start_capture = false -%}
+        {%- elsif start_capture == true -%}
+            {%- assign captured_text = captured_text | append: line -%}
+        {%- elsif line contains '{% capture' -%}
+            {%- assign temp = line | split: ' ' -%}
+            {%- assign captured_var  = temp[2] -%}
+            {%- assign start_capture = true -%}
+        {%- elsif line contains '{% include' -%}
+            {%- assign includes = includes | push: line -%}
+        {%- endif -%}
+
+    {%- endfor -%}
+
+    {%- assign list_items      = nil -%}
+    {%- assign carousel_images = nil -%}
+
+    {%- case captured_var -%}
+        {%- when 'list_items' -%}
+            {%- assign list_items = captured_text -%}
+        {%- when 'carousel_images' -%}
+            {%- assign carousel_images = captured_text -%}
+    {%- endcase -%}
+
+    {%- for include in includes -%}
+
+        {%- assign incl = include | strip -%}
+        {%- assign incl = incl | remove: '{% include ' -%}
+        {%- assign incl = incl | remove: ' %' | remove: '}' -%}
+        {%- assign incl = incl | replace_first: ' ', '" ' -%}
+        {%- assign temp = incl | split: '" ' -%}
+
+        {%- assign file  = temp | first -%}
+        {%- assign params = temp | shift -%}
+
+        {%- assign alt     = nil -%}
+        {%- assign block   = nil -%}
+        {%- assign caption = nil -%}
+        {%- assign id      = nil -%}
+        {%- assign image   = nil -%}
+        {%- assign link    = nil -%}
+        {%- assign size    = nil -%}
+        {%- assign style   = nil -%}
+        {%- assign title   = nil -%}
+        {%- assign text    = nil -%}
+        {%- assign type    = nil -%}
+
+        {%- for param in params -%}
+
+            {%- assign pair  = param | split: '='  -%}
+            {%- assign key   = pair[0] -%}
+            {%- assign value = pair[1] | remove: '"' -%}
+
+            {%- case key -%}
+                {%- when 'alt' -%}
+                    {%- assign alt = value -%}
+                {%- when 'block' -%}
+                    {%- assign block = value -%}
+                {%- when 'caption' -%}
+                    {%- assign caption = value -%}
+                {%- when 'id' -%}
+                    {%- assign id = value -%}
+                {%- when 'image' -%}
+                    {%- assign image = value -%}
+                {%- when 'link' -%}
+                    {%- assign link = value -%}
+                {%- when 'size' -%}
+                    {%- assign size = value -%}
+                {%- when 'style' -%}
+                    {%- assign style = value -%}
+                {%- when 'title' -%}
+                    {%- assign title = value -%}
+                {%- when 'text' -%}
+                    {%- assign text = value -%}
+                {%- when 'type' -%}
+                    {%- assign type = value -%}
+            {%- endcase -%}
+
+        {%- endfor -%}
+
+
+        {%- include {{ file }} 
+                    alt=alt
+                    block=block
+                    caption=caption
+                    id=id
+                    image=image
+                    link=link
+                    size=size
+                    style=style
+                    title=title
+                    text=text
+                    type=type
+                    -%}
+
+    {%- endfor -%}
+
+{%- else -%}
+    {{ code | markdownify }}
+{%- endif -%}
+
+<details>
+
+    <summary class="text-monospace">View Code...</summary>
+    {%- highlight liquid -%}
+    {%- if code contains 'gist.github' -%}
+        {%- assign parts = code | split: '/'  -%}
+        {%- assign id = parts[3] | split: '.' | first -%}
+        {%- assign gist = id | prepend: '{%- gist ' -%}
+        {%- assign gist = gist | append: ' %'  -%}
+        {%- assign gist = gist | append: '}'  -%}
+        {{ gist }}
+    {%- else -%}
+        {{ code }}
+    {%- endif -%}
+    {%- endhighlight -%}
+
+
+    {%- for tip in page.tips -%}
+        <blockquote>
+            {{ tip | markdownify }}
+        </blockquote>
+    {%- endfor -%}
+
+</details>
