@@ -301,7 +301,4 @@ portfolYOU provides a good number of social networks, but if you want to add you
 [cards-hover]: https://www.youtube.com/watch?v=2qQxwT-Qm5E
 [vertical-timeline]: https://www.youtube.com/watch?v=TP4THzsAa3M&t=2s
 
-<footer>
-  This documentation is <b>open source</b>. Noticed a typo? <br>
-  Or something unclear? Improve it on {% github_edit_link "GitHub" %}.
-</footer>
+{% include elements/github-edit-footer.html %}
