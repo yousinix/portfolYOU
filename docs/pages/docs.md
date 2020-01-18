@@ -8,10 +8,9 @@ weight: 5
 # About portfolYOU <small class="text-muted">{{ site.github.latest_release.tag_name }}</small>
 {:.no_toc}
 
-{%- assign partials = site.static_files | where_exp:"file", "file.path contains 'docs/partials/'" -%}
-
-{% for partial in partials %}
-{% include_relative {{ partial.path | remove: '/docs/' }} %}
+{%- assign docs = site.static_files | where_exp:"file", "file.path contains '/documentation/'" -%}
+{% for doc in docs %}
+{% include_relative {{ doc.path | remove: '/pages/' }} %}
 {% endfor %}
 
 {% include elements/github-edit-footer.html %}

@@ -1,0 +1,64 @@
+### Site Settings ###
+title               : portfolYOU-dev
+description         : Running in Dev Mode
+baseurl             : "/portfolYOU"
+repository          : YoussefRaafatNasry/portfolYOU
+theme               : portfolyou-jekyll-theme
+
+
+### Navbar Settings ###
+nav_exclude:
+  - pages/404.html
+  - pages/index.md
+  - blog/tags.html
+  - blog/page-:num/index.html
+  - pages/documentation/**
+
+
+### Author Info ###
+author:
+  name              : John Doe
+  image             : https://bit.ly/2KCvgVJ
+  github            : your_username
+
+
+### Pagination ###
+paginate: 6
+paginate_path: "/blog/page-:num/"
+
+
+### Posts Permalink ###
+permalink: blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements:
+    output: true
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "elements"
+    values:
+      layout: "element"
+
+
+### Plugins ###
+plugins:
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jemoji

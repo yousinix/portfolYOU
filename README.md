@@ -12,6 +12,6 @@
 
 [![Get the theme][button]](https://youssefraafatnasry.github.io/portfolYOU/docs#installation)
 
-[header]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/assets/Logo.png?raw=true
-[preview]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/assets/Preview.gif?raw=true
-[button]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/assets/Button.png?raw=true
+[header]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/imgs/Logo.png?raw=true
+[preview]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/imgs/Preview.gif?raw=true
+[button]: https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/imgs/Button.png?raw=true
