@@ -1,34 +1,29 @@
 ### Site Settings ###
-title               : portfolYOU-dev
-description         : Running in Dev Mode
-baseurl             : "/portfolYOU"
+baseurl             : "/portfolYOU-dev"
 repository          : YoussefRaafatNasry/portfolYOU
 theme               : portfolyou-jekyll-theme
 
 
 ### Navbar Settings ###
 nav_exclude:
-  - pages/404.html
-  - pages/index.md
   - blog/tags.html
   - blog/page-:num/index.html
+  - pages/404.html
+  - pages/index.md
   - pages/documentation/**
 
 
 ### Author Info ###
 author:
-  name              : John Doe
-  image             : https://bit.ly/2KCvgVJ
-  github            : your_username
+  name              : YRN
+  image             : https://avatars2.githubusercontent.com/u/41103290
+  github            : YoussefRaafatNasry
 
 
-### Pagination ###
+### Posts ###
 paginate: 6
 paginate_path: "/blog/page-:num/"
-
-
-### Posts Permalink ###
-permalink: blog/:title
+permalink: /blog/:title
 
 
 ### Collections ###
@@ -52,13 +47,3 @@ defaults:
       type: "elements"
     values:
       layout: "element"
-
-
-### Plugins ###
-plugins:
-  - jekyll-default-layout
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jemoji

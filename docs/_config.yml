@@ -10,12 +10,18 @@ baseurl             : "/portfolYOU"                    # subpath of your site (e
 repository          : YoussefRaafatNasry/portfolYOU    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
 remote_theme        : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
 
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
 ### Navbar Settings ###
 nav_exclude:                        # Pages with the following paths will be excluded from navbar
-  - pages/404.html
-  - pages/index.md
   - blog/tags.html
   - blog/page-:num/index.html
+  - pages/404.html
+  - pages/index.md
   - pages/documentation/**
 
 
@@ -42,13 +48,10 @@ author:
 # youtube           : your_channel_name
 
 
-### Pagination ###
+### Posts ###
 paginate: 6
 paginate_path: "/blog/page-:num/"
-
-
-### Posts Permalink ###
-permalink: blog/:title
+permalink: /blog/:title
 
 
 ### Collections ###
@@ -72,11 +75,6 @@ defaults:
       type: "elements"
     values:
       layout: "element"
-
-
-### Plugins ###
-plugins:
-  - jemoji
 
 
 ### Exclude from processing ###
