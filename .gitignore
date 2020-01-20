@@ -1,16 +1,6 @@
-# Local Site Directories
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Ruby Gem
+# Ruby Gems
 *.gem
-.bundle
-Gemfile.lock
 
-# Photoshop Documents
+# Design Files
 *.psd
-
-# Log Files
-*.log
+*.ai
