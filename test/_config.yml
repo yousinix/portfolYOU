@@ -1,16 +1,18 @@
 ### Site Settings ###
-baseurl             : "/portfolYOU-dev"
+source              : ../
+collections_dir     : docs
+data_dir            : docs/_data
+baseurl             : "/portfolYOU-test"
 repository          : YoussefRaafatNasry/portfolYOU
-theme               : portfolyou-jekyll-theme
 
 
 ### Navbar Settings ###
 nav_exclude:
-  - blog/tags.html
-  - blog/page-:num/index.html
-  - pages/404.html
-  - pages/index.md
-  - pages/documentation/**
+  - docs/blog/tags.html
+  - docs/blog/page-:num/index.html
+  - docs/pages/404.html
+  - docs/pages/index.md
+  - docs/pages/documentation/**
 
 
 ### Author Info ###
@@ -22,8 +24,8 @@ author:
 
 ### Posts ###
 paginate: 6
-paginate_path: "/blog/page-:num/"
-permalink: /blog/:title
+paginate_path: "docs/blog/page-:num/"
+permalink: docs/blog/:title
 
 
 ### Collections ###
@@ -47,3 +49,20 @@ defaults:
       type: "elements"
     values:
       layout: "element"
+
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jemoji
+
+
+exclude:
+  - test/
+  - docs/Gemfile
+  - docs/Gemfile.lock
+  - docs/_site/
+  - docs/.sass-cache/

@@ -48,11 +48,13 @@
 
       {%- endfor -%}
 
+      {%- assign selected_active = false -%}
 
       {% for html_page in filtered_pages %}  
 
-        {%- if page.url contains html_page.url -%}
+        {%- if selected_active == false and page.url contains html_page.url -%}
           {%- assign active_status = "active" -%}
+          {%- assign selected_active = true -%}
         {%- else -%}
           {%- assign active_status = "" -%}
         {%- endif -%}
