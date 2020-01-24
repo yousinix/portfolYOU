@@ -18,8 +18,7 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude:                        # Pages with the following paths will be excluded from navbar
-  - blog/tags.html
-  - blog/page-:num/index.html
+  - pages/tags.html
   - pages/404.html
   - pages/index.md
   - pages/documentation/**
@@ -49,8 +48,6 @@ author:
 
 
 ### Posts ###
-paginate: 6
-paginate_path: "/blog/page-:num/"
 permalink: /blog/:title
 
 

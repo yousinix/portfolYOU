@@ -8,8 +8,7 @@ repository          : YoussefRaafatNasry/portfolYOU
 
 ### Navbar Settings ###
 nav_exclude:
-  - docs/blog/tags.html
-  - docs/blog/page-:num/index.html
+  - docs/pages/tags.html
   - docs/pages/404.html
   - docs/pages/index.md
   - docs/pages/documentation/**
@@ -23,9 +22,7 @@ author:
 
 
 ### Posts ###
-paginate: 6
-paginate_path: "docs/blog/page-:num/"
-permalink: docs/blog/:title
+permalink: /blog/:title
 
 
 ### Collections ###
@@ -56,7 +53,6 @@ plugins:
   - jekyll-gist
   - jekyll-github-metadata
   - jekyll-include-cache
-  - jekyll-paginate
   - jemoji
 
 

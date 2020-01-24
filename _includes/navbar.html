@@ -27,17 +27,6 @@
               {%- assign exclude = true -%}
               {%- break -%}
             {%- endif -%}
-          {%- elsif exclude_path contains ':num' -%}
-            {%- assign temp = html_page.path -%}
-            {%- assign parts = exclude_path | split: ':num' -%}
-            {%- for part in parts -%}
-              {%- assign temp = temp | remove: part -%}
-            {%- endfor -%}
-            {%- assign test_num = temp | plus: 0 | downcase -%}
-            {%- if temp == test_num -%}
-              {%- assign exclude = true -%}
-              {%- break -%}
-            {%- endif -%}
           {%- endif -%}
 
         {%- endfor -%}
@@ -48,13 +37,10 @@
 
       {%- endfor -%}
 
-      {%- assign selected_active = false -%}
-
       {% for html_page in filtered_pages %}  
 
-        {%- if selected_active == false and page.url contains html_page.url -%}
+        {%- if page.url contains html_page.url -%}
           {%- assign active_status = "active" -%}
-          {%- assign selected_active = true -%}
         {%- else -%}
           {%- assign active_status = "" -%}
         {%- endif -%}
