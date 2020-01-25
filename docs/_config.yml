@@ -21,7 +21,7 @@ nav_exclude:                        # Pages with the following paths will be exc
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - pages/documentation/**
+  - documentation/partials/**
 
 
 ### Author Info ###
