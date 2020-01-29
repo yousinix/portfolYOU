@@ -13,4 +13,4 @@
     ```
 
 1. The new page will be added to the navigation bar automatically.
-1. Check more pages templates from [here]({{ site.github.repository_url }}/tree/master/pages).
+1. Check more pages templates from [here]({{ site.github.repository_url }}/tree/master/docs/pages).

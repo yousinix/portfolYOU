@@ -13,4 +13,4 @@
     ```
 
 1. Add project body in markdown or html. Check available [elements]({{ '/elements' | relative_url }}) to enjoy extra customization.
-1. Check more projects templates from [here]({{ site.github.repository_url }}/tree/master/_projects).
+1. Check more projects templates from [here]({{ site.github.repository_url }}/tree/master/docs/_projects).
