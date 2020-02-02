@@ -28,7 +28,7 @@
 
     {% include projects/project-card.html %}
 
-    <script>get_tools("{{ project_id }}")</script>
+    <script>get_tools("{{ site.github.owner_name }}/{{ remote_project }}")</script>
 
   {% endfor %}
 
