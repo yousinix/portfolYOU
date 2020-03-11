@@ -45,6 +45,10 @@ author:
 # youtube           : your_channel_name
 
 
+### Disqus ###
+disqus: rribeiro1-github-io                             # Comment if you want to disable disqus
+
+
 ### Posts ###
 permalink: /blog/:title
 
@@ -70,6 +74,11 @@ defaults:
       type: "elements"                                  # For Documentation Only
     values:                                             # For Documentation Only
       layout: "element"                                 # For Documentation Only
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
 
 
 ### Exclude from processing ###
