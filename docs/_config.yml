@@ -46,7 +46,7 @@ author:
 
 
 ### Disqus ###
-disqus: rribeiro1-github-io                             # Comment if you want to disable disqus
+disqus: your-short-name-disqus                          # Your website Shortname on disqus
 
 
 ### Posts ###
@@ -78,7 +78,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      comments: true
+      comments: true                                    # Set false to disable comments
 
 
 ### Exclude from processing ###
