@@ -29,3 +29,9 @@ layout: page
 </p>
 
 {{ content }}
+
+{% if page.comments %}
+<div class="pt-5">
+  {% include blog/disqus.html %}
+</div>
+{% endif %}

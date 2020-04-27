@@ -58,6 +58,10 @@ collections:
     output: true                                        # For Documentation Only
 
 
+### Disqus ###
+disqus: your-short-name-disqus                          # Your website Shortname on disqus
+
+
 ### Defaults for collections ###
 defaults:
   - scope:
@@ -70,7 +74,11 @@ defaults:
       type: "elements"                                  # For Documentation Only
     values:                                             # For Documentation Only
       layout: "element"                                 # For Documentation Only
-
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
 
 ### Exclude from processing ###
 exclude:

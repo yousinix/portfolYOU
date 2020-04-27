@@ -23,6 +23,7 @@ author:
 
 ### Posts ###
 permalink: /blog/:title
+disqus: short-name-disqus
 
 
 ### Collections ###
@@ -46,7 +47,11 @@ defaults:
       type: "elements"
     values:
       layout: "element"
-
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
 
 plugins:
   - jekyll-default-layout
