@@ -1,4 +1,5 @@
 ### Site Settings ###
+title               : PortfolYOU
 source              : ../
 collections_dir     : docs
 data_dir            : docs/_data

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
 
-  <title>{{ site.title }}</title>
+  <title>{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</title>
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 
   <!-- Font Awesome CDN -->
