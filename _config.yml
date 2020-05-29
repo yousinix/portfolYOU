@@ -1,10 +1,9 @@
 ### Site Settings ###
 title               : ashhadsheikh
-description         : >-
-                      "I’m a Software Engineer based in Islamabad, Pakistan who loves creating apps for web and mobile."
+description         : I love pursuing beauty and elegance in everything I do.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : ashhadsheikh/ashhadsheikh.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : ashhadsheikh/ashhadsheikh.github.io
+remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
 ### Plugins ###
@@ -23,25 +22,12 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Ashhad Sheikh
-  image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
-# dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
+  image             : assets/images/ashhad.jpeg
+  email             : ashhadsheikh@hotmail.com
+  github            : ashhadsheikh
+  linkedin          : ashhadsheikh
+  # medium            : your_username
+  twitter           : AshhadDev
 
 
 ### Posts ###
