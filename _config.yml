@@ -1,6 +1,6 @@
 ### Site Settings ###
 title               : ashhadsheikh
-description         : I love pursuing beauty and elegance in everything I do.
+description         : I love pursuing beauty and elegance in everything I do. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch. Schedule a <a href='https://calendly.com/ashhadsheikh'>meeting</a>.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : ashhadsheikh/ashhadsheikh.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -22,7 +22,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Ashhad Sheikh
-  image             : assets/images/ashhad.jpeg
+  image             : assets/images/ashhad-thumbnail.jpeg
   email             : ashhadsheikh@hotmail.com
   github            : ashhadsheikh
   linkedin          : ashhadsheikh

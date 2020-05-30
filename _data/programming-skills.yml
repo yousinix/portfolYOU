@@ -1,11 +1,11 @@
-- name: HTML5/CSS3
+- name: Go
   percentage: 90
   color: danger
 
-- name: Go
+- name: Ruby on Rails
   percentage: 80
-  color:
+  color: 
 
-- name: Python
-  percentage: 70
+- name: Javascript - React | Vue | Angular
+  percentage: 80
   color: dark

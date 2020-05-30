@@ -1,17 +1,24 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: HireNinja / Luminary Media.
+  from: Jan, 2019
+  to: Present
+  description: Working for a client named Luminary Media which is a subscription based podcasting platform operating in 7 countries globally, I'm a part of payments team here which manages subscriptions across Play store, App Store and Zuora. We've recently mved from monolithic application to SOA and I wrote separate services for Payments and Search. Apart from this I'm also involved in opex squads which works in achieving operational excellence and maintaining overall system health.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Keeptruckin Inc.
+  from: Jan, 2017
+  to: May, 2018
+  description: Was involved in designing and developing highly distributed Ruby on Rails web platform. Developed Rest APIs and data models to support core product features, Integrated core product with Salesforce CRM and Zuora Subscription Management platform for better sales and support to client and Developed dashboard and reports using Looker for internal teams to proactively identify potential problems in system.
+
+- title: Techlogix Pvt Ltd.
+  from: June, 2016
+  to: Jan, 2017
+  description: Worked on a Campus Management software named Campus on Cloud, where I designed ETL jobs using Pentaho for migrating client's legacy data and developed 360-degree view dashboards for system using Power BI.
+
+- title: PLUMgrid Inc (Acquired by VMware)
+  from: Jan, 2016
+  to: May, 2016
+  description: Worked with Openstack Pakistan Team on deployment of Openstack clouds on Amazon and Azure
+
+- title: Student, FAST-NU Islamabad
+  from: 2012
+  to: 2016
+  description: Bachelor's in Computer Sciences, I got graduated with a title of <a href='http://www.nu.edu.pk/dv?id=12I-0394'>Magna Cum Laude</a>

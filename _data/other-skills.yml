@@ -1,7 +1,15 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
-
-- name: Adobe Illustrator
+- name: Subscription Management
   percentage: 90
   color: success
+
+- name: Cloud Administration
+  percentage: 80
+  color: danger
+
+- name: Data Analytics
+  percentage: 70
+  color: info
+
+- name: Salesforce
+  percentage: 65
+  color: 
