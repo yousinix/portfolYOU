@@ -23,8 +23,9 @@ author:
 
 ### Posts ###
 permalink: /blog/:title
-disqus: short-name-disqus
 
+disqus:
+  shortname: your-disqus-shortname
 
 ### Collections ###
 collections:
