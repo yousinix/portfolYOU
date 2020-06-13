@@ -1,9 +1,9 @@
 ### Site Settings ###
 title               : portfolYOU
 description         : >-
-                      "I turn coffee :coffee: into code,
+                      I turn coffee :coffee: into code,
                       use tabs over spaces
-                      and never broke production."
+                      and never broke production.
 baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
