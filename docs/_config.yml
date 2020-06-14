@@ -63,6 +63,13 @@ collections:
 disqus: your-short-name-disqus                          # Your website Shortname on disqus
 
 
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
 ### Defaults for collections ###
 defaults:
   - scope:

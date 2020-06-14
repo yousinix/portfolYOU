@@ -35,6 +35,13 @@ collections:
     output: true
 
 
+### Analytics ###
+analytics:
+  enabled: true
+  google:
+    tracking_id: google-tracking-id
+
+
 ### Defaults for collections ###
 defaults:
   - scope:
