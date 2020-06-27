@@ -9,7 +9,7 @@ Simply **override** the file you want to change by matching the **same file name
 
 **Example 2:** Custom Style
 
-1. Create **`assets/css/styles.scss`**.
+1. Create **`assets/css/style.scss`**.
 1. Add the following lines:
 
     ```css
