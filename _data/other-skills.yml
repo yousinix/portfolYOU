@@ -6,7 +6,7 @@
   percentage: 90
   color: success
 
--name: Django
+- name: Django
  percentage: 70
 
 - name: Docker
