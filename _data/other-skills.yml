@@ -1,7 +1,13 @@
-- name: Adobe Photoshop
-  percentage: 95
+- name: PyTorch
+  percentage: 90
   color: info
 
-- name: Adobe Illustrator
+- name: TensorFlow
   percentage: 90
   color: success
+
+-name: Django
+ percentage: 70
+
+- name: Docker
+ percentage: 70
