@@ -1,5 +1,5 @@
 ### Site Settings ###
-title               : Portfolio
+title               : Home
 description         : >-
                       I turn coffee :coffee: into code,
                       use tabs over spaces.
@@ -17,14 +17,13 @@ plugins:
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
   - pages/404.html
-  - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
+  - pages/index.md                        # For Documentation Only
 
 
 ### Author Info ###
 author:
   name              : Jayrajsinh Parmar
-  image             : ./image/jayraj3.png
+  image             : ./image/super_resolution.jpg
 #  behance           : your_username
 # dribbble          : your_username
   email             : jayrajvp18@gmail.com
@@ -54,8 +53,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
+  # elements:                                             # For Documentation Only
+  #   output: true                                        # For Documentation Only
 
 
 ### Disqus ###
@@ -76,11 +75,11 @@ defaults:
       type: "projects"
     values:
       layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
+  # - scope:                                              # For Documentation Only
+  #     path: ""                                          # For Documentation Only
+  #     type: "elements"                                  # For Documentation Only
+  #   values:                                             # For Documentation Only
+  #     layout: "element"                                 # For Documentation Only
   # - scope:
   #     path: ""
   #     type: "posts"
