@@ -1,8 +1,8 @@
 ---
-name: Mater Thesis
+name: Autonomous Car
 tools: [Python, OpenAI Gym, Stable-Baselines]
 #image: ![][thesis/r_1.JPG]
-description: Deep Reinforcement Learning for Path following and Obstacle avoidance. The car follow given the given path.
+description: Master thesis - Deep Reinforcement Learning for Path following and Obstacle avoidance. The car follow given the given path.
 ---
 
 # The Deep Reinforcement Learning Project
