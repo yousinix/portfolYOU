@@ -90,3 +90,8 @@ youtube:
   url   : https://www.youtube.com/
   icon  : fab fa-youtube
   color : ff0000
+
+keybase:
+  url   : https://www.keybase.io/
+  icon  : fab fa-keybase
+  color : 66ccff
