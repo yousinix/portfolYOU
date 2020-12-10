@@ -1,7 +1,9 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ project_url }}" class="project card text-dark">
     {%- if project_img -%}
-    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    <div class="card-image">
+      <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    </div>
     {%- endif -%}
     <div class="card-body">
       <h5 id="{{ project_id }}-name" class="card-title">

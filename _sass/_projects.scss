@@ -2,8 +2,12 @@
   border-radius: $rounded-borders;
   text-decoration: none !important;
   margin: 10px auto;
-
+  .card-image {
+    width:100%;
+    text-align:center;
+  }
   .card-img-top {
+    max-width:90px;
     border-radius: $rounded-borders $rounded-borders 0 0;
   }
 
