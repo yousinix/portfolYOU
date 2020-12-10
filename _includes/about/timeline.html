@@ -1,13 +1,26 @@
 <div class="col mt-4">
-  <div class="timeline-body">
+  <ul class="timeline timeline-centered">
     {% for item in site.data.timeline %}
-      <div class="timeline-item">
-        <div class="content">
-          <h2>{{ item.title }}</h2>
-          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          <p>{{ item.description }}</p>
+      {% if item.title %}
+        <li class="timeline-item timeline-item-{{ item.type | default:'left' }}">
+          <div class="timeline-info">
+            <span>{{ item.date }}</span>
+          </div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </li>
+      {% else %}
+      <li class="timeline-item period">
+        <div class="timeline-info"></div>
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h2 class="timeline-title">{{item.date}}</h2>
         </div>
-      </div>
+      </li>
+      {% endif %}
     {% endfor %}
-  </div>
+  </ul>
 </div>

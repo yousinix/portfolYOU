@@ -1,6 +1,5 @@
 - title: Student, Harvard CS
-  from: 2014
-  to: 2018
+  date: 2008. 11.
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -8,8 +7,7 @@
                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 - title: Software Engineer, Google, UK
-  from: 2018
-  to: present
+  date: 2008. 12.
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
