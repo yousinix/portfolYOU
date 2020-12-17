@@ -8,6 +8,7 @@
 - **Automatic** importing for **GitHub Repositories** as Projects.
 - **Search** posts by title, tags or descriptions.
 - **Tags archive** for posts.
+- Disqus support for blog posts.
 - Skills progress bars and education/experience timeline.
 - Support large number of **social networks**.
 - Quick including for various [elements][elements] as videos, lists, figures, buttons and many more.
