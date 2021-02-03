@@ -16,6 +16,8 @@ We believe in clean design and having the highest standards for our code. By wor
 {% include about/skills.html title="Our Ancillary Skills" source=site.data.other-skills %}
 </div>
 
+# **Our Experience ** 
+
 <div class="row">
-{% include about/timeline.html title="Our Experience" %}
+{% include about/timeline.html %}
 </div>
