@@ -1,15 +1,15 @@
 - name: Adobe Photoshop
   percentage: 95
-  color: info
+  color: warning
 
 - name: Adobe Illustrator
   percentage: 90
-  color: success
+  color: danger
 
 - name: Power BI
   percentage: 85
-  color: #cccccc
+  color: info
 
 - name: MS Office
   percentage: 80
-  color: green
+  color: 

@@ -1,27 +1,27 @@
 - name: HTML5/CSS3
   percentage: 95
-  color: 
+  color: success
 
 - name: JavaScript/TypeScript
   percentage: 90
-  color: danger
+  color: secondary
 
 - name: Cloud Services (Azure, Google, AWS)
   percentage: 85
-  color: 
+  color: warning
 
 - name: React Native & React
   percentage: 80
-  color:
+  color: danger
 
 - name: Big Data & Machine Learning 
   percentage: 75
-  color: 
+  color: info
 
 - name: C#
   percentage: 70
-  color: green
+  color: 
 
 - name: C/C++
   percentage: 60
-  color: dark
+  color: secondary
