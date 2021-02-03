@@ -17,6 +17,6 @@ We believe in clean design and having the highest standards for our code. By wor
 </div>
 
 <div class="row">
-# **Our Experience**
+## **Our Experience**
 {% include about/timeline.html %}
 </div>
