@@ -13,7 +13,7 @@ We believe in clean design and having the highest standards for our code. By wor
 
 <div class="row">
 {% include about/skills.html title="Our Development Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Ancillary Skills" source=site.data.other-skills %}
+{% include about/skills.html title="Our Ancillary Skills" source=site.data.other-skills %}
 </div>
 
 <div class="row">
