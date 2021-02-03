@@ -1,11 +1,27 @@
 - name: HTML5/CSS3
+  percentage: 100
+  color: 
+
+- name: JavaScript/TypeScript
   percentage: 90
   color: danger
 
-- name: Go
+- name: Secure Cloud Solutions (Azure, Google, AWS)
+  percentage: 85
+  color: 
+
+- name: React Native & React
   percentage: 80
   color:
 
-- name: Python
+- name: Big Data & Machine Learning Algorithms
+  percentage: 75
+  color: 
+
+- name: C#
   percentage: 70
+  color: navy
+
+- name: C
+  percentage: 60
   color: dark

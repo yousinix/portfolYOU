@@ -5,3 +5,7 @@
 - name: Adobe Illustrator
   percentage: 90
   color: success
+
+- name: Power BI
+  percentage: 80
+  color: yellow
