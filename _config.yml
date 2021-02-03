@@ -2,7 +2,7 @@
 title               : HiveCraft
 description         : >-
                       We turn coffee :coffee: into code,
-                      use tabs over spaces
+                      use tabs over spaces, 
                       and never break production.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : HiveCrafted/portfolio     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
