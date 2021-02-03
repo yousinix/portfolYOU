@@ -4,7 +4,7 @@
 
 - name: JavaScript/TypeScript
   percentage: 90
-  color: secondary
+  color: 
 
 - name: Cloud Services (Azure, Google, AWS)
   percentage: 85
@@ -20,8 +20,8 @@
 
 - name: C#
   percentage: 70
-  color: 
+  color: secondary
 
 - name: C/C++
   percentage: 60
-  color: secondary
+  color: light
