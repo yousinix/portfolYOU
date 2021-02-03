@@ -6,7 +6,7 @@
   percentage: 90
   color: danger
 
-- name: Secure Cloud Solutions (Azure, Google, AWS)
+- name: Cloud Solutions (Azure, Google, AWS)
   percentage: 85
   color: 
 
@@ -14,13 +14,13 @@
   percentage: 80
   color:
 
-- name: Big Data & Machine Learning Algorithms
+- name: Big Data & Machine Learning 
   percentage: 75
   color: 
 
 - name: C#
   percentage: 70
-  color: navy
+  color: green
 
 - name: C
   percentage: 60
