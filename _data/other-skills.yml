@@ -8,4 +8,8 @@
 
 - name: Power BI
   percentage: 85
-  color: yellow
+  color: #cccccc
+
+- name: MS Office
+  percentage: 80
+  color: green
