@@ -5,11 +5,11 @@ permalink: /about/
 weight: 3
 ---
 
-## **About Me**
+## **About Us**
 
 Hi, we are **{{ site.author.name }}** :wave:,<br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We believe in clean design and having the highest standards for our code. With decades of development experience between us, we can help your company or organization to fulfill project goals and rapidly prototype innovative solutions custom fit to your needs.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
