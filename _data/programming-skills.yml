@@ -6,7 +6,7 @@
   percentage: 90
   color: danger
 
-- name: Cloud Solutions (Azure, Google, AWS)
+- name: Cloud Services (Azure, Google, AWS)
   percentage: 85
   color: 
 
@@ -22,6 +22,6 @@
   percentage: 70
   color: green
 
-- name: C
+- name: C/C++
   percentage: 60
   color: dark
