@@ -9,7 +9,7 @@ description: Hive Journal is an immersive journaling and productivity app create
 
 The Movies Project is something like **Netflix**, the only difference is that **it's not real**! It doesn't exist! I just created it to demonstrate how the **showcase** page looks like and how you can write whatever you want with full markdown support.
 
-![preview](https://github.com/HiveCrafted/portfolio/raw/65e56184ab28672cdd31f2d3b79dfc6851fa1cb7/assets/hivejournal-logo-horizontal.png)
+[![preview](https://github.com/HiveCrafted/portfolio/raw/65e56184ab28672cdd31f2d3b79dfc6851fa1cb7/assets/hivejournal-logo-horizontal.png)](https://hivejournal.com/download)
 
 ## Hive Journal Website
 
