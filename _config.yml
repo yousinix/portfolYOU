@@ -49,7 +49,7 @@ author:
 
 
 ### Posts ###
-# permalink: /blog/:title
+permalink: /blog/:title
 
 
 ### Collections ###
