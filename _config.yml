@@ -2,8 +2,11 @@
 title               : HiveCraft
 description         : >-
                       We are obsessed with helping people bring great ideas to life.
-                      <br>
-                      Let's talk about yours over a virtual :coffee:
+
+
+                      Let's talk about yours over a virtual coffee.
+
+                      :coffee:
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : HiveCrafted/portfolio     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
