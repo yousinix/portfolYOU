@@ -1,11 +1,11 @@
 ---
 name: HabitForge
-tools: [ruby on rails, mysql]
+tools: [Ruby on Rails, SQL]
 image: https://github.com/HiveCrafted/portfolio/raw/master/assets/ProjectHabitforge1.png
 description: Top 10 Productivity App "HabitForge" (200k users, listed many times as a Top 10 Productivity App during 7-year lifespan)
 ---
 
-# HabitForge 
+# HabitForge
 
 Sandon created a free "positive habit formation" application used by over 200k people during its 6 year lifespan. Leveraging open source Ruby on Rails and mysql, users logged over 2 Million+ successful days of habit-building. It was often listed in the top 5-10 productivity apps, and was featured by authors in print and web magazines: 
 
