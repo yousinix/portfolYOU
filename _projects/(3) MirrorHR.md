@@ -2,7 +2,7 @@
 name: MirrorHR
 tools: [iOS, Apple Watch, Azure, Power BI]
 image: https://github.com/HiveCrafted/portfolio/raw/master/assets/MirrorHR-Devices.jpg
-description: Microsoft's 2019 Garage-sponsored Hackathon winning project covered by Forbes. An iOS/Apple Watch app with data dashboard that alerts caregivers of children with epilepsy when seizure activity is detected.
+description: Microsoft's 2019 Garage-sponsored Hackathon winning project covered by Forbes. MirrorHR is an iOS/Apple Watch app with data dashboard that helps caregivers of children with epilepsy detect seizure activity.
 ---
 
 # MirrorHR
