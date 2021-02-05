@@ -9,6 +9,7 @@ description: Hive Journal is an immersive journaling and productivity app create
 
 ###### *Hive Journal is our ongoing obsession to create the best journaling experience on the planet.*
 
+<br />
 
 #### Lightning-Fast and Secure
 Capture ideas at the speed of thought, secured by industry leading double-encryption.
@@ -16,18 +17,21 @@ Capture ideas at the speed of thought, secured by industry leading double-encryp
 [![preview](https://github.com/HiveCrafted/portfolio/raw/master/assets/ProjectHiveJournalScreens1.png)](https://hivejournal.com/download)
 
 
+<br />
 
 #### Beautiful and Intuitive
 Hand picked journal covers, breathtaking backgrounds and one-of-a-kind handwritten fonts.
 
 [![preview](https://github.com/HiveCrafted/portfolio/raw/master/assets/ProjectHiveJournalScreens3.png)](https://hivejournal.com/download)
 
+<br />
 
 #### Insightful with Tone-Generated Visuals
 Intelligent AI with tone analysis of your writing, represented with engaging visuals. Hive Journal has integrations with Spotify, IBM Watson, Google Transcription, and Twilio.
 
 [![preview](https://github.com/HiveCrafted/portfolio/raw/master/assets/ProjectHiveJournalScreens2.png)](https://hivejournal.com/download)
 
+<br />
 
 #### Everywhere you need it: Mobile or Browser
 Synced across your iOS devices. On your laptop? Create long-form entries via our minimalistic web app.
