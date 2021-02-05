@@ -4,7 +4,7 @@ tools: [iOS, React Native, TypeScript, MongoDB, Firebase, Swift]
 image: https://github.com/HiveCrafted/portfolio/raw/master/assets/hivejournal-logo.png
 description: Hive Journal is an immersive journaling and productivity app created for iOS.
 ---
-<!-- 
+
 # Hive Journal
 
 ### *Hive Journal is our ongoing obsession to create the best journaling experience on the planet.*
@@ -36,4 +36,4 @@ Intelligent AI with tone analysis of your writing, represented with engaging vis
 
 <p class="text-center">
 {% include elements/button.html link="https://hivecrafted.com/projects/" text="View More" %}
-</p> -->
+</p>
