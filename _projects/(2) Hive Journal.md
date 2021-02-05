@@ -7,7 +7,7 @@ description: Hive Journal is an immersive journaling and productivity app create
 
 # Hive Journal
 
-### *Hive Journal is our ongoing obsession to create the best journaling experience on the planet.*
+##### *Hive Journal is our ongoing obsession to create the best journaling experience on the planet.*
 
 #### Lightning-Fast and Secure
 Capture ideas at the speed of thought, secured by industry leading double-encryption.
