@@ -13,3 +13,6 @@ Gemfile.lock
 
 # OSX Finder
 .DS_Store
+
+# VS Code
+.vscode/
