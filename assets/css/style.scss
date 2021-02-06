@@ -10,12 +10,14 @@ body {
 }
 
 #companies-div {
-    width: 100% !important;
+    min-width: 100% !important;
     align-content: center !important;
     overflow: hidden !important;
     position: absolute !important;
-    top: 70vh !important;
+    top: 70% !important;
     display: block !important;
+    left: -20vw !important;
+    right: auto !important;
 }
 
 #companies {
