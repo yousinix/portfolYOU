@@ -16,8 +16,9 @@ body {
     left: -15vw !important;
     padding: 0 !important;
     margin: 0 !important;
-    display: inline-block !important;
+    display: block !important;
     background-color: rgba(0, 0, 0, 0);
+    position: fixed !important;
 }
 
 @import "portfolYOU";
