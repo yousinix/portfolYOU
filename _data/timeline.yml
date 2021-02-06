@@ -1,70 +1,17 @@
-- title: Senior Software Engineer @ Northwestern Mutual (Milwaukee, CA)
-  from: 2020
-  description:  Collaborated across teams to develop a lab document recognition system 
-                leveraging open-source OCR libraries. Developed API endpoints in node 
-                to interact with redis caching.
-                <br />
-                <br />
-                React, mysql, docker, kubernetes, redis, GraphQL, 
-                javascript, typescript, build pipelines. 
-
-- title: Solution Architect, Principal Software Engineer, VP of Technology @ VolunteerCrowd (Irvine, CA)
-  from: 2018
-  to: 2020
-  description:  Led a diverse team of talented engineers from Cuba, China and the U.S.  Architected 
-                multi-tier integrated systems using Azure, React Native (iOS) and React Web, integrated
-                with Salesforce. 
-                <br />
-                Collaboratively architected, developed and deployed MVPs for Web and Mobile using React.js 
-                and React Native. 
-                <br />
-                Recruited talent to convert React web to include Server Side Rendering (for SEO).
-                <br />
-                Co-developed new iOS mobile app using React Native w/ APNs push notifications, Maps integration, 
-                directory search, API consumption, OAuth.io email and social sign-in integration, social media 
-                sharing, "likes" and "subscriptions" tracking. 
-                <br />
-                Led design of proxy API and Azure SQL caching layer, Azure linux web servers, app gateways and 
-                firewalls, DevOps deployment pipelines, alerts and logging.
-
-- title: Principal Software Engineer, Creator/Owner @ Point Seven Studios
-  from: 2018
-  to: 2021
-  description:  Funded and co-developed the free HiveJournal iOS app, a fast, simple, elegant and secure journaling app created to improve the mental health of anyone, especially those with autism.
-                <br />
-                Collaborated with developers in India, Bangladesh and China using React, React Native (iOS), and integrations with IBM Watson (tone and personality analysis), Spotify (listening tone\/mood analysis), Google Firebase, MongoDB Atlas and Twilio SMS. 
-                <br />
-                Worked with several startups on UpWork to create Web and Mobile applications and backend APIs. 
-                <br />
-                Led technical development teams with members from Russia, China and Japan, serving as software engineer, scrum master and project manager.
-                <br />
-                Leveraged technologies such as React, React Native, FHIR, NativeScript, AWS, Google Firebase, Azure, mongodb, mysql.
-
-- title: Assistant Director, Enterprise Research Information Systems @ University of California, San Diego
+- title: Student, Harvard CS
   from: 2014
   to: 2018
-  description:  Led a diverse team of developers from India, China and the U.S. to develop and support services for UC San Diego's $1Billion Sponsored Research Enterprise.
-                <br />
-                Facilitated inclusive conversations among developers and stakeholders to make sure that all points of view were heard and considered when making decisions. 
-                <br />
-                Collaborated across business and technical teams to architect solutions for enterprise integrations. 
-                <br />
-                Served as Project Manager for several development projects, ensuring timely communication between development teams and stakeholders in support of pre-award, post-award and compliance aspects of sponsored research lifecycle.
-                <br />
-                Working with our financial business clients, we were honored to receive the UC System's Sautter Award for our collaboration's impact on recovering lost award revenues.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-- title: Principal Software Engineer, Creator/Owner @ HabitForge
-  from: 2009
-  to: 2016
-  description:  Created a free "positive habit formation" application used by over 200k people during its 6 year lifespan, logging over 2 Million+ successful days.
-                <br />
-                Leveraging open source Ruby on Rails and mysql, it was often listed in the top 5-10 productivity apps, and was featured by authors in print and web magazines,
-                <br />
-                PCWorld, LifeHacker, Forbes.com, WebPsychology, Family Circle, Shape, 4 Hour Body, Fast Company and others.
-
-- title: Senior Software Engineer and IT Director @ University of Wisconsin
-  from: 2000
-  to: 2014
-  description:  Led an IT team that aided in collaborative research, education and health care at a top 5 sponsored research institution.
-                <br />
-                Worked with researchers and physicians to create custom web apps using Ruby on Rails, PHP and .Net for Clinical Data Dashboards, Partnerships for Childhood Fitness, and Seatbelt Installation Management.
+- title: Software Engineer, Google, UK
+  from: 2018
+  to: present
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
