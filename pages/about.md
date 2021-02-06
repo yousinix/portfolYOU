@@ -18,11 +18,10 @@ We believe in clean design and having the highest standards for our code. By wor
 
 # Maki Roggers
 <div class="row">
-Testing dual-files, broke for now: include timeline-maki.html
-<!-- {% include timeline-maki.html %} -->
+{% include about/timeline.html title="Maki Roggers" source=site.data.timeline-maki %}
 </div>
 
 # Sandon Jurowski
 <div class="row">
-{% include about/timeline.html %}
+{% include about/timeline.html title="Sandon Jurowski" source=site.data.timeline-sandon %}
 </div>
