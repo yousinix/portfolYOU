@@ -18,10 +18,11 @@ We believe in clean design and having the highest standards for our code. By wor
 
 # Maki Roggers
 <div class="row">
-{% include timeline-maki.html %}
+Testing dual-files, broke for now: include timeline-maki.html
+<!-- {% include timeline-maki.html %} -->
 </div>
 
 # Sandon Jurowski
 <div class="row">
-{% include timeline-sandon.html %}
+{% include about/timeline.html %}
 </div>
