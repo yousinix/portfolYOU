@@ -7,9 +7,7 @@ description         : >-
                       <br>
                       Let's talk about yours over coffee. :coffee:
                       <br>
-                      <div id="companies-div">
-                        <img id="companies" src="https://github.com/HiveCrafted/portfolio/raw/master/assets/HiveCraftAvatars.png">
-                      </div>
+                      <img id="companies" src="https://github.com/HiveCrafted/portfolio/raw/master/assets/HiveCraftAvatars.png">
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : HiveCrafted/portfolio     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU

@@ -9,7 +9,8 @@ body {
     visibility: hidden !important;
 }
 
-#companies-div {
+#companies {
+    max-width: 60vw !important;
     overflow-x: hidden !important;
     overflow-y: scroll !important;
     left: -15vw !important;
@@ -17,12 +18,6 @@ body {
     margin: 0 !important;
     display: inline-block !important;
     background-color: rgba(0, 0, 0, 0);
-}
-
-#companies {
-    max-width: 60vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
 
 @import "portfolYOU";
