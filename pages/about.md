@@ -18,10 +18,10 @@ We believe in clean design and having the highest standards for our code. By wor
 
 # Maki Roggers
 <div class="row">
-{% include about/timeline-maki.html %}
+{% include timeline-maki.html %}
 </div>
 
 # Sandon Jurowski
 <div class="row">
-{% include about/timeline-sandon.html %}
+{% include timeline-sandon.html %}
 </div>
