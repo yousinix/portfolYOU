@@ -18,7 +18,7 @@ We believe in clean design and having the highest standards for our code. By wor
 
 # Maki Roggers
 <div class="row">
-{% include about/timeline-maki.html title="Maki Roggers" source=site.data.timeline-maki %}
+{% include about/timeline.html title="Maki Roggers" source=site.data.timeline-maki %}
 </div>
 
 # Sandon Jurowski

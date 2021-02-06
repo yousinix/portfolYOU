@@ -94,6 +94,3 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-
-include:
-  - "*/timeline*"
