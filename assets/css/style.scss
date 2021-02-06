@@ -3,6 +3,7 @@
 
 body {
     background-color: #f4f3ef !important;
+    overflow-x: hidden !important;
 }
 
 #attribution {
@@ -16,7 +17,6 @@ body {
     margin: 0 !important;
     display: block !important;
     background-color: transparent !important;
-    position: fixed !important;
     max-width: 140% !important;
 }
 
