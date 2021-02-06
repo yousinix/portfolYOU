@@ -9,8 +9,12 @@ body {
     visibility: hidden !important;
 }
 
+#companies-div {
+    max-width: 100% !important;
+    align-content: center !important;
+}
+
 #companies {
-    margin-left: -200px !important;
     max-width: 60vw !important;
 }
 
