@@ -12,9 +12,9 @@ body {
 #companies-div {
     min-width: 100% !important;
     align-content: center !important;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
     position: absolute !important;
-    top: 70% !important;
     display: block !important;
     left: -20vw !important;
     right: auto !important;
