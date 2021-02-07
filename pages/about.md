@@ -16,12 +16,7 @@ We believe in clean design and having the highest standards for our code. By wor
 {% include about/skills.html title="Our Ancillary Skills" source=site.data.other-skills %}
 </div>
 
-# Maki Roggers
+# Our Experience
 <div class="row">
-{% include about/timeline.html title="Maki Roggers" source=site.data.timeline-maki %}
-</div>
-
-# Sandon Jurowski
-<div class="row">
-{% include about/timeline.html title="Sandon Jurowski" source=site.data.timeline-sandon %}
+{% include about/timeline.html title="Our Experience" source=site.data.timeline %}
 </div>
