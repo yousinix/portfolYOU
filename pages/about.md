@@ -15,15 +15,9 @@ Whether you are starting a small or large project from scratch, or if you are lo
 
 Leveraging agile software development methodologies, we work closely with you to design, develop, and deploy solutions that are scalable, flexible, and secure.
 
-### Expertise in all modern front-end and back-end technologies.
-### Leveraging Agile Software Development Methodologies.
-MOBILE & IOT SOLUTIONS BUILT IN ANDROID, IOS, OR REACT NATIVE
-
-| Development | Design | Cloud | Data |   |
-|-------------|--------|-------|------|---|
-| a2          | b2     | c2    | d2   |   |
-| a3          | b3     | c3    | d3   |   |
-|             |        |       |      |   |
+| Development                                                                          | Design                                                             | Cloud                                                                           | Data                                                                                     |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| - HTML5/CSS3<br>- JavaScript/TypeScript<br>- React & React Native<br>- C#<br>- C/C++ | - Adobe Photoshop<br>- Adobe Illustrator<br>- Sketch<br>- Invision | - Microsoft Azure<br>- Google Cloud<br>- Amazon AWS<br>- IBM Watson<br>- Twilio | - SQL<br>- MongoDB Atlas<br>- Firebase<br>- PowerBI<br>- CosmosDB<br>- Excel Power Query |
 
 <div class="row">
 {% include about/skills.html title="Our Development Skills" source=site.data.programming-skills %}
