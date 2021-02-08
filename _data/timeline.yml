@@ -1,6 +1,6 @@
 - title: Maki Roggers
   from: Co-Founder
-  to: Software Engineer
+  to: Senior Software Engineer
   description:  Collaborated across teams to develop a lab document recognition system 
                 leveraging open-source OCR libraries. Developed API endpoints in node 
                 to interact with redis caching.
@@ -11,11 +11,7 @@
 
 - title: Sandon Jurowski
   from: Co-Founder
-  to: Software Engineer
-  description:  Collaborated across teams to develop a lab document recognition system 
-                leveraging open-source OCR libraries. Developed API endpoints in node 
-                to interact with redis caching.
-                <br />
-                <br />
-                React, mysql, docker, kubernetes, redis, GraphQL, 
-                javascript, typescript, build pipelines. 
+  to: Principal Software Engineer
+  description:  I'm a full-stack engineer with over 20 years of experience as an app developer, 
+                team lead, systems administrator, technology director and app development manager. 
+                I have a passion for building software solutions, and being a bridge between people and technology.
