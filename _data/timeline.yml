@@ -1,17 +1,15 @@
 - title: Maki Roggers
   from: Co-Founder
   to: Senior Software Engineer
-  description:  Collaborated across teams to develop a lab document recognition system 
-                leveraging open-source OCR libraries. Developed API endpoints in node 
-                to interact with redis caching.
-                <br />
-                <br />
-                React, mysql, docker, kubernetes, redis, GraphQL, 
-                javascript, typescript, build pipelines. 
+  description:  <a href="https://www.linkedin.com/in/makiroggers/" target="_blank" >Maki Roggers</a> is a Microsoft 
+                hackathon-award-winning software engineer with a passion for creating simple, elegant solutions that 
+                are highly impactful.
+
 
 - title: Sandon Jurowski
   from: Co-Founder
   to: Principal Software Engineer
-  description:  <a href="https://www.linkedin.com/in/jurowski/" target="_blank" >Sandon Jurowski</a> is a full-stack engineer with over 20 years of experience as an app developer, 
-                team lead, systems administrator, technology director and app development manager. 
-                I have a passion for building software solutions, and being a bridge between people and technology.
+  description:  <a href="https://www.linkedin.com/in/jurowski/" target="_blank" >Sandon Jurowski</a> is a full-stack 
+                engineer with over 20 years of experience as an app developer, team lead, systems administrator, 
+                technology director and app development manager. I have a passion for building software solutions, 
+                and being a bridge between people and technology.
