@@ -15,9 +15,9 @@ Whether you are starting a small or large project from scratch, or if you are lo
 
 Leveraging agile software development methodologies, we work closely with you to design, develop, and deploy solutions that are scalable, flexible, and secure.
 
-| Development                                                                          | Design                                                             | Cloud                                                                           | Data                                                                                     |
-|--------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| - HTML5/CSS3<br>- JavaScript/TypeScript<br>- React & React Native<br>- C#<br>- C/C++ | - Adobe Photoshop<br>- Adobe Illustrator<br>- Sketch<br>- Invision | - Microsoft Azure<br>- Google Cloud<br>- Amazon AWS<br>- IBM Watson<br>- Twilio | - SQL<br>- MongoDB Atlas<br>- Firebase<br>- PowerBI<br>- CosmosDB<br>- Excel Power Query |
+| Development                                                                          | Design                                                                             | Cloud                                                                           | Data                                                                  |
+|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| - HTML5/CSS3<br>- JavaScript/TypeScript<br>- React & React Native<br>- C#<br>- C/C++ | - Adobe Photoshop<br>- Adobe Illustrator<br>- Sketch<br>- Invision<br>- LucidChart | - Microsoft Azure<br>- Google Cloud<br>- Amazon AWS<br>- IBM Watson<br>- Twilio | - SQL<br>- Firebase<br>- PowerBI<br>- CosmosDB<br>- Excel Power Query |
 
 <!-- <div class="row">
 {% include about/skills.html title="Our Development Skills" source=site.data.programming-skills %}
