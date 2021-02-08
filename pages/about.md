@@ -19,12 +19,12 @@ Leveraging agile software development methodologies, we work closely with you to
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | - HTML5/CSS3<br>- JavaScript/TypeScript<br>- React & React Native<br>- C#<br>- C/C++ | - Adobe Photoshop<br>- Adobe Illustrator<br>- Sketch<br>- Invision | - Microsoft Azure<br>- Google Cloud<br>- Amazon AWS<br>- IBM Watson<br>- Twilio | - SQL<br>- MongoDB Atlas<br>- Firebase<br>- PowerBI<br>- CosmosDB<br>- Excel Power Query |
 
-<div class="row">
+<!-- <div class="row">
 {% include about/skills.html title="Our Development Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Our Ancillary Skills" source=site.data.other-skills %}
-</div>
+</div> -->
 
-# Our Experience
+# About Us
 <div class="row">
 {% include about/timeline.html title="Our Experience" source=site.data.timeline %}
 </div>
