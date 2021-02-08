@@ -5,11 +5,25 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Us**
+# **HiveCraft**
 
-Hello! HiveCraft is a web and mobile software development consulting duo consisting of **{{ site.author.name }}**. :wave:<br>
+HiveCraft is a full-stack web, mobile and back-end software development team founded by, **{{ site.author.name }}**
 
-We believe in clean design and having the highest standards for our code. By working with us, you benefit from our decades of collective full-stack development experience. We can help your company or organization to creatively fulfill your project goals and rapidly prototype innovative solutions custom fit to your needs.
+We provide custom end-to-end development services, leveraging leading-edge cloud technologies and development frameworks as well as data analysis.
+
+Whether you are starting a small or large project from scratch, or if you are looking to augment your existing development team, HiveCraft can help.
+
+Leveraging agile software development methodologies, we work closely with you to design, develop, and deploy solutions that are scalable, flexible, and secure.
+
+### Expertise in all modern front-end and back-end technologies.
+### Leveraging Agile Software Development Methodologies.
+MOBILE & IOT SOLUTIONS BUILT IN ANDROID, IOS, OR REACT NATIVE
+
+| Development | Design | Cloud | Data |   |
+|-------------|--------|-------|------|---|
+| a2          | b2     | c2    | d2   |   |
+| a3          | b3     | c3    | d3   |   |
+|             |        |       |      |   |
 
 <div class="row">
 {% include about/skills.html title="Our Development Skills" source=site.data.programming-skills %}
