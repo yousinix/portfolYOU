@@ -1,0 +1,47 @@
+// Some overrides for dark theme
+
+@mixin theme($property, $light-value, $dark-value) {
+  .bootstrap & {
+    #{$property}: $light-value;
+  }
+
+  .bootstrap-dark & {
+    #{$property}: $dark-value;
+  }
+}
+
+// Colors
+
+.text-themed {
+  @include theme(color, $text-black, $text-white);
+}
+
+.bg-themed {
+  @include theme(background-color, $light, $dark);
+}
+
+.bg-light {
+  & * {
+    color: $text-black;
+  }
+}
+
+.bg-dark {
+  & * {
+    color: $text-white;
+  }
+}
+
+// Code blocks & Syntax highlighting
+
+.bootstrap {
+  @import "autumn.scss";
+}
+
+.bootstrap-dark {
+  @import "native.scss";
+
+  .gist {
+    filter: invert(90%) hue-rotate(180deg);
+  }
+}

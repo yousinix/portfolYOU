@@ -6,18 +6,23 @@
   https://github.com/YoussefRaafatNasry/portfolYOU
 -->
 
-<html lang="en" class="h-100">
+<html lang="en">
 
 {% include head.html %}
 
-<body class="d-flex flex-column h-100">
+<body>
 
-  <main class="flex-shrink-0 container mt-5">
-  {% include navbar.html %}
-  {{ content }}
-  </main>
+  <div id="page-wrapper" class="d-flex flex-column">
 
-  {% include footer.html %}
+    <main class="flex-shrink-0 container mt-5">
+      {% include navbar.html %}
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </div>
+
   {% include analytics.html %}
   {% include scripts.html %}
 
