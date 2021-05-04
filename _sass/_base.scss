@@ -1,8 +1,14 @@
-html{
+html {
   padding-left: calc(100vw - 100%);
 }
 
-body {
+html,
+body,
+#page-wrapper {
+  min-height: 100vh;
+}
+
+body * {
   font-family: "Poppins", sans-serif;
 }
 
