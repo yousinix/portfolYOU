@@ -3,11 +3,6 @@
   position: relative;
   overflow: hidden;
 
-  > p {
-    margin: 0;
-    font-size: 18px;
-  }
-
   &:before {
     width: 100%;
     height: 5px;
@@ -25,17 +20,6 @@
   background: $primary;
   display: block;
   position: relative;
-
-  span {
-    position: absolute;
-    border-top: 5px solid inherit;
-    top: -30px;
-    padding: 0;
-    font-size: 18px;
-    padding: 3px 0;
-    font-weight: 500;
-    right: 0;
-  }
 }
 
 .skill-bar.skill-bar-secondary {
