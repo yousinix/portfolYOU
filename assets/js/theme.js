@@ -15,10 +15,10 @@ function loadTheme() {
   if (isDark) {
     BODY.classList.remove("bootstrap");
     BODY.classList.add("bootstrap-dark");
-    THEME_TOGGLER.innerHTML = "🌙";
+    THEME_TOGGLER.innerHTML = "🌞";
   } else {
     BODY.classList.remove("bootstrap-dark");
     BODY.classList.add("bootstrap");
-    THEME_TOGGLER.innerHTML = "🌞";
+    THEME_TOGGLER.innerHTML = "🌙";
   }
 }
