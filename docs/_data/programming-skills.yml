@@ -8,4 +8,4 @@
 
 - name: Python
   percentage: 70
-  color: dark
+  color: secondary
