@@ -7,28 +7,32 @@
   {% for remote_project in page.remote_projects %}
 
     {%- for repo in site.github.public_repositories -%}
+
       {%- if remote_project == repo.name -%}
+
         {%- assign project = repo -%}
+        {%- assign words = project.name | split: '-' -%}
+        
+        {%- capture titlecase -%}
+          {%- for word in words -%}
+            {{ word | capitalize | append: ' ' }}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- assign project_type = "remote" -%}
+        {%- assign project_id   = project.name -%}
+        {%- assign project_img  = false -%}
+        {%- assign project_name = titlecase | strip -%}
+        {%- assign project_desc = project.description -%}
+        {%- assign project_url  = project.html_url -%}
+
+        {% include projects/project-card.html %}
+
+        <script>get_tools("{{ site.github.owner_name }}/{{ remote_project }}")</script>
+
       {%- endif -%}
+
     {%- endfor -%}
-
-    {%- assign words = project.name | split: '-' -%}
-    {%- capture titlecase -%}
-      {%- for word in words -%}
-        {{ word | capitalize | append: ' ' }}
-      {%- endfor -%}
-    {%- endcapture -%}
-
-    {%- assign project_type = "remote" -%}
-    {%- assign project_id   = project.name -%}
-    {%- assign project_img  = false -%}
-    {%- assign project_name = titlecase | strip -%}
-    {%- assign project_desc = project.description -%}
-    {%- assign project_url  = project.html_url -%}
-
-    {% include projects/project-card.html %}
-
-    <script>get_tools("{{ site.github.owner_name }}/{{ remote_project }}")</script>
 
   {% endfor %}
 
