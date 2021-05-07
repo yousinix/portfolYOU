@@ -2,16 +2,26 @@ html {
   padding-left: calc(100vw - 100%);
 }
 
-html,
-body,
-#page-wrapper {
-  min-height: 100vh;
-}
-
-body * {
+body {
   font-family: "Poppins", sans-serif;
 }
 
 .badge {
   font-weight: 500;
+}
+
+.bg-light,
+.badge-light {
+  &,
+  * {
+    color: $text-black !important;
+  }
+}
+
+.bg-dark,
+.badge-dark {
+  &,
+  * {
+    color: $text-white !important;
+  }
 }

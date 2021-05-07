@@ -117,7 +117,7 @@
     padding: 0 1em;
   }
 
-  table {
+  table:not(.highlight) {
     display: block;
     overflow-x: auto;
     margin: 1rem 0;
@@ -138,7 +138,7 @@
     }
 
     tr:nth-child(even) {
-      background-color: $light;
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 }
