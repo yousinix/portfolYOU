@@ -51,7 +51,7 @@
           {%- assign url = html_page.url | relative_url -%}
         {%- endif -%}
 
-        <a class="nav-item nav-link {{ active_status }}" href="{{ url }}">{{ html_page.title }}</a>
+        <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" target="_blank">{{ html_page.title }}</a>
 
       {% endfor %}
 
