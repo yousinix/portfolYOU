@@ -117,6 +117,16 @@
     padding: 0 1em;
   }
 
+  ul.task-list {
+    list-style: none;
+    padding-left: 24px;
+  }
+
+  input.task-list-item-checkbox {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
   table:not(.highlight) {
     display: block;
     overflow-x: auto;
