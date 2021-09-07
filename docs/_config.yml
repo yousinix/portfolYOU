@@ -97,6 +97,10 @@ defaults:
       path: "documentation"                             # For Documentation Only
     values:                                             # For Documentation Only
       open_new_tab: false                               # For Documentation Only
+  - scope:
+      path: ""
+    values:
+      open_new_tab: false
 
 ### Exclude from processing ###
 exclude:
