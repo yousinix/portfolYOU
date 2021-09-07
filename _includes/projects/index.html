@@ -24,6 +24,7 @@
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = project.topics -%}
+        {%- assign open_new_tab  = project.open_new_tab -%}
 
         {% include projects/project-card.html %}
 
@@ -42,6 +43,8 @@
     {%- assign project_name  = project.name -%}
     {%- assign project_desc  = project.description -%}
     {%- assign project_tools = project.tools -%}
+    {%- assign open_new_tab  = project.open_new_tab -%}
+    <!-- {%- assign open_new_tab  = true -%} -->
 
     {%- if project.external_url -%}
       {%- assign project_url = project.external_url -%}
