@@ -9,6 +9,7 @@
     title: Page Name
     permalink: /page_permalink/ (the output path for the page)
     weight: 2 (the order of the page in the navigation bar)
+    open_new_tab: true (link will open in new tab instead of replacing the current tab)
     ---
     ```
 
