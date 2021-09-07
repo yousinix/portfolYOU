@@ -7,6 +7,6 @@ Remote Projects are imported automatically from GitHub. The name, description an
 remote_projects:
   - repo-name-1
   - repo-name-2
-open_new_tab: true (applies to all remote projects)
+remote_open_new_tab: true (applies to all remote projects)
 ---
 ```
