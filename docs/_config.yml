@@ -79,7 +79,7 @@ defaults:
       type: "projects"
     values:
       layout: "page"
-      open_new_tab: false                               # For Documentation Only
+      open_new_tab: false
   - scope:                                              # For Documentation Only
       path: ""                                          # For Documentation Only
       type: "elements"                                  # For Documentation Only
