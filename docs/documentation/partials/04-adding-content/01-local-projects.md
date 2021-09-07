@@ -9,6 +9,7 @@
     tools: [Tool1, Tool2]
     image: image url or path here.
     description: Write project description here.
+    open_new_tab: true (link will open in new tab instead of replacing the current tab)
     ---
     ```
 

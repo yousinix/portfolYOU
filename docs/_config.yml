@@ -6,7 +6,7 @@ description         : >-
                       and never broke production.
 baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : Avery2/portfolYOU
+remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
 ### Plugins ###
@@ -79,6 +79,7 @@ defaults:
       type: "projects"
     values:
       layout: "page"
+      open_new_tab: false                               # For Documentation Only
   - scope:                                              # For Documentation Only
       path: ""                                          # For Documentation Only
       type: "elements"                                  # For Documentation Only
@@ -89,6 +90,7 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
+      open_new_tab: false
   - scope:
       path: "pages"
     values:
@@ -97,10 +99,6 @@ defaults:
       path: "documentation"                             # For Documentation Only
     values:                                             # For Documentation Only
       open_new_tab: false                               # For Documentation Only
-  - scope:
-      path: ""
-    values:
-      open_new_tab: false
 
 ### Exclude from processing ###
 exclude:
