@@ -1,6 +1,8 @@
 <div class="card-group mt-2">
 
   {% for post in site.posts %}
+    {%- assign open_new_tab  = post.open_new_tab -%}
+
     {% include blog/post-card.html %}
   {% endfor %}
   
