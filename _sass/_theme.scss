@@ -9,7 +9,7 @@
 }
 
 #theme-toggler:before {
-  @include themed(content, "🌙", "🌞");
+  @include themed(content, "🌙", "☀️");
 }
 
 .navbar-themed {
