@@ -73,6 +73,15 @@ analytics:
     tracking_id: your-google-tracking-id
 
 
+### Google Ads ###
+### Get your publisher ID with https://www.google.com/adsense/new/u/0/pub-your_publisher_id/settings/account-information
+### Copy the number only, without "pub-"
+ads:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    publisher_id: your-google-tracking-id
+
+
 ### Defaults for collections ###
 defaults:
   - scope:

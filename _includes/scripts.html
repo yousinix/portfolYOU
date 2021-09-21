@@ -14,6 +14,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 <script> new WOW().init(); </script>
 
+<!-- Google Ads -->
+{%- if jekyll.environment == 'production' and site.ads.enabled == true -%}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ site.ads.google.publisher_id }}"
+     crossorigin="anonymous"></script>
+{%- endif -%}
+
 <!-- Initialize all tooltips -->
 <script>
 $(function () {

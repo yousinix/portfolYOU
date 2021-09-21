@@ -1,0 +1,1 @@
+google.com, pub-{{ site.ads.google.publisher_id }}, DIRECT, f08c47fec0942fa0
