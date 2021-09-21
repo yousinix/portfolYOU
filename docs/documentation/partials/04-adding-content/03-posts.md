@@ -10,7 +10,6 @@
     style: fill / border (choose one only)
     color: primary / secondary / success / danger / warning / info / light / dark (choose one only)
     description: Write post description here, or it will be the first 25 words of the post's body.
-    open_new_tab: true (link will open in new tab instead of replacing the current tab)
     ---
     ```
 
