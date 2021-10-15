@@ -24,8 +24,15 @@
 {%- else -%}
   {%- assign post_url = post.url | relative_url -%}
 {%- endif -%}
-    
-<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+
+{%- comment -%} Determine Blog column style {%- endcomment -%}
+{%- if site.blog.single -%}
+  {%- assign column_style = 'col-lg-12' -%}
+{%- else -%}
+  {%- assign column_style = 'col-lg-6' -%}
+{%- endif -%}
+
+<div class="{{ column_style }} my-3 wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
