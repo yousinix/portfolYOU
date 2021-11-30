@@ -1,6 +1,0 @@
-<figure class="figure w-100">
-  <img src="{{ include.image | relative_url }}" class="figure-img img-fluid rounded" alt="{{ include.alt | default: include.caption }}">
-  {%- if include.caption -%}
-    <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
-  {%- endif -%}
-</figure>
