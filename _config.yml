@@ -1,10 +1,10 @@
 ### Site Settings ###
-title               : portfolYOU
+title               : portfolYOU - CARLA ARELLANO
 description         : >-
                       I turn coffee :coffee: into code,
                       use tabs over spaces
                       and never broke production.
-baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : "<>"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
@@ -25,8 +25,8 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : John Doe
-  image             : https://i.imgur.com/uyDNQnn.jpg
+  name              : Carla Arellano
+  image             : https://i.ibb.co/4g84V9R/262924079-579786066424480-6187978544782918533-n.jpg
   behance           : your_username
 # dribbble          : your_username
   email             : username@domain.com
