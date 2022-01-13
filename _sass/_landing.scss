@@ -27,8 +27,9 @@
   object-position: center;
 
   transition: transform 400ms !important;
+  
   &:hover:not(.post) {
-    transform: translateY(-8px);
+    // transform: translateY(-8px);
     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
 }
