@@ -4,3 +4,6 @@
 # Design Files
 *.psd
 *.ai
+
+# IntelliJ
+.idea
