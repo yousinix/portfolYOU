@@ -10,6 +10,8 @@
     </div>
   </div>
   <div class="col-lg-8 col-md-6 text-center mt-4">
-  <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+	{% for desc in site.description %}
+  		<p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ desc }}</p>
+	{% endfor %}
   </div>
 </div>
