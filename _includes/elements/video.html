@@ -1,3 +1,7 @@
-<div class="video">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
-</div>
+<p align="center">
+    <iframe width="560" height="315" frameborder="0" 
+        src="https://www.youtube.com/embed/{{ include.yt-id }}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <center>{{ include.date }}</center>
+</p>
