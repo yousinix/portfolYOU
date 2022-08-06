@@ -10,6 +10,7 @@ landing_vertical    : false                             # Set the front page to 
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-katex
 
 
 ### Navbar Settings ###
