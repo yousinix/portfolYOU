@@ -25,7 +25,7 @@
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
         <!-- {%- assign project_tools = project.topics -%} -->
-        {%- assign project_tools = project.contributors -%}
+        {%- assign project_tools = project.contributors | map: "login" -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
 
         {% include projects/project-card.html %}
