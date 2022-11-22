@@ -6,7 +6,7 @@
 
     {%- for repo in site.github.public_repositories -%}
 
-      {%- if remote_project == repo.name or site.show_all_remote_repos and remote_project.contributors contains site.author.github -%}
+      {%- if remote_project == repo.name or site.show_all_remote_repos and remote_project.owner_name == site.author.github -%}
 
         {%- assign project = repo -%}
         {%- assign words = project.name | split: '-' -%}
