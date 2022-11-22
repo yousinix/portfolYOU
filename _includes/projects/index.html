@@ -23,7 +23,7 @@
         {%- assign project_img = possible_project_img_path -%}
         {%- assign project_name  = titlecase | strip -%}
         <!--  -->
-        {%- assign project_desc  = project.owner -%}
+        {%- assign project_desc  = project.owner_name -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = project.topics -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
