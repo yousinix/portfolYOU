@@ -33,6 +33,10 @@
 
     {%- endfor -%}
 
+    {%- if site.show_all_remote_repos -%}
+    {%- break -%}
+    {%- endif -%}
+
   {% endfor %}
 
   <!-- Local Projects -->
