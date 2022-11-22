@@ -23,7 +23,7 @@
         {%- assign project_img = possible_project_img_path -%}
         {%- assign project_name  = titlecase | strip -%}
         <!--  -->
-        {%- assign project_desc  = repo.contributors -%}
+        {%- assign project_desc  = repo -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = repo.owner_public_repositories_contributors : map: "login" -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
