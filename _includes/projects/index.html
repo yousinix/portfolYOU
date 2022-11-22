@@ -10,7 +10,6 @@
 
         {%- assign project = repo -%}
         {%- assign words = project.name | split: '-' -%}
-        
         {%- capture titlecase -%}
           {%- for word in words -%}
             {{ word | capitalize | append: ' ' }}
@@ -19,7 +18,7 @@
 
         {%- assign project_type  = "remote" -%}
         {%- assign project_id    = project.name -%}
-        {%- assign project_img   = false -%}
+        {%- assign project_img   = "assets/" | append: project.name | append: '.jpg' -%}
         {%- assign project_name  = titlecase | strip -%}
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
