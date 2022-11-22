@@ -20,11 +20,7 @@
         {%- assign project_id    = project.name -%}
         {%- assign project_img = false -%}
         {%- assign possible_project_img_path = "assets/" | append: project.name | append: '.jpg' -%}
-        {%- for static_file in site.static_files -%}
-          {%- if static_file.path == possible_project_img_path -%}
-          {%- assign project_img = possible_project_img_path -%}
-          {%- endif -%}
-        {%- endfor -%}
+        {%- assign project_img = possible_project_img_path -%}
         {%- assign project_name  = titlecase | strip -%}
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
