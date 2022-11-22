@@ -22,7 +22,8 @@
         {%- assign possible_project_img_path = "assets/" | append: project.name | append: '.jpg' -%}
         {%- assign project_img = possible_project_img_path -%}
         {%- assign project_name  = titlecase | strip -%}
-        {%- assign project_desc  = project.description -%}
+        <!-- {%- assign project_desc  = project.description -%} -->
+        {%- assign project_desc  = remote_project.contributors -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = project.topics -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
