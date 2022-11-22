@@ -18,7 +18,12 @@
 
         {%- assign project_type  = "remote" -%}
         {%- assign project_id    = project.name -%}
-        {%- assign project_img   = "assets/" | append: project.name | append: '.jpg' -%}
+        {%- assign project_img = false -%}
+        {%- for static_file in site.static_files -%}
+        {%- if static_file.path == "assets/" | append: project.name | append: '.jpg' -%}
+        {%- assign project_img "assets/" | append: project. name append: ' jpg' -%}
+        {%- endif -%}
+        {%- endfor -%}
         {%- assign project_name  = titlecase | strip -%}
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
