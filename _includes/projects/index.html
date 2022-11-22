@@ -26,7 +26,8 @@
           {%- endif -%}
         {%- endfor -%}
         {%- assign project_name  = titlecase | strip -%}
-        {%- assign project_desc  = project.description -%}
+        <!-- {%- assign project_desc  = project.description -%} -->
+        {%- assign project_desc  = project_img -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = project.topics -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
