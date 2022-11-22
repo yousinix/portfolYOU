@@ -6,7 +6,7 @@
 
     {%- for repo in site.github.public_repositories -%}
 
-      {%- if remote_project == repo.name or site.show_all_remote_repos -%}
+      {%- if remote_project == repo.name or site.show_all_remote_repos and not repo.fork -%}
 
         {%- assign project = repo -%}
         {%- assign words = project.name | split: '-' -%}
@@ -23,7 +23,7 @@
         {%- assign project_img = possible_project_img_path -%}
         {%- assign project_name  = titlecase | strip -%}
         <!--  -->
-        {%- assign project_desc  = repo -%}
+        {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tools = repo.owner_public_repositories_contributors : map: "login" -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
