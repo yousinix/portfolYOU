@@ -25,7 +25,7 @@
         <!--  -->
         {%- assign project_desc  = project.repository_url -%}
         {%- assign project_url   = project.html_url -%}
-        {%- assign project_tools = project.topics -%}
+        {%- assign project_tools = project.owner_public_repositories_contributors -%}
         {%- assign open_new_tab  = page.remote_open_new_tab -%}
 
         {% include projects/project-card.html %}
