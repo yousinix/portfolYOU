@@ -9,8 +9,8 @@
 a {color:$primary;}
 
 .btn-outline-primary { color: #fff; background-color: $primary; border-color: $primary; }
-.btn-outline-primary:active { color: #fff; background-color: $primary; border-color: $primary; }
-.btn-outline-primary:hover { color: #fff; background-color: $primary; border-color: $primary; }
+.btn-outline-primary:active { color: #fff; background-color: lighten($primary, 10%); border-color: lighten($primary, 10%); }
+.btn-outline-primary:hover { color: #fff; background-color: lighten($primary, 10%); border-color: lighten($primary, 10%); }
 
 .badge-primary { color: #fff; background-color: $primary; }
 a.bg-primary:hover {
