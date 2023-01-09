@@ -9,7 +9,9 @@
 a {color:$primary;}
 
 .btn-outline-primary { color: #fff; background-color: $primary; border-color: $primary; }
-.btn-outline-primary:not(:disabled):not(.disabled):active { color: #fff; background-color: $primary; border-color: $primary; }
+.btn-outline-primary:active { color: #fff; background-color: $primary; border-color: $primary; }
+.btn-outline-primary:hover { color: #fff; background-color: $primary; border-color: $primary; }
+
 .badge-primary { color: #fff; background-color: $primary; }
 a.bg-primary:hover {
     background-color: darken($primary, 10%)!important;
