@@ -1,6 +1,0 @@
----
-layout: null
-permalink: /404.html
----
-
-{% include 404.html %}

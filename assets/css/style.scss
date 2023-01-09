@@ -1,3 +1,15 @@
 ---
 ---
 @import "portfolYOU";
+
+.text-primary { color: $primary!important; }
+.border-primary { border-color: $primary!important; }
+.bg-primary { background-color: $primary!important; }
+
+a {color:$primary;}
+
+.btn-outline-primary { color: #fff; background-color: $primary; border-color: $primary; }
+.badge-primary { color: #fff; background-color: $primary; }
+a.bg-primary:hover {
+    background-color: darken($primary, 10%)!important;
+}
