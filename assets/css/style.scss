@@ -16,3 +16,6 @@ a {color:$primary;}
 a.bg-primary:hover {
     background-color: darken($primary, 10%)!important;
 }
+.form-control:focus{
+    border-color: $primary!important;
+}
