@@ -1,0 +1,56 @@
+{% assign teachers = "" | split: ',' %}
+{% assign students = "" | split: ',' %}
+{% for p in site.people %}
+  {%- if p.tags contains "teacher" -%}
+      {% assign teachers = teachers | push: p %}
+  {% endif %}
+  {%- if p.tags contains "student" -%}
+      {% assign students = students | push: p %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="pt-3 text-center">teachers</h2>
+<div class="card-columns m-3 mt-5">
+    {% for people in teachers %}
+      {%- assign people_type  = "local" -%}
+      {%- assign people_id    = people.name | slugify -%}
+      {%- assign people_img   = people.image -%}
+      {%- assign people_name  = people.name -%}
+      {%- assign people_desc  = people.description -%}
+      {%- assign people_tools = people.tools -%}
+  
+      {%- if people.external_url -%}
+        {%- assign people_url = people.external_url -%}
+        {%- assign external    = true -%}
+      {%- else -%}
+        {%- assign people_url = people.url | relative_url -%}
+        {%- assign external    = false -%}
+      {%- endif -%}
+  
+      {% include peoples/people-card.html %}
+    {% endfor %}
+  
+  </div>
+  
+  <h2 class="pt-3 text-center">students</h2>
+  <div class="card-columns m-3 mt-5">
+      {% for people in students %}
+        {%- assign people_type  = "local" -%}
+        {%- assign people_id    = people.name | slugify -%}
+        {%- assign people_img   = people.image -%}
+        {%- assign people_name  = people.name -%}
+        {%- assign people_desc  = people.description -%}
+        {%- assign people_tools = people.tools -%}
+    
+        {%- if people.external_url -%}
+          {%- assign people_url = people.external_url -%}
+          {%- assign external    = true -%}
+        {%- else -%}
+          {%- assign people_url = people.url | relative_url -%}
+          {%- assign external    = false -%}
+        {%- endif -%}
+    
+        {% include people/people-card.html %}
+      {% endfor %}
+    
+    </div>  

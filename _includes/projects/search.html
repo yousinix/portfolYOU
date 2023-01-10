@@ -7,7 +7,7 @@
       <i class="fas fa-search"></i>
     </span>
   </div>
-  <button class="btn btn-outline-primary ml-1" onclick="location.href = '{{ '/blog/tags' | relative_url }}';">
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '{{ '/projects/tags' | relative_url }}';">
     <i class="fas fa-tags"></i>
   </button>
 </div>
@@ -20,6 +20,6 @@
         resultsContainer: document.getElementById('results-container'),
         searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
         noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
-        json: '{{ '/search.json' | relative_url }}'
+        json: '{{ '/search_proj.json' | relative_url }}'
       })
 </script>

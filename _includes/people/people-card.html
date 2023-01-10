@@ -1,0 +1,21 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ people_url }}" class="people card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if people_img -%}
+    <img id="{{ people_id }}-img" class="card-img-top" src="{{ people_img }}" alt="{{ people_name }}" />
+    {%- endif -%}
+    <div class="card-body">
+      <h5 id="{{ people_id }}-name" class="card-title">
+          {%- if people_type == "remote" -%}
+          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+          {%- endif -%}
+        {{ people_name }}
+      </h5>
+      <p id="{{ people_id }}-desc" class="card-text">{{ people_desc }}</p>
+      <p id="{{ people_id }}-tools" class="card-text">
+        {%- for tool in people_tools -%}
+        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        {%- endfor -%}
+      </p>
+    </div>
+  </a>
+</div>
