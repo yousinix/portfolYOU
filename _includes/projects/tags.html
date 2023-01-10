@@ -20,7 +20,7 @@
       {%- else -%}
         {%- assign url = project.url | relative_url -%}
       {%- endif -%}
-    <a href="{{ url }}"><li>{{ project.title }}</li></a>
+    <a href="{{ url }}"><li>{{ project.name }}</li></a>
     <small class="text-muted"> - {{ project.date | date_to_long_string }}</small>
     <br/>
     {%- endif -%}
