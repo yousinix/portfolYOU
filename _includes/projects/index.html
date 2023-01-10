@@ -4,6 +4,10 @@
   <!-- Remote Projects -->
   {% for remote_project in page.remote_projects %}
 
+    {%- for repo in site.github.public_repositories -%}
+
+      {%- if remote_project == repo.name -%}
+
         {%- assign project = repo -%}
         {%- assign words = project.name | split: '-' -%}
         
@@ -23,6 +27,10 @@
         {%- assign external      = true -%}
 
         {% include projects/project-card.html %}
+
+      {%- endif -%}
+
+    {%- endfor -%}
 
   {% endfor %}
 
