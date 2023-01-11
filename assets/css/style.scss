@@ -19,3 +19,8 @@ a.bg-primary:hover {
 .form-control:focus{
     border-color: $primary!important;
 }
+
+.carousel-indicators {
+    bottom:5em;
+    z-index:5;
+}
