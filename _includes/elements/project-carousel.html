@@ -22,9 +22,9 @@
             {%- if item.short_description -%}
             {{ item.short_description }}
             {%- else -%}
-            {{ item.description | truncatewords: 10 }}
+            {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="position:absolute; color:black; right:0px;">read more</a>
+            <a href="{{item.url}}" style="position:absolute; color:black; right:0px; z-index:10;"><b>read more</b></a>
          </p>
 
         </div>
@@ -36,9 +36,9 @@
             {%- if item.short_description -%}
             {{ item.short_description }}
             {%- else -%}
-            {{ item.description | truncatewords: 10 }}
+            {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="position:absolute; color:black; right:0px;">read more</a>
+            <a href="{{item.url}}" style="position:absolute; color:black; right:0px; z-index:10"><b>read more</b></a>
          </p>
           
         </div>
