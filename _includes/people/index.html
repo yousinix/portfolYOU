@@ -1,11 +1,14 @@
 {% assign teachers = "" | split: ',' %}
 {% assign students = "" | split: ',' %}
 {% for p in site.people %}
-  {%- if p.navs contains "teacher" and p.navs not contains "template" -%}
-      {% assign teachers = teachers | push: p %}
-  {% endif %}
-  {%- if p.navs contains "student" and p.navs not contains "template" -%}
-      {% assign students = students | push: p %}
+  {%- if p.navs contains "template" -%}
+  {%- else -%}
+    {%- if p.navs contains "teacher" -%}
+        {% assign teachers = teachers | push: p %}
+    {% endif %}
+    {%- if p.navs contains "student" and p.navs not contains "template" -%}
+        {% assign students = students | push: p %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 

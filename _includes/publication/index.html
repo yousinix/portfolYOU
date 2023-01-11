@@ -1,7 +1,11 @@
 <div class="card-group mt-2">
 
   {% for publication in site.publications %}
-    {% include publication/publication-card.html %}
+      
+    {%- if p.navs contains "template" -%}
+    {%- else -%}
+      {% include publication/publication-card.html %}
+    {%- endif -%}
   {% endfor %}
   
 </div>

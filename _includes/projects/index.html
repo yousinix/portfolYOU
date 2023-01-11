@@ -36,7 +36,8 @@
 
   <!-- Local Projects -->
   {% for project in site.projects %}
-
+  {%- if p.navs contains "template" -%}
+  {%- else -%}
 
     {%- assign project_id    = project.name | slugify -%}
     {%- assign project_img   = project.image -%}
@@ -60,6 +61,7 @@
     {%- endif -%}
 
     {% include projects/project-card.html %}
+  {%- endif -%}
 
   {% endfor %}
 
