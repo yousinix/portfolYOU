@@ -2,7 +2,7 @@
 
   {% for publication in site.publications %}
       
-    {%- if p.navs contains "template" -%}
+    {%- if publication.navs contains "template" -%}
     {%- else -%}
       {% include publication/publication-card.html %}
     {%- endif -%}

@@ -36,7 +36,7 @@
 
   <!-- Local Projects -->
   {% for project in site.projects %}
-  {%- if p.navs contains "template" -%}
+  {%- if project.navs contains "template" -%}
   {%- else -%}
 
     {%- assign project_id    = project.name | slugify -%}
