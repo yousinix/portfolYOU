@@ -21,7 +21,7 @@ layout: page
     Tags: 
     {% for tag in page.tags %}
     <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/publication/tags#' | relative_url }}">
-      {%- include elements/tag.html name={{tag | default: ""}} -%}
+      {%- include elements/tag.html name='{{tag | default: ""}}' -%}
     </a>
     {% endfor %}
   {%- endif -%}
