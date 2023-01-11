@@ -7,7 +7,7 @@
       
     <p id="{{ people_id }}-tags" class="card-text">
       {%- for tag in people_tags -%}
-        {%- include elements/tag.html name='{{tag | default: ""}}' -%}
+        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tag }}</span>
       {%- endfor -%}
     </p>
 
