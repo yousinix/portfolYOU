@@ -12,7 +12,7 @@ layout: default
     Tags: 
     {% for tag in page.tags %}
     <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/projects/tags#' | relative_url }}">
-      {%- include elements/tag.html name={{tag}} -%}
+      {%- include elements/tag.html name={{tag | default: ""}} -%}
     </a>
     {% endfor %}
   {%- endif -%}

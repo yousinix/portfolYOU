@@ -13,7 +13,7 @@
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
       <p id="{{ project_id }}-tags" class="card-text">
         {%- for tag in project_tags -%}
-          {%- include elements/tag.html name={{tag}} -%}
+          {%- include elements/tag.html name={{tag | default: ""}} -%}
         {%- endfor -%}
       </p>
     </div>
