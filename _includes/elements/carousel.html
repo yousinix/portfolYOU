@@ -16,11 +16,11 @@
     {% for image in images %}
       {%- if forloop.first -%}
         <div class="carousel-item active">
-          <img src="{{ image }}" class="d-block w-100">
+          <img src="{{ image }}" class="d-block w-100" style="aspect-ratio:{{ratio | default: 16/9}};">
         </div>
       {%- else -%}
         <div class="carousel-item">
-          <img src="{{ image }}" class="d-block w-100">
+          <img src="{{ image }}" class="d-block w-100" style="aspect-ratio:{{ratio | default: 16/9}};">
         </div>
       {%- endif -%}
     {% endfor %}
