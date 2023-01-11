@@ -6,14 +6,16 @@
     <div class="card-body">
       
     <p id="{{ people_id }}-tags" class="card-text">
-      {%- for tag in people_tags -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tag }}</span>
-      {%- endfor -%}
+
+        {% for tag in publication.tags %}
+        <span class="badge fill">{{ tag }}</span>
+        {% endfor %}
+
     </p>
 
-    <h5 id="{{ people_id }}-name" class="card-title">
+    <h4 id="{{ people_id }}-name" class="card-text">
       {{ people_name }}
-    </h5>
+    </h4>
     </div>
   </a>
 </div>
