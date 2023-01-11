@@ -24,8 +24,9 @@
             {%- else -%}
             {{ item.description | truncatewords: 10 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="color:black;"> <small><i>read more...</i></small></a>
-        </p>
+            <a href="{{item.url}}" style="position:absolute; color:black; right:0px;">read more</a>
+         </p>
+
         </div>
       {%- else -%}
         <div class="carousel-item">
@@ -37,9 +38,8 @@
             {%- else -%}
             {{ item.description | truncatewords: 10 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="color:black;"> <small><i>read more...</i></small></a>
-        </p>
-      </p>
+            <a href="{{item.url}}" style="position:absolute; color:black; right:0px;">read more</a>
+         </p>
           
         </div>
       {%- endif -%}
