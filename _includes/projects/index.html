@@ -37,7 +37,7 @@
   <!-- Local Projects -->
   {% for project in site.projects %}
 
-    {%- assign project_type  = "local" -%}
+
     {%- assign project_id    = project.name | slugify -%}
     {%- assign project_img   = project.image -%}
     {%- assign project_name  = project.name -%}
@@ -50,6 +50,13 @@
     {%- else -%}
       {%- assign project_url = project.url | relative_url -%}
       {%- assign external    = false -%}
+    {%- endif -%}
+
+    {%- if project.remote_project -%}
+      {%- assign project_type  = "remote" -%}
+      {%- assign project_img   = false -%}
+    {%- else -%}
+      {%- assign project_type  = "local" -%}
     {%- endif -%}
 
     {% include projects/project-card.html %}
