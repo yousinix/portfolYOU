@@ -1,27 +1,27 @@
-<!-- Collect tags from all posts -->
+<!-- Collect tags from all publications -->
 {%- assign tags = blank -%}
-{%- for post in site.posts -%}
-  {%- assign post_tags = post.tags | join:'|' | append:'|' -%}
-  {%- if post_tags != '|' -%}
-    {%- assign tags = tags | append:post_tags -%}
+{%- for publication in site.publications -%}
+  {%- assign publication_tags = publication.tags | join:'|' | append:'|' -%}
+  {%- if publication_tags != '|' -%}
+    {%- assign tags = tags | append:publication_tags -%}
   {%- endif -%}
 {%- endfor -%}
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
-<!-- List tags & related posts -->
+<!-- List tags & related publications -->
 {% for tag in tags %}
 <div class="py-3">
   <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
   <ol>
-  {% for post in site.posts %}
-    {%- if post.tags contains tag -%}
-      {%- if post.external_url -%}
-        {%- assign url = post.external_url -%}
+  {% for publication in site.publications %}
+    {%- if publication.tags contains tag -%}
+      {%- if publication.external_url -%}
+        {%- assign url = publication.external_url -%}
       {%- else -%}
-        {%- assign url = post.url | relative_url -%}
+        {%- assign url = publication.url | relative_url -%}
       {%- endif -%}
-    <a href="{{ url }}"><li>{{ post.title }}</li></a>
-    <small class="text-muted"> - {{ post.date | date_to_long_string }}</small>
+    <a href="{{ url }}"><li>{{ publication.title }}</li></a>
+    <small class="text-muted"> - {{ publication.date | date_to_long_string }}</small>
     <br/>
     {%- endif -%}
   {% endfor %}
