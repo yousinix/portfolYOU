@@ -13,7 +13,7 @@
 {% endfor %}
 
 <h2 class="pt-3 text-center">teachers</h2>
-<div class="card-columns m-3 mt-5">
+<div class="card-group mt-2">
     {% for people in teachers %}
       {%- assign people_id    = people.name | slugify -%}
       {%- assign people_img   = people.image -%}
@@ -28,7 +28,7 @@
   </div>
   
   <h2 class="pt-3 text-center">students</h2>
-  <div class="card-columns m-3 mt-5">
+  <div class="card-group mt-2">
     {% for people in students %}
       {%- assign people_id    = people.name | slugify -%}
       {%- assign people_img   = people.image -%}
