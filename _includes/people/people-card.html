@@ -4,18 +4,16 @@
     <img id="{{ people_id }}-img" class="card-img-top" src="{{ people_img }}" alt="{{ people_name }}" />
     {%- endif -%}
     <div class="card-body">
-      <h5 id="{{ people_id }}-name" class="card-title">
-          {%- if people_type == "remote" -%}
-          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
-          {%- endif -%}
-        {{ people_name }}
-      </h5>
-      <p id="{{ people_id }}-desc" class="card-text">{{ people_desc }}</p>
-      <p id="{{ people_id }}-tools" class="card-text">
-        {%- for tool in people_tools -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
-        {%- endfor -%}
-      </p>
+      
+    <p id="{{ people_id }}-tags" class="card-text">
+      {%- for tag in people_tags -%}
+        {%- include elements/tag.html name={{tag}} -%}
+      {%- endfor -%}
+    </p>
+
+    <h5 id="{{ people_id }}-name" class="card-title">
+      {{ people_name }}
+    </h5>
     </div>
   </a>
 </div>
