@@ -19,10 +19,13 @@
           style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;">
           
         <p class="card-text small" 
-            style="position:absolute; bottom:0px; background:#eeeeeeaa; z-index:10; border-radius:4px"> 
-            {{item.description}} 
-            <a href="{{item.url}}"><small>read more..</small></a>
-                
+            style="color:black; position:absolute; bottom:0px; left:5px; background:#eeeeeeaa; z-index:10;"> 
+            {%- if item.short_description -%}
+            {{ item.short_description }}
+            {%- else -%}
+            {{ item.description | truncatewords: 10 }}
+            {%- endif -%} 
+            <a href="{{item.url}}" style="color:black;"> read more ..</a>
         </p>
         </div>
       {%- else -%}
@@ -30,10 +33,13 @@
           <img src="{{ item.image }}" href="{{item.url}}" class="d-block w-100"
           style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;">
           <p class="card-text small" 
-          style="position:absolute; bottom:0px; background:#eeeeeeaa; z-index:10; border-radius:4px"> 
-          {{item.description}} 
-          <a href="{{item.url}}"><small>read more..</small></a>
-              
+          style="color:black; position:absolute; bottom:0px; left:5px; background:#eeeeeeaa; z-index:10;"> 
+          {%- if item.short_description -%}
+          {{ item.short_description }}
+          {%- else -%}
+          {{ item.description | truncatewords: 10 }}
+          {%- endif -%} 
+          <a href="{{item.url}}" style="color:black;"> read more ..</a>
       </p>
           
         </div>
