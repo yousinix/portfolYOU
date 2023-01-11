@@ -6,7 +6,7 @@
     {%- if p.navs contains "teacher" -%}
         {% assign teachers = teachers | push: p %}
     {% endif %}
-    {%- if p.navs contains "student" and p.navs not contains "template" -%}
+    {%- if p.navs contains "student" -%}
         {% assign students = students | push: p %}
     {% endif %}
   {% endif %}
