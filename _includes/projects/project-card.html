@@ -10,6 +10,9 @@
           {%- endif -%}
         {{ project_name }}
       </h5>
+      <h6>
+        {{ project_alias }}
+      </h6>
       <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
       <p id="{{ project_id }}-tags" class="card-text">
         {%- for tag in project_tags -%}
