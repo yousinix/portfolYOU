@@ -8,7 +8,30 @@ layout: default
 
   <br>
   <p class="post-metadata text-muted">
-    {%- if page.tags != empty -%}
+
+  {% if page.team != empty %}
+    Team: 
+    {% for people in page.team %} 
+      {% assign p = false %}
+      {% for item in site.data.people %}
+        {% if item.name == people %}
+          {% assign p = item %}  
+        {% endif %}
+      {% endfor %}
+    
+      {%- if forloop.first -%}
+      {% else %}
+      , 
+      {% endif %}
+      {% if p %}
+        <a href="people/{{p.page}}">{{p.name}}</a>
+      {% else %}
+        {{people}}
+      {% endif %}
+    {% endfor%}
+  {% endif%}
+  
+  {%- if page.tags != empty -%}
     Tags: 
     {% for tag in page.tags %}
     <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/projects/tags#' | relative_url }}">
