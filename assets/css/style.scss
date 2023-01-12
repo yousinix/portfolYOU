@@ -26,3 +26,17 @@ a.bg-primary:hover {
 }
 
 .row:before, .row:after {display: none !important;}
+
+@media (min-width: 540px) {  
+    .card-columns {column-count: 1;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 720px) { 
+.card-columns {column-count: 2;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 960px) {  
+    .card-columns {column-count: 3;} 
+}
