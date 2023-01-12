@@ -1,13 +1,18 @@
 {%- assign images = carousel_images | strip | newline_to_br | split: '<br />' -%}
+{% if include.id %}
+  {% assgin carousel_id = include.id %}
+{% else %}
+  {% assgin carousel_id = 1 %}
+{% endif %}
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
 
   <ol class="carousel-indicators">
     {% for image in images %}
         {%- if forloop.first -%}
-          <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}" class="active"></li>
+          <li data-target="#carousel{{carousel_id}}" data-slide-to="{{forloop.index0}}" class="active"></li>
         {%- else -%}
-          <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}"></li>
+          <li data-target="#carousel{{carousel_id}}" data-slide-to="{{forloop.index0}}"></li>
         {%- endif -%}
     {% endfor %}
   </ol>
@@ -28,12 +33,12 @@
     {% endfor %}
   </div>
 
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carousel{{carousel_id}}" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
 
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carousel{{carousel_id}}" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
