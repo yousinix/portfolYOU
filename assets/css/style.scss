@@ -32,11 +32,11 @@ a.bg-primary:hover {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 720px) { 
+@media (min-width: 960px) { 
 .card-columns {column-count: 2;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 960px) {  
+@media (min-width: 1200px) {  
     .card-columns {column-count: 3;} 
 }
