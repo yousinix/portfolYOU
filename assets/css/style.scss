@@ -25,14 +25,14 @@ a.bg-primary:hover {
     z-index:5;
 }
 
-.row:before, .row:after {display: none !important;}
+.row:before, .row:after { display: flex !important; }
 
 @media (min-width: 540px) {  
     .card-columns {column-count: 1;}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 960px) { 
+@media (min-width: 992px) { 
 .card-columns {column-count: 2;}
 }
 
