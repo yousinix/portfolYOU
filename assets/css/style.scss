@@ -33,3 +33,5 @@ a.bg-primary:hover {
       column-count: 3;
     }
   }
+
+.row:before, .row:after {display: none !important;}
