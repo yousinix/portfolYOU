@@ -29,9 +29,8 @@
   <a href="{{ publication_url }}" class="post card {{ card_style }}" {%- if publication.external_url and
     site.open_new_tab -%} target="_blank" {%- endif -%}>
     <div class="card-body {{ text_style }}">
-      <div class="card bg-dark text-white">
-        <img src="{{publication.image}}" class="card-img" alt="{{publication.name}}">
-        <div class="card-img-overlay"></div>
+      <img src="{{publication.image}}" class="card-img" alt="{{publication.name}}">
+      <div class="card-img-overlay">
         <h4 class="card-title">{{ publication.title }}</h4>
         <h6 class="card-subtitle mb-3 text-muted {{ text_style }}">{{ publication.subtitle }}</h6>
 
@@ -44,11 +43,10 @@
           <span class="badge {{ badge_style }}">{{ tag }}</span>
           {% endfor %}
         </p>
-      </div>
-      <div class="card-footer {{ text_style }}">
-        {{ publication.date | date_to_long_string }} | {{ publication.paper_type }}
+        <div class="card-footer {{ text_style }}">
+          {{ publication.date | date_to_long_string }} | {{ publication.paper_type }}
+        </div>
       </div>
     </div>
-</div>
-</a>
+  </a>
 </div>
