@@ -1,4 +1,6 @@
 
+
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
 
   <ol class="carousel-indicators">
@@ -13,6 +15,11 @@
 
   <div class="carousel-inner">
     {% for item in carousel_items %}
+      {%- if item.external_url -%}
+        {%- assign url = item.external_url -%}
+      {%- else -%}
+        {%- assign url = item.url | relative_url -%}
+      {%- endif -%}
       {%- if forloop.first -%}
         <div class="carousel-item active">
           <img src="{{ item.image }}" class="d-block w-100" 
@@ -24,13 +31,13 @@
             {%- else -%}
             {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="position:absolute; color:black; right:0px; z-index:10;"><b> more ></b></a>
+            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10;"><b> more ></b></a>
          </p>
 
         </div>
       {%- else -%}
         <div class="carousel-item">
-          <img src="{{ item.image }}" href="{{item.url}}" class="d-block w-100"
+          <img src="{{ item.image }}" class="d-block w-100"
           style="aspect-ratio:16/9; overflow:hidden; object-fit: cover;">
           <p class="card-text small"> 
             {%- if item.short_description -%}
@@ -38,7 +45,7 @@
             {%- else -%}
             {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{item.url}}" style="position:absolute; color:black; right:0px; z-index:10"><b> more ></b></a>
+            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10"><b> more ></b></a>
          </p>
           
         </div>
