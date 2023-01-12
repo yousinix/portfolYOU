@@ -1,8 +1,8 @@
 {%- assign images = carousel_images | strip | newline_to_br | split: '<br />' -%}
 {% if include.id %}
-  {% assgin carousel_id = include.id %}
+  {% assign carousel_id = include.id %}
 {% else %}
-  {% assgin carousel_id = 1 %}
+  {% assign carousel_id = 1 %}
 {% endif %}
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
