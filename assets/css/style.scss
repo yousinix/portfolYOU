@@ -25,6 +25,7 @@ a.bg-primary:hover {
     z-index:5;
 }
 
+@import "~bootstrap/scss/bootstrap-grid.scss";
 .card-columns {
     @include media-breakpoint-only(md) {
       column-count: 2;
