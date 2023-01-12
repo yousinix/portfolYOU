@@ -36,7 +36,7 @@
       <h6 class="card-subtitle mb-3 text-muted max-lines">{{ publication.subtitle }}</h6>
 
       <h6 class="card-text small">
-        {{ publication.authors }}
+        {{ publication.authors | join: ", " }}
       </h6>
 
       <p class="card-text">
