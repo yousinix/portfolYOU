@@ -31,7 +31,9 @@
             {%- else -%}
             {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10;"><b> more ></b></a>
+            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10;"
+            {%- if item.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
+            ><b> more ></b></a>
          </p>
 
         </div>
@@ -45,7 +47,9 @@
             {%- else -%}
             {{ item.description | truncatewords: 15 }}
             {%- endif -%} 
-            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10"><b> more ></b></a>
+            <a href="{{url}}" style="position:absolute; color:black; right:0px; z-index:10"
+            {%- if item.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
+            ><b> more ></b></a>
          </p>
           
         </div>
