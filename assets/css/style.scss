@@ -40,3 +40,12 @@ a.bg-primary:hover {
 @media (min-width: 1200px) {  
     .card-columns {column-count: 3;} 
 }
+
+
+html,body { height:100% }
+.svg-div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  overflow: hidden;
+}
