@@ -24,3 +24,12 @@ a.bg-primary:hover {
     bottom:2em;
     z-index:5;
 }
+
+.card-columns {
+    @include media-breakpoint-only(md) {
+      column-count: 2;
+    }
+    @include media-breakpoint-only(lg) {
+      column-count: 3;
+    }
+  }
