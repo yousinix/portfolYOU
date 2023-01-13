@@ -17,7 +17,31 @@ layout: page
   </b>
 
   <br>
+  <p class="post-metadata text-muted">
 
+  {% if page.team != empty %}
+    Team: 
+    {% for people in page.team %} 
+      {% assign p = false %}
+      {% for item in site.data.people %}
+        {% if item.name == people %}
+          {% assign p = item %}  
+        {% endif %}
+      {% endfor %}
+    
+      {%- if forloop.first -%}
+      {% else %}
+      , 
+      {% endif %}
+      {% if p %}
+        <a href="/people/{{p.page}}">{{p.name}}</a>
+      {% else %}
+        {{people}}
+      {% endif %}
+    {% endfor%}
+  {% endif%}
+  <br>
+  
   {%- if page.tags != empty -%}
     Tags: 
     {% for tag in page.tags %}

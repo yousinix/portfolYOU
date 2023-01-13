@@ -12,7 +12,7 @@
   {% endif %}
 {% endfor %}
 
-<h2 class="pt-3 text-center">teachers</h2>
+<h2 class="pt-3 text-center my-5">teachers</h2>
 <div class="card-group mt-2">
     {% for people in teachers %}
       {%- assign people_id    = people.name | slugify -%}
@@ -27,7 +27,7 @@
   
   </div>
   
-  <h2 class="pt-3 text-center">students</h2>
+  <h2 class="pt-3 text-center my-5">students</h2>
   <div class="card-group mt-2">
     {% for people in students %}
       {%- assign people_id    = people.name | slugify -%}

@@ -24,3 +24,47 @@ a.bg-primary:hover {
     bottom:2em;
     z-index:5;
 }
+
+.row:before, .row:after { display: flex !important; }
+
+@media (min-width: 540px) {  
+    .card-columns {column-count: 1;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) { 
+.card-columns {column-count: 2;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .card-columns {column-count: 3;} 
+}
+
+
+.max-lines {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.75em;
+    line-height: 1.25em;
+  }
+
+
+@media (min-width: 100px) {
+    .card-height { height: 20em}
+}
+@media (min-width: 480px) {
+    .card-height { height: 15em}
+}
+@media (min-width: 768px) {
+    .card-height { height: 13em}
+}
+@media (min-width: 992px) {
+    .card-height { height: 15em}
+}
+
+.text-muted {
+    color: #b6bdc2!important;
+}

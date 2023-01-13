@@ -1,38 +1,42 @@
 {%- comment -%} Default Styles {%- endcomment -%}
-{%- assign card_style  = '' -%}
-{%- assign text_style  = 'text-themed' -%}
+{%- assign card_style = '' -%}
+{%- assign text_style = 'text-themed' -%}
 {%- assign badge_style = 'badge-dark' -%}
 
 {%- comment -%} Update Styles {%- endcomment -%}
 {%- if publication.style == 'fill' -%}
-  {%- assign card_style = publication.color | prepend: 'bg-' -%}
-  {%- if publication.color != 'light' -%}
-    {%- assign text_style  = 'text-white' -%}
-    {%- assign badge_style = 'badge-light text-' -%}
-    {%- assign badge_style = badge_style | append: publication.color -%}
-  {%- endif -%}
+{%- assign card_style = publication.color | prepend: 'bg-' -%}
+{%- if publication.color != 'light' -%}
+{%- assign text_style = 'text-white' -%}
+{%- assign badge_style = 'badge-light text-' -%}
+{%- assign badge_style = badge_style | append: publication.color -%}
+{%- endif -%}
 {%- else -%}
-  {%- assign card_style = publication.color | prepend: 'border border-' -%}
-  {%- if publication.color -%}
-    {%- assign badge_style =  publication.color | prepend: 'badge-' -%}
-  {%- endif -%}
+{%- assign card_style = publication.color | prepend: 'border border-' -%}
+{%- if publication.color -%}
+{%- assign badge_style = publication.color | prepend: 'badge-' -%}
+{%- endif -%}
 {%- endif -%}
 
 {%- comment -%} Determine publication URL {%- endcomment -%}
 {%- if publication.external_url -%}
-  {%- assign publication_url = publication.external_url -%}
+{%- assign publication_url = publication.external_url -%}
 {%- else -%}
-  {%- assign publication_url = publication.url | relative_url -%}
+{%- assign publication_url = publication.url | relative_url -%}
 {%- endif -%}
-    
+
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ publication_url }}" class="post card {{ card_style }}" {%- if publication.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+  <a href="{{ publication_url }}" class="post card {{ card_style }} p-0" {%- if publication.external_url and
+    site.open_new_tab -%} target="_blank" {%- endif -%}>
+    <img src="{{publication.image}}" class="w-100 p-0 card-height" style="opacity: 0.2; background-size: cover; object-fit: cover; overflow:hidden">
+    <div class="card-img-overlay">
     <div class="card-body {{ text_style }}">
+
       <h4 class="card-title">{{ publication.title }}</h4>
-      <h6 class="card-subtitle mb-3 text-muted {{ text_style }}">{{ publication.subtitle }}</h6>
+      <h6 class="card-subtitle mb-3 text-muted max-lines">{{ publication.subtitle }}</h6>
 
       <h6 class="card-text small">
-        {{ publication.authors }}
+        {{ publication.authors | join: ", " }}
       </h6>
 
       <p class="card-text">
@@ -41,7 +45,8 @@
         {% endfor %}
       </p>
     </div>
-    <div class="card-footer {{ text_style }}">
+    </div>
+    <div class="card-footer {{ text_style }} m-0">
       {{ publication.date | date_to_long_string }} | {{ publication.paper_type }}
     </div>
   </a>
