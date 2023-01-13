@@ -45,6 +45,11 @@ layout: page
   {% endif%}
   <br>
   
+  {% if page.location != empty and page.location_cn != empty %}
+    Location: {{ page.location_cn }} | {{ page.location }}
+  {% endif%}
+  <br>
+
   {%- if page.tags != empty -%}
     Tags: 
     {% for tag in page.tags %}
