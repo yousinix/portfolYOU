@@ -18,7 +18,7 @@
   var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{name} {{% if {name_cn} != empty %}} | {name_cn} {{% endif %}}</a>',
         noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
         json: '{{ '/search_project.json' | relative_url }}'
       })
