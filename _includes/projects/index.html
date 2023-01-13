@@ -21,8 +21,6 @@
         {%- assign project_id    = project.name -%}
         {%- assign project_img   = false -%}
         {%- assign project_name  = titlecase | strip -%}
-        {%- assign project_alias  = project.alias -%}
-        {%- assign project_year  = project.year -%}
         {%- assign project_desc  = project.description -%}
         {%- assign project_url   = project.html_url -%}
         {%- assign project_tags = project.topics -%}
@@ -44,6 +42,8 @@
     {%- assign project_id    = project.name | slugify -%}
     {%- assign project_img   = project.image -%}
     {%- assign project_name  = project.name -%}
+    {%- assign project_name_cn  = project.alias -%}
+    {%- assign project_year  = project.year -%}
     {%- assign project_desc  = project.description -%}
     {%- assign project_tags = project.tags-%}
 

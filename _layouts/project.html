@@ -4,7 +4,10 @@ layout: page
 
 
 <h1><b>{{ page.name }}</b></h1>
-<h3><b>{{ page.alias }}</b></h3>
+{% if page.name_cn != empty %}
+  <h3><b>{{ page.name_cn }}</b></h3>
+{% endif %}
+
 <p class="post-metadata text-muted">
   {{ page.year }} -  
   <b>
