@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog">
+  <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>Blog</title>
+  <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/portfolYOU/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/portfolYOU/"><h5><b>portfolYOU</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
+
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/portfolYOU/blog/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
+        json: '/portfolYOU/search.json'
+      })
+</script>
+<div class="card-group mt-2">
+
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/digital-minimalism" class="post card border border-">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Digital Minimalism</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Social Media</span>
+        
+        <span class="badge badge-dark">Minimalism</span>
+        
+        <span class="badge badge-dark">Technology</span>
+        
+      </p>
+      <p class="card-text">Minimalism is the art of knowing how much is just enough. Digital minimalism applies this idea to our personal technology. It’s the key to living a focused life in an increasingly noisy world.</p>
+    </div>
+    <div class="card-footer text-themed">
+      20 February 2019
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/learn-react-js" class="post card border border-primary">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Learn React.js in 5 minutes</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-primary">React</span>
+        
+        <span class="badge badge-primary">JavaScript</span>
+        
+        <span class="badge badge-primary">Web Development</span>
+        
+      </p>
+      <p class="card-text">A quick introduction to the popular JavaScript library.</p>
+    </div>
+    <div class="card-footer text-themed">
+      15 February 2019
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/clean-coding" class="post card bg-info">
+    <div class="card-body text-white">
+      <h3 class="card-title">Clean Coding</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-info">Software Development</span>
+        
+        <span class="badge badge-light text-info">Clean Code</span>
+        
+      </p>
+      <p class="card-text">These four “clean code” tips will dramatically improve your engineering team’s productivity</p>
+    </div>
+    <div class="card-footer text-white">
+      10 December 2018
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/what-the-heck-is-a-callback" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">What the heck is a Callback?</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">JavaScript</span>
+        
+        <span class="badge badge-light text-danger">Nodejs</span>
+        
+        <span class="badge badge-light text-danger">Web Development</span>
+        
+      </p>
+      <p class="card-text">Learn and understand the basics of callbacks in just 6 minutes with easy examples.</p>
+    </div>
+    <div class="card-footer text-white">
+      01 December 2018
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/four-lessons-after-eleven-years-in-silicon-valley" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">4 Lessons After 11 Years in Silicon Valley</h3>
+      <p class="card-text">
+        
+      </p>
+      <p class="card-text">On the realities of opportunity, success, reputation, and relationships in tech.</p>
+    </div>
+    <div class="card-footer text-white">
+      09 May 2018
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/github-flow" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">GitHub Flow</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">GitHub</span>
+        
+        <span class="badge badge-light text-primary">Workflow</span>
+        
+      </p>
+      <p class="card-text">GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide explains how and why GitHub Flow works.</p>
+    </div>
+    <div class="card-footer text-white">
+      01 January 2017
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/a-better-hello-world" class="post card bg-dark">
+    <div class="card-body text-white">
+      <h3 class="card-title">A better Hello World</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-dark">Software Development</span>
+        
+      </p>
+      <p class="card-text">A different “hello world” to demonstrate language features better.</p>
+    </div>
+    <div class="card-footer text-white">
+      23 July 2016
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/do-not-go-gentle-into-that-good-night" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Do not go gentle into that good night</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Poetry</span>
+        
+      </p>
+      <p class="card-text"></p>
+<p>Do not go gentle into that good night,<br> Old age should burn and rave at close of day;<br> Rage, rage against the dying<small><i>  read more...</i></small></p>
+    </div>
+    <div class="card-footer text-themed">
+      17 April 2016
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/portfolYOU/blog/what-is-version-control" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">What is version control?</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Version Control</span>
+        
+      </p>
+      <p class="card-text">Benefits of version control and version control systems.</p>
+    </div>
+    <div class="card-footer text-white">
+      09 February 2016
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">How to undo your git failure?</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">External Post</span>
+        
+        <span class="badge badge-light text-warning">Git</span>
+        
+      </p>
+      <p class="card-text">Using `git reflog` and `git reset` to save your code.</p>
+    </div>
+    <div class="card-footer text-white">
+      25 September 2015
+    </div>
+  </a>
+</div>
+  
+  
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>John Doe</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="https://www.behance.net/your_username" style="color: #6c757d" onmouseover="this.style.color='#1769ff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1" href="mailto:username@domain.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/your_username" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@your_username" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/your_username" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
