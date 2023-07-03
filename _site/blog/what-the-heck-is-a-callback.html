@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What the heck is a Callback?">
+  <meta property="og:description" content="Learn and understand the basics of callbacks in just 6 minutes with easy examples.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>What the heck is a Callback?</title>
+  <meta name="description" content="Learn and understand the basics of callbacks in just 6 minutes with easy examples.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/portfolYOU/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/portfolYOU/"><h5><b>portfolYOU</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>What the heck is a Callback?</b></h1>
+
+<p class="post-metadata text-muted">
+  01 December 2018 -  
+  <b>6 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#javascript">
+      <span class="tag badge badge-pill text-primary border border-primary">JavaScript</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#nodejs">
+      <span class="tag badge badge-pill text-primary border border-primary">Nodejs</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#web-development">
+      <span class="tag badge badge-pill text-primary border border-primary">Web Development</span>
+    </a>
+    </p>
+
+<p>Source: <a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced">Brandon Morelli</a></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*pWGJIKats-zuumA3RQNEWQ.jpeg" alt="" /></p>
+
+<h2 id="what-is-a-callback">What is a Callback?</h2>
+
+<p><strong>Simply put:</strong> A callback is a function that is to be executed <strong>after</strong> another function has finished executing — hence the name ‘call back’.</p>
+
+<p><strong>More complexly put:</strong> In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called <strong>higher-order functions</strong>. Any function that is passed as an argument is called a <strong>callback function</strong>.</p>
+
+<p>^ That’s a lot of words. Lets look at some examples to break this down a little more.</p>
+
+<h2 id="why-do-we-need-callbacks">Why do we need Callbacks?</h2>
+
+<p>For one very important reason — JavaScript is an event driven language. This means that instead of waiting for a response before moving on, JavaScript will keep executing while listening for other events. Lets look at a basic example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">first</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">second</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">first</span><span class="p">();</span>
+<span class="nx">second</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>As you would expect, the function <code class="language-plaintext highlighter-rouge">first</code> is executed first, and the function <code class="language-plaintext highlighter-rouge">second</code> is executed second — logging the following to the console:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1</span>
+<span class="c1">// 2</span>
+</code></pre></div></div>
+
+<p>All good so far.</p>
+
+<p>But what if function <code class="language-plaintext highlighter-rouge">first</code> contains some sort of code that can’t be executed immediately? For example, an API request where we have to send the request then wait for a response? To simulate this action, were going to use <code class="language-plaintext highlighter-rouge">setTimeout</code> which is a JavaScript function that calls a function after a set amount of time. We’ll delay our function for 500 milliseconds to simulate an API request. Our new code will look like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">first</span><span class="p">(){</span>
+  <span class="c1">// Simulate a code delay</span>
+  <span class="nx">setTimeout</span><span class="p">(</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">},</span> <span class="mi">500</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">second</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">first</span><span class="p">();</span>
+<span class="nx">second</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>It’s not important that you understand how <code class="language-plaintext highlighter-rouge">setTimeout()</code> works right now. All that matters is that you see we’ve moved our <code class="language-plaintext highlighter-rouge">console.log(1);</code> inside of our 500 millisecond delay. So what happens now when we invoke our functions?</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">first</span><span class="p">();</span>
+<span class="nx">second</span><span class="p">();</span>
+<span class="c1">// 2</span>
+<span class="c1">// 1</span>
+</code></pre></div></div>
+
+<p>Even though we invoked the <code class="language-plaintext highlighter-rouge">first()</code> function first, we logged out the result of that function after the <code class="language-plaintext highlighter-rouge">second()</code> function.</p>
+
+<p>It’s not that JavaScript didn’t execute our functions in the order we wanted it to, it’s instead that <strong>JavaScript didn’t wait for a response from <code class="language-plaintext highlighter-rouge">first()</code> before moving on to execute <code class="language-plaintext highlighter-rouge">second()</code></strong>.</p>
+
+<p>So why show you this? Because you can’t just call one function after another and hope they execute in the right order. <mark class="px-2">Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.</mark></p>
+
+<h2 id="create-a-callback">Create a Callback</h2>
+
+<p><em>Alright, enough talk, lets create a callback!</em></p>
+
+<p>First, open up your Chrome Developer Console (Windows: Ctrl + Shift + J)(Mac: Cmd + Option + J) and type the following function declaration into your console:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doHomework</span><span class="p">(</span><span class="nx">subject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">`Starting my </span><span class="p">${</span><span class="nx">subject</span><span class="p">}</span><span class="s2"> homework.`</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Above, we’ve created the function <code class="language-plaintext highlighter-rouge">doHomework</code> . Our function takes one variable, the subject that we are working on. Call your function by typing the following into your console:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">doHomework</span><span class="p">(</span><span class="dl">'</span><span class="s1">math</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// Alerts: Starting my math homework.</span>
+</code></pre></div></div>
+
+<p>Now lets add in our callback — as our last parameter in the <code class="language-plaintext highlighter-rouge">doHomework()</code> function we can pass in <code class="language-plaintext highlighter-rouge">callback</code>. The callback function is then defined in the second argument of our call to <code class="language-plaintext highlighter-rouge">doHomework()</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doHomework</span><span class="p">(</span><span class="nx">subject</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">`Starting my </span><span class="p">${</span><span class="nx">subject</span><span class="p">}</span><span class="s2"> homework.`</span><span class="p">);</span>
+  <span class="nx">callback</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">doHomework</span><span class="p">(</span><span class="dl">'</span><span class="s1">math</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Finished my homework</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>As you’ll see, if you type the above code into your console you will get two alerts back to back: Your ‘starting homework’ alert, followed by your ‘finished homework’ alert.</p>
+
+<p>But callback functions don’t always have to be defined in our function call. They can be defined elsewhere in our code like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doHomework</span><span class="p">(</span><span class="nx">subject</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">`Starting my </span><span class="p">${</span><span class="nx">subject</span><span class="p">}</span><span class="s2"> homework.`</span><span class="p">);</span>
+  <span class="nx">callback</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">alertFinished</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Finished my homework</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">doHomework</span><span class="p">(</span><span class="dl">'</span><span class="s1">math</span><span class="dl">'</span><span class="p">,</span> <span class="nx">alertFinished</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This result of this example is exactly the same as the previous example, but the setup is a little different. As you can see, we’ve passed the <code class="language-plaintext highlighter-rouge">alertFinished</code> function definition as an argument during our <code class="language-plaintext highlighter-rouge">doHomework()</code> function call!</p>
+
+<h2 id="a-real-world-example">A real world example</h2>
+
+<p>Last week I published an article on how to Create a Twitter Bot in 38 lines of code. The only reason the code in that article works is because of Twitters API. When you make requests to an API, you have to wait for the response before you can act on that response. This is a wonderful example of a real-world callback. Here’s what the request looks like:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">T</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">search/tweets</span><span class="dl">'</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">err</span><span class="p">){</span>
+    <span class="c1">// This is where the magic will happen</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">T.get</code> simply means we are making a get request to Twitter</li>
+  <li>There are three parameters in this request: <code class="language-plaintext highlighter-rouge">‘search/tweets’</code>, which is the route of our request, <code class="language-plaintext highlighter-rouge">params</code> which are our search parameters, and then an anonymous function which is our callback.</li>
+</ul>
+
+<p>A callback is important here because we need to wait for a response from the server before we can move forward in our code. We don’t know if our API request is going to be successful or not so after sending our parameters to search/tweets via a get request, we wait. Once Twitter responds, our callback function is invoked. Twitter will either send an <code class="language-plaintext highlighter-rouge">err</code> (error) object or a <code class="language-plaintext highlighter-rouge">response</code> object back to us. In our callback function we can use an <code class="language-plaintext highlighter-rouge">if()</code> statement to determine if our request was successful or not, and then act upon the new data accordingly.</p>
+
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>John Doe</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#3b5998'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

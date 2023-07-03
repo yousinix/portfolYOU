@@ -1,0 +1,83 @@
+[
+  
+    {
+      "title"    : "Digital Minimalism",
+      "category" : "",
+      "tags"     : "Social Media, Minimalism, Technology",
+      "url"      : "/portfolYOU/blog/digital-minimalism",
+      "date"     : "2019-02-20 00:00:00 -0300"
+    } ,
+  
+    {
+      "title"    : "Learn React.js in 5 minutes",
+      "category" : "",
+      "tags"     : "React, JavaScript, Web Development",
+      "url"      : "/portfolYOU/blog/learn-react-js",
+      "date"     : "2019-02-15 00:00:00 -0200"
+    } ,
+  
+    {
+      "title"    : "Clean Coding",
+      "category" : "",
+      "tags"     : "Software Development, Clean Code",
+      "url"      : "/portfolYOU/blog/clean-coding",
+      "date"     : "2018-12-10 00:00:00 -0200"
+    } ,
+  
+    {
+      "title"    : "What the heck is a Callback?",
+      "category" : "",
+      "tags"     : "JavaScript, Nodejs, Web Development",
+      "url"      : "/portfolYOU/blog/what-the-heck-is-a-callback",
+      "date"     : "2018-12-01 00:00:00 -0200"
+    } ,
+  
+    {
+      "title"    : "4 Lessons After 11 Years in Silicon Valley",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/portfolYOU/blog/four-lessons-after-eleven-years-in-silicon-valley",
+      "date"     : "2018-05-09 00:00:00 -0300"
+    } ,
+  
+    {
+      "title"    : "GitHub Flow",
+      "category" : "",
+      "tags"     : "GitHub, Workflow",
+      "url"      : "/portfolYOU/blog/github-flow",
+      "date"     : "2017-01-01 00:00:00 -0200"
+    } ,
+  
+    {
+      "title"    : "A better Hello World",
+      "category" : "",
+      "tags"     : "Software Development",
+      "url"      : "/portfolYOU/blog/a-better-hello-world",
+      "date"     : "2016-07-23 00:00:00 -0300"
+    } ,
+  
+    {
+      "title"    : "Do not go gentle into that good night",
+      "category" : "",
+      "tags"     : "Poetry",
+      "url"      : "/portfolYOU/blog/do-not-go-gentle-into-that-good-night",
+      "date"     : "2016-04-17 00:00:00 -0300"
+    } ,
+  
+    {
+      "title"    : "What is version control?",
+      "category" : "",
+      "tags"     : "Version Control",
+      "url"      : "/portfolYOU/blog/what-is-version-control",
+      "date"     : "2016-02-09 00:00:00 -0200"
+    } ,
+  
+    {
+      "title"    : "How to undo your git failure?",
+      "category" : "",
+      "tags"     : "External Post, Git",
+      "url"      : "https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74",
+      "date"     : "2015-09-25 00:00:00 -0300"
+    } 
+  
+]

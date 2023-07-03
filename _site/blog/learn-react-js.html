@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Learn React.js in 5 minutes">
+  <meta property="og:description" content="A quick introduction to the popular JavaScript library.">
+  <meta property="og:image" content="https://i.imgur.com/uyDNQnn.jpg">
+
+  <title>Learn React.js in 5 minutes</title>
+  <meta name="description" content="A quick introduction to the popular JavaScript library.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/portfolYOU/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/portfolYOU/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/portfolYOU/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/portfolYOU/"><h5><b>portfolYOU</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/portfolYOU/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/portfolYOU/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/portfolYOU/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Learn React.js in 5 minutes</b></h1>
+
+<p class="post-metadata text-muted">
+  15 February 2019 -  
+  <b>8 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#react">
+      <span class="tag badge badge-pill text-primary border border-primary">React</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#javascript">
+      <span class="tag badge badge-pill text-primary border border-primary">JavaScript</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/portfolYOU/blog/tags#web-development">
+      <span class="tag badge badge-pill text-primary border border-primary">Web Development</span>
+    </a>
+    </p>
+
+<p>Source: <a href="https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4">freecodecamp</a></p>
+
+<p>This tutorial will give you a basic understanding of React.js by building a very simple application. I’ll leave out everything which I don’t think is core.</p>
+
+<h2 id="the-setup">The setup</h2>
+
+<p>When getting started with React, you should use the simplest setup possible: an HTML file which imports the <code class="language-plaintext highlighter-rouge">React</code> and the <code class="language-plaintext highlighter-rouge">ReactDOM</code> libraries using script tags, like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/react@15/dist/react.min.js"</span><span class="nt">&gt;</span> <span class="nt">&lt;/script&gt;&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/react-dom@15/dist/react-dom.min.js"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/babel-standalone@6.15.0/babel.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"root"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/babel"</span><span class="nt">&gt;</span>
+
+    <span class="cm">/*
+    ADD REACT CODE HERE
+    */</span>
+
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>We’ve also imported Babel, as React uses something called JSX to write markup. We’ll need to transform this JSX into plain JavaScript, so that the browser can understand it.</p>
+
+<p>There are more two things I want you to notice:</p>
+
+<ol>
+  <li>The <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> with the id of <code class="language-plaintext highlighter-rouge">#root</code>. This is the entry point for our app. This is where our entire app will live.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">&lt;script type="text/babel"&gt;</code> tag in the body. This is where we’ll write our React.js code.</li>
+</ol>
+
+<p>If you want to experiment with the code, check out this Scrimba playground.</p>
+
+<h2 id="components">Components</h2>
+
+<p>Everything in React is a component, and these usually take the form of JavaScript classes. You create a component by extending upon the <code class="language-plaintext highlighter-rouge">React-Component</code> class. Let’s create a component called <code class="language-plaintext highlighter-rouge">Hello</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Hello</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="nx">world</span><span class="o">!&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You then define the methods for the component. In our example, we only have one method, and it’s called <code class="language-plaintext highlighter-rouge">render()</code>.</p>
+
+<p>Inside <code class="language-plaintext highlighter-rouge">render()</code> you’ll return a description of what you want React to draw on the page. In the case above, we simply want it to display an <code class="language-plaintext highlighter-rouge">h1</code> tag with the text <em>Hello world!</em> inside it.</p>
+
+<p>To get our tiny application to render on the screen we also have to use <code class="language-plaintext highlighter-rouge">ReactDOM.render()</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Hello</span> <span class="o">/&gt;</span><span class="p">,</span> 
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">root</span><span class="dl">"</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>So this is where we connect our <code class="language-plaintext highlighter-rouge">Hello</code> component with the entry point for the app (<code class="language-plaintext highlighter-rouge">&lt;div id="root"&gt;&lt;/div&gt;</code>). It results in the following:</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*T-bmSzg0KlijyB3dG1M-ow.png" alt="" /></p>
+
+<p>The HTML’ish syntax we just looked at (<code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;Hello/&gt;</code>) is the JSX code I mentioned earlier. It’s not actually HTML, though what you write there does end up as HTML tags in the DOM.</p>
+
+<p>The next step is to get our app to handle data.</p>
+
+<h2 id="handling-data">Handling data</h2>
+
+<p>There are two types of data in React: props and state. The difference between the two is a bit tricky to understand in the beginning, so don’t worry if you find it a bit confusing. It’ll become easier once you start working with them.</p>
+
+<p>The key difference is that state is private and can be changed from within the component itself. Props are external, and not controlled by the component itself. It’s passed down from components higher up the hierarchy, who also control the data.</p>
+
+<p><mark class="px-2">A component can change its internal state directly. It can not change its props directly.</mark></p>
+
+<p>Let’s take a closer look at props first.</p>
+
+<h2 id="props">Props</h2>
+
+<p>Our <code class="language-plaintext highlighter-rouge">Hello</code> component is very static, and it renders out the same message regardless. A big part of React is reusability, meaning the ability to write a component once, and then reuse it in different use cases — for example, to display different messages.</p>
+
+<p>To achieve this type of reusability, we’ll add props. This is how you pass props to a component:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Hello</span> <span class="nx">message</span><span class="o">=</span><span class="dl">"</span><span class="s2">my friend</span><span class="dl">"</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">root</span><span class="dl">"</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>This prop is called <code class="language-plaintext highlighter-rouge">message</code> and has the value “my friend”. We can access this prop inside the Hello component by referencing <code class="language-plaintext highlighter-rouge">this.props.message</code>, like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Hello</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">message</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As a result, this is rendered on the screen:</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*M0-2Ct0K3SARZLSwIzgdJw.png" alt="" /></p>
+
+<p>The reason we’re writing {this.props.message} with curly braces is because we need to tell the JSX that we want to add a JavaScript expression. This is called <strong>escaping</strong>.</p>
+
+<p>So now we have a reusable component which can render whatever message we want on the page. Woohoo!</p>
+
+<p>However, what if we want the component to be able to change its own data? Then we have to use state instead!</p>
+
+<h2 id="state">State</h2>
+
+<p>The other way of storing data in React is in the component’s state. And unlike props — which can’t be changed directly by the component — the state can.</p>
+
+<p>So if you want the data in your app to change — for example based on user interactions — it must be stored in a component’s state somewhere in the app.</p>
+
+<h3 id="initializing-state">Initializing state</h3>
+
+<p>To initialize the state, simply set <code class="language-plaintext highlighter-rouge">this.state</code> in the <code class="language-plaintext highlighter-rouge">constructor()</code> method of the class. Our state is an object which in our case only has one key called <code class="language-plaintext highlighter-rouge">message</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Hello</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+
+    <span class="kd">constructor</span><span class="p">(){</span>
+        <span class="k">super</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">my friend (from state)!</span><span class="dl">"</span>
+        <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">message</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Before we set the state, we have to call <code class="language-plaintext highlighter-rouge">super()</code> in the constructor. This is because <code class="language-plaintext highlighter-rouge">this</code> is uninitialized before <code class="language-plaintext highlighter-rouge">super()</code> has been called.</p>
+
+<p>Changing the state
+To modify the state, simply call <strong>this.setState()</strong>, passing in the new state object as the argument. We’ll do this inside a method which we’ll call <code class="language-plaintext highlighter-rouge">updateMessage</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Hello</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+
+    <span class="kd">constructor</span><span class="p">(){</span>
+        <span class="k">super</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">my friend (from state)!</span><span class="dl">"</span>
+        <span class="p">};</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+   <span class="p">}</span>
+    <span class="nx">updateMessage</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+            <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">my friend (from changed state)!</span><span class="dl">"</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">message</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note: To make this work, we also had to bind the <code class="language-plaintext highlighter-rouge">this</code> keyword to the <code class="language-plaintext highlighter-rouge">updateMessage</code> method. Otherwise we couldn’t have accessed <code class="language-plaintext highlighter-rouge">this</code> in the method.</p>
+</blockquote>
+
+<p>The next step is to create a button to click on, so that we can trigger the <code class="language-plaintext highlighter-rouge">updateMessage()</code> method.</p>
+
+<p>So let’s add a button to the <code class="language-plaintext highlighter-rouge">render()</code> method:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+     <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+       <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">message</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>       <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Click</span> <span class="nx">me</span><span class="o">!&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>     <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here, we’re hooking an event listener onto the button, listening for the <strong>onClick</strong> event. When this is triggered, we call the <strong>updateMessage</strong> method.</p>
+
+<p>Here’s the entire component:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Hello</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+
+    <span class="kd">constructor</span><span class="p">(){</span>
+        <span class="k">super</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">my friend (from state)!</span><span class="dl">"</span>
+        <span class="p">};</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">updateMessage</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+            <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">my friend (from changed state)!</span><span class="dl">"</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+         <span class="k">return</span> <span class="p">(</span>
+           <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+             <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">message</span><span class="p">}</span><span class="o">!&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>             <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">updateMessage</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Click</span> <span class="nx">me</span><span class="o">!&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>           <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <strong>updateMessage</strong> method then calls <strong>this.setState()</strong> which changes the <code class="language-plaintext highlighter-rouge">this.state.message</code> value. And when we click the button, here’s how that will play out:</p>
+
+<p>Congrats! You now have a very basic understanding of the most important concepts in React.</p>
+
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>John Doe</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#3b5998'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
