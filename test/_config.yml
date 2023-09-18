@@ -2,7 +2,7 @@
 source              : ../
 collections_dir     : docs
 data_dir            : docs/_data
-baseurl             : "/portfolYOU-test"
+baseurl             : 
 repository          : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false
 
@@ -16,8 +16,8 @@ nav_exclude:
 
 ### Author Info ###
 author:
-  name              : YRN
-  image             : https://avatars2.githubusercontent.com/u/41103290
+  name              : Kim Yuri
+  image             : https://github.com/yuti0114/yuti0114.github.io/assets/144539116/0f19e158-a039-4c4c-a32f-3008c1f5708c
   github            : YoussefRaafatNasry
 
 
