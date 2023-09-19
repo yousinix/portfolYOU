@@ -108,3 +108,8 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+
+
+### Blog ###
+blog:
+  single: false                                         # Set to true to get a single column style blog
