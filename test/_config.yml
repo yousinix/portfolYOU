@@ -3,7 +3,7 @@ source              : ../
 collections_dir     : docs
 data_dir            : docs/_data
 baseurl             : "/portfolYOU-test"
-repository          : YoussefRaafatNasry/portfolYOU
+repository          : yousinix/portfolYOU
 open_new_tab        : false
 
 ### Navbar Settings ###
@@ -18,7 +18,7 @@ nav_exclude:
 author:
   name              : YRN
   image             : https://avatars2.githubusercontent.com/u/41103290
-  github            : YoussefRaafatNasry
+  github            : yousinix
 
 
 ### Posts ###

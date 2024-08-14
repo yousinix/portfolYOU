@@ -10,5 +10,5 @@
    - Follow the style guide where possible.
    - Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
 
-[fork]: https://github.com/YoussefRaafatNasry/portfolYOU/fork
-[compare]: https://github.com/YoussefRaafatNasry/portfolYOU/compare
+[fork]: https://github.com/yousinix/portfolYOU/fork
+[compare]: https://github.com/yousinix/portfolYOU/compare

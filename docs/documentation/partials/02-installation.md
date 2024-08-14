@@ -30,7 +30,7 @@ The following steps demonstrate how to use portfolYOU as **GitHub Pages remote t
 1. _[Optional]_ To use a specific [version][versions] of portfolYOU _(defaults to latest version)_:
 
     ```yml
-    remote_theme: YoussefRaafatNasry/portfolYOU@v1.0.0
+    remote_theme: yousinix/portfolYOU@v1.0.0
     ```
 
 [repo]: {{ site.github.repository_url }}
