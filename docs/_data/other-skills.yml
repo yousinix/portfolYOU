@@ -1,7 +1,9 @@
 - name: Adobe Photoshop
   percentage: 95
+  showPercentage: true
   color: info
 
 - name: Adobe Illustrator
   percentage: 90
+  showPercentage: true
   color: success

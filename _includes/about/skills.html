@@ -9,7 +9,9 @@
       <p class="mb-1">{{ skill.name }}</p>
     </div>
     <div class="col-2 text-right">
-      <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
+      {%- if skill.showPercentage -%}
+        <p class="mb-1 text-muted">{{ skill.percentage }}%</p>
+      {%- endif -%}
     </div>
   </div>
 
