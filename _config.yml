@@ -12,7 +12,7 @@ open_new_tab        : true                             # Opens external URLs in 
 
 ### Plugins ###
 plugins:
-  - jemoji
+  # - jemoji
 
 
 ### Navbar Settings ###
@@ -100,3 +100,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - vendor/

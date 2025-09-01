@@ -1,12 +1,16 @@
 - name: Architecture Design
-  percentage: 90
+  percentage: 95
   color: success
 
 - name: Problem Solving
-  percentage: 90
+  percentage: 95
   color: success
 
 - name: Leadership & Mentoring
+  percentage: 90
+  color: success
+
+- name: Testing
   percentage: 90
   color: success
 
@@ -18,10 +22,6 @@
   percentage: 85
   color: info
 
-- name: Testing
-  percentage: 80
-  color: warning
-
 - name: CI/CD Knowledge
-  percentage: 70
+  percentage: 80
   color: warning

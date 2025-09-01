@@ -1,5 +1,11 @@
+- title: Senior Android Engineer, Loom
+  period: 2023 - present
+  description: As a Senior Android Engineer (Freelance) at Loom, I develop software that integrates into Point of Sale devices, facilitating various financial and service-based transactions for end users.
+               My role involves creating software that bridges POS devices with essential services, empowering merchants to offer multiple transaction types through a unified platform.
+               Additionally, I'm developing a merchant application using modern frameworks like Compose MultiPlatform, Ktor, and SQLDelight, allowing merchants to visualize and manage their transactions in real-time with comprehensive business insights.
+
 - title: Android Engineer, Farfetch
-  period: 2021 - present
+  period: 2021 - November 2023
   description: As an Android Engineer at Farfetch, I maintain and develop new features for the <a href="https://play.google.com/store/apps/details?id=com.farfetch.farfetchshop&hl=en&gl=US&pli=1">Farfetch App</a>.
                My role encompasses a wide array of responsibilities, such as&#58; Development of new features, maintenance, and the pursuit of exceptional user experiences in collaboration with our Design and Product teams.
                Planning of feature implementations and architectural decisions in advance, with the aim of optimizing development efficiency and ensuring top-notch product quality.

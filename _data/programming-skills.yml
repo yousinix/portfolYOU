@@ -3,11 +3,11 @@
   color: success
   
 - name: Kotlin
-  percentage: 90
+  percentage: 95
   color: success
 
 - name: Jetpack Compose
-  percentage: 85
+  percentage: 95
   color: success
 
 - name: Java
