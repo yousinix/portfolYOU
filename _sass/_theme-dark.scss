@@ -27,7 +27,7 @@ $dark-900: #17191a;
   input {
     background-color: $dark-300;
     border-color: $dark-100;
-    color: $dark-900;
+    color: $text-white;
 
     &::placeholder {
       color: rgba($text-white, 0.64);
